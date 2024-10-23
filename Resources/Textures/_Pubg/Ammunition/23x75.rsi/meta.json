@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "Warete",
+    "copyright": "23x75 copy Warete",
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "base-spent"
+        }
+    ]
+}

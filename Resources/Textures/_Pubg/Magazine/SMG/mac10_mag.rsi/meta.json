@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "Mac10 Mag Warete",
+    "copyright": "Warete",
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "mag-1"
+        }
+    ]
+}

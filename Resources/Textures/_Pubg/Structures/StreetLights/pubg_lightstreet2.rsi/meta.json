@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "license": "Niki89",
+    "copyright": "Niki89",
+    "size": {
+        "x": 64,
+        "y": 128
+    },
+    "states": [
+        {
+            "name": "streetlight",
+            "directions": 4
+        },
+        {
+            "name": "streetlight2",
+            "directions": 4
+        }
+    ]
+}

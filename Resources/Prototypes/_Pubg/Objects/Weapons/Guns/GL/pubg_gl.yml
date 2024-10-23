@@ -1,0 +1,60 @@
+- type: entity
+  name: GL-06
+  parent: BaseWeaponLauncher
+  id: PubgWeaponGL06
+  description: Oh boy...
+  components:
+  - type: Sprite
+    sprite: _Pubg/Weapons/GL/gl_6.rsi
+    layers:
+    - state: icon
+      map: ["enum.GunVisualLayers.Base"]
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - CartridgeGL-40mm
+    capacity: 1
+    proto: PubgGrenadeCartridge
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+    autoCycle: false
+
+- type: entity
+  name: RG-06
+  parent: BaseWeaponLauncher
+  id: PubgWeaponRG06
+  description: Oh boy... OH BOY!!!
+  components:
+  - type: Sprite
+    sprite: _Pubg/Weapons/GL/rg_6.rsi
+    layers:
+    - state: icon
+      map: ["enum.GunVisualLayers.Base"]
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: Wieldable
+    wieldTime: 0
+    forceTwoHanded: True
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - CartridgeGL-40mm
+    capacity: 6
+    proto: PubgGrenadeCartridge
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+    autoCycle: false

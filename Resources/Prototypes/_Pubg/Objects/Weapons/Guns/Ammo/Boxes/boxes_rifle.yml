@@ -1,0 +1,123 @@
+# 7.62x39mm
+- type: entity
+  parent: BaseItem
+  id: BaseMagazineBoxRifle7-62x39mm
+  name: ammunition box (7.62x39mm)
+  components:
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeRifle7-62x39mm
+      proto: CartridgeRifle7-62x39mm
+      capacity: 30
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/AmmoBoxes/ammobox_7.62x39mm.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-1
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance
+
+# 7.62x51mm
+- type: entity
+  parent: BaseItem
+  id: BaseMagazineBoxRifle7-62x51mm
+  name: ammunition box (7.62x51mm)
+  components:
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeRifle7-62x51mm
+      proto: CartridgeRifle7-62x51mm
+      capacity: 30
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/AmmoBoxes/ammobox_7.62x51mm.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-1
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance
+
+# 5.56x45mm
+- type: entity
+  parent: BaseItem
+  id: BaseMagazineBoxRifle5-56x45mm
+  name: ammunition box (5.56x45mm)
+  components:
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeRifle5-56x45mm
+      proto: CartridgeRifle5-56x45mm
+      capacity: 30
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/AmmoBoxes/ammobox_5.56x45mm.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-1
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance
+
+# 9x39mm
+- type: entity
+  parent: BaseItem
+  id: BaseMagazineBoxRifle9x39mm
+  name: ammunition box (9x39mm)
+  components:
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeRifle9x39mm
+      proto: CartridgeRifle9x39mm
+      capacity: 20
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/AmmoBoxes/ammobox_9x39mm.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-1
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance

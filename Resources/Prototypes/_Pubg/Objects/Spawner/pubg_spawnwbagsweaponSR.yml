@@ -1,0 +1,177 @@
+# Bags with weapon
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelPUBGWeapons
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: Sprite
+      sprite: Clothing/Back/Duffels/syndicate.rsi
+    - type: ExplosionResistance
+      damageCoefficient: 0.1
+    - type: ClothingSpeedModifier
+      walkModifier: 1
+      sprintModifier: 1
+
+
+################################## SUB RIFLE
+# SKS Bag
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsSKS
+  suffix: SKS
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+          # Weapon
+        - id: WeaponSubRifleSKS
+          orGroup: Weapon
+          # Magazine
+        - id: MagazineRifleSKS
+          prob: 0.20
+          orGroup: Magazine
+        - id: null
+          prob: 0.8
+          orGroup: Magazine
+        - id: MagazineRifleSKS
+          prob: 0.20
+          orGroup: Magazine2
+        - id: null
+          prob: 0.8
+          orGroup: Magazine2
+        - id: MagazineRifleSKS
+          prob: 0.20
+          orGroup: Magazine3
+        - id: null
+          prob: 0.8
+          orGroup: Magazine3
+          # Ammo
+        - id: BaseMagazineBoxRifle7-62x39mm
+          prob: 0.10
+
+# Garand Bag
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsGarand
+  suffix: Garand
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+        # Weapon
+        - id: WeaponSubRifleGarand
+          orGroup: Weapon
+          # Magazine
+        - id: MagazineRifleGarand
+          prob: 0.50
+          orGroup: Magazine
+        - id: null
+          prob: 0.50
+          orGroup: Magazine
+        - id: MagazineRifleGarand
+          prob: 0.20
+          orGroup: Magazine2
+        - id: null
+          prob: 0.8
+          orGroup: Magazine2
+        - id: MagazineRifleGarand
+          prob: 0.10
+          orGroup: Magazine3
+        - id: null
+          prob: 0.8
+          orGroup: Magazine3
+          # Ammo
+        - id: BaseMagazineBoxRifle7-62x51mm
+          prob: 0.20
+
+# Merkel Sr1 Bag
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsMerkel
+  suffix: Merkel
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+        # Weapon
+        - id: WeaponSubRifleMerkel
+          orGroup: Weapon
+          # Magazine
+        - id: MagazineRifleMerkel
+          prob: 0.75
+          orGroup: Magazine
+        - id: null
+          prob: 0.25
+          orGroup: Magazine
+        - id: MagazineRifleMerkel
+          prob: 0.30
+          orGroup: Magazine2
+        - id: null
+          prob: 0.70
+          orGroup: Magazine2
+        - id: MagazineRifleMerkel
+          prob: 0.30
+          orGroup: Magazine3
+        - id: null
+          prob: 0.70
+          orGroup: Magazine3
+          # Ammo TODO TODO TODO TODO TODO TODO TODO
+        - id: BaseMagazineBoxRifle7-62x51mm
+          prob: 0.30
+
+
+#- type: entity
+#  name: Maint Loot Spawner
+#  suffix: Scrap+Weapons
+#  id: MaintenanceWeaponSpawner
+#  parent: MarkerBase
+#  components:
+#    - type: Sprite
+#      layers:
+#        - state: red
+#        - sprite: Objects/Weapons/Melee/machete.rsi
+#          state: icon
+#    - type: RandomSpawner
+#      rarePrototypes:
+#        - Machete
+#        - BaseBallBat
+#        - CombatKnife
+#        - Spear
+#        - RifleStock
+#        - ModularReceiver
+#        - HydroponicsToolScythe
+#      rareChance: 0.05
+#      prototypes:
+#        - FlashlightLantern
+#        - OxygenTankFilled
+#        - DoubleEmergencyOxygenTankFilled
+#        - NitrogenTankFilled
+#        - DoubleEmergencyNitrogenTankFilled
+#        - Lighter
+#        - Matchbox
+#        - Crowbar
+#        - Shovel
+#        - Welder
+#        - WeaponFlareGun
+#        - LidSalami
+#        - ClothingEyesBlindfold
+#        - ClothingMaskMuzzle
+#        - ClothingMaskGasSecurity
+#        - ShardGlass
+#        - Syringe
+#        - Mousetrap
+#        - Brutepack1
+#        - Ointment1
+#        - Gauze1
+#        - Bola
+#        - SurvivalKnife
+#        - ScalpelShiv
+#        - Shiv
+#        - SawImprov
+#        - HydroponicsToolMiniHoe
+#      chance: 0.6
+#      offset: 0.0

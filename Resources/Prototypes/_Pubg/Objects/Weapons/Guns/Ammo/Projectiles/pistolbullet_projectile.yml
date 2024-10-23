@@ -1,0 +1,52 @@
+#Grach, PM, MAC10
+- type: entity
+  id: BulletPistol9mm
+  name: bullet (9mm)
+  parent: BaseBullet
+  noSpawn: true
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 7.5
+
+
+# Luger
+- type: entity
+  id: BulletPistol7-65mm
+  name: bullet (7.65mm)
+  parent: BaseBullet
+  noSpawn: true
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 10
+          Blunt: 2.5
+
+# P90
+- type: entity
+  id: BulletPistol5-7x28mm
+  name: bullet (5.7x28mm)
+  parent: BaseBullet
+  noSpawn: true
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 5
+          Blunt: 1
+
+
+# Desert Eagle
+- type: entity
+  id: BulletPistol50bmg
+  name: bullet (50bmg)
+  parent: BaseBullet
+  noSpawn: true
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 15
+          Blunt: 8

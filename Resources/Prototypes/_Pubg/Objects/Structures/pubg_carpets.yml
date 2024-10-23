@@ -1,0 +1,66 @@
+# Carpets
+- type: entity
+  id: PubgCarpetOne
+  parent: CarpetBase
+  suffix: Carpet one
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _Pubg/Structures/Carpets/pubg_carpet_1.rsi
+  - type: Icon
+    sprite: _Pubg/Structures/Carpets/pubg_carpet_1.rsi
+
+- type: entity
+  id: PubgCarpetTwo
+  parent: CarpetBase
+  suffix: Carpet two
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _Pubg/Structures/Carpets/pubg_carpet_2.rsi
+  - type: Icon
+    sprite: _Pubg/Structures/Carpets/pubg_carpet_2.rsi
+
+- type: entity
+  id: PubgCarpetThree
+  parent: CarpetBase
+  suffix: Carpet three
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _Pubg/Structures/Carpets/pubg_carpet_3.rsi
+  - type: Icon
+    sprite: _Pubg/Structures/Carpets/pubg_carpet_3.rsi
+
+- type: entity
+  id: PubgCarpetFour
+  parent: CarpetBase
+  suffix: Carpet four
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _Pubg/Structures/Carpets/pubg_carpet_4.rsi
+  - type: Icon
+    sprite: _Pubg/Structures/Carpets/pubg_carpet_4.rsi
+
+- type: entity
+  id: PubgCarpetFive
+  parent: CarpetBase
+  suffix: Carpet five
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _Pubg/Structures/Carpets/pubg_carpet_5.rsi
+  - type: Icon
+    sprite: _Pubg/Structures/Carpets/pubg_carpet_5.rsi
+
+- type: entity
+  id: PubgCarpetSix
+  parent: CarpetBase
+  suffix: Carpet six
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _Pubg/Structures/Carpets/pubg_carpet_6.rsi
+  - type: Icon
+    sprite: _Pubg/Structures/Carpets/pubg_carpet_6.rsi

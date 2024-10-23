@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "Ohio Ordance 1918 Mag Warete",
+    "copyright": "Warete",
+    "states": [
+        {
+            "name": "base"
+        }
+    ]
+}

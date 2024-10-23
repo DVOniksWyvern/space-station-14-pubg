@@ -1,0 +1,154 @@
+# AR-18
+- type: entity
+  id: MagazineRifleAR18-V2
+  name: "magazine AR18-V2(5.56x45mm rifle)"
+  parent: MagazineRifleSKS
+  components:
+    - type: Tag
+      tags:
+        - MagazineRifleAR18-V2
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeRifle5-56x45mm
+      proto: CartridgeRifle5-56x45mm
+      capacity: 30
+    - type: Sprite
+      sprite: _Pubg/Magazine/Rifle/ar18_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+
+# FN-FAL
+- type: entity
+  id: MagazineRifleFNFAL
+  name: "magazine FN-FAL(7.62x51mm rifle)"
+  parent: MagazineRifleSKS
+  components:
+    - type: Tag
+      tags:
+        - MagazineRifleFNFAL
+    - type: BallisticAmmoProvider
+      whitelist:
+        tags:
+          - CartridgeRifle7-62x51mm
+      proto: CartridgeRifle7-62x51mm
+      capacity: 20
+    - type: Sprite
+      sprite: _Pubg/Magazine/Rifle/fnfal_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+
+# AS Val
+- type: entity
+  id: MagazineRifleASVAL
+  name: "magazine AS Val(9x39mm rifle)"
+  parent: MagazineRifleSKS
+  components:
+    - type: Tag
+      tags:
+        - MagazineRifleASVAL
+    - type: BallisticAmmoProvider
+      whitelist:
+        tags:
+          - CartridgeRifle9x39mm
+      proto: CartridgeRifle9x39mm
+      capacity: 20
+    - type: Sprite
+      sprite: _Pubg/Magazine/Rifle/asval_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+
+# A91
+- type: entity
+  id: MagazineRifleA91
+  name: "magazine A91(7.62x39mm rifle)"
+  parent: MagazineRifleSKS
+  components:
+    - type: Tag
+      tags:
+        - MagazineRifleA91
+    - type: BallisticAmmoProvider
+      whitelist:
+        tags:
+          - CartridgeRifle7-62x39mm
+      proto: CartridgeRifle7-62x39mm
+      capacity: 30
+    - type: Sprite
+      sprite: _Pubg/Magazine/Rifle/a91_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+
+# Beryl
+- type: entity
+  id: MagazineRifleBeryl
+  name: "magazine Beryl(5.56x45mm rifle)"
+  parent: MagazineRifleSKS
+  components:
+    - type: Tag
+      tags:
+        - MagazineRifleBeryl
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeRifle5-56x45mm
+      proto: CartridgeRifle5-56x45mm
+      capacity: 30
+    - type: Sprite
+      sprite: _Pubg/Magazine/Rifle/beryl_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+
+# Ohio Ordance 1918
+- type: entity
+  id: MagazineRifleOhioOrdance
+  name: "magazine Beryl(30-06spr rifle)"
+  parent: MagazineRifleSKS
+  components:
+    - type: Tag
+      tags:
+        - MagazineRifleOhioOrdance
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeRifle30-06spr
+      proto: CartridgeRifle30-06spr
+      capacity: 20
+    - type: Sprite
+      sprite: _Pubg/Magazine/Rifle/ohioordnance1918_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+
+# ASH-12
+- type: entity
+  id: MagazineRifleASH12
+  name: "magazine Ash-12(12x55mm rifle)"
+  parent: MagazineRifleSKS
+  components:
+  - type: Tag
+    tags:
+    - MagazineRifleASH12
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+      - CartridgeRifle12x55mm
+    proto: CartridgeRifle12x55mm
+    capacity: 20
+  - type: Sprite
+    sprite: _Pubg/Magazine/Rifle/ash12_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: [ "enum.GunVisualLayers.Mag" ]

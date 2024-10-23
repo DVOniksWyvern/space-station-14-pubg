@@ -1,0 +1,699 @@
+# Если что-то меняете, не забудьте поменять это и ВНИЗУ
+# Шкафы обыкновенные, настенные ниже.
+# Low level tier
+- type: entity
+  id: PubgCrateBase
+  parent: BaseStructureDynamic
+  name: PubgCrate
+  description: A Pubg crate.
+  abstract: true
+  components:
+  - type: ResistLocker
+  - type: Transform
+    noRot: true
+  - type: Sprite
+    noRot: true
+    sprite: Structures/Storage/closet.rsi
+    layers:
+    - state: generic
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: generic_door
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: MovedByPressure
+  - type: ItemSlots
+  - type: DamageOnHighSpeedImpact
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: InteractionOutline
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.48,0.25,0.48"
+        density: 75
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: EntityStorage
+  - type: ContainerContainer
+    containers:
+      entity_storage: !type:Container
+      paper_label: !type:ContainerSlot
+  - type: PlaceableSurface
+    placeCentered: true
+    isPlaceable: false
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+          params:
+            volume: -6
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: locked
+    stateDoorOpen: open
+  - type: StaticPrice
+    price: 50
+
+
+- type: entity
+  id: PubgWardrobeTier1
+  parent: PubgCrateBase
+  name: Interesting container
+  description: "What is it..."
+  suffix: Low level
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: _Pubg/Structures/Crates/crate_wood.rsi
+      layers:
+      - state: locked_0
+        map: [ "enum.StorageVisualLayers.Base" ]
+      - state: open_0
+        map: [ "enum.StorageVisualLayers.Door" ]
+    - type: EntityStorageVisuals
+      stateBaseClosed: locked_0
+      stateDoorOpen: open_0
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 80
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: WoodDestroy
+            params:
+              volume: -3
+    - type: StorageFill
+      contents:
+        # Pistols
+        - id: PubgBoxWeaponPM9
+          prob: 0.15
+          orGroup: Weapon
+        - id: PubgBoxWeaponGrach
+          prob: 0.10
+          orGroup: Weapon
+        - id: PubgBoxWeaponLuger
+          prob: 0.08
+          orGroup: Weapon
+        # SMG
+        - id: ClothingBackpackDuffelPUBGWeaponsMac10
+          prob: 0.03
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsVityaz
+          prob: 0.04
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsP90
+          prob: 0.02
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsCPW
+          prob: 0.01
+          orGroup: Weapon
+        # Sub Rifle
+        - id: ClothingBackpackDuffelPUBGWeaponsSKS
+          prob: 0.05
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsGarand
+          prob: 0.05
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsMerkel
+          prob: 0.10
+          orGroup: Weapon
+        # Rifle
+        - id: ClothingBackpackDuffelPUBGWeaponsA91
+          prob: 0.004
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsBeryl
+          prob: 0.003
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsFNFal
+          prob: 0.002
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsAR18
+          prob: 0.001
+          orGroup: Weapon
+        # Shotguns
+        - id: ClothingBackpackDuffelPUBGWeaponsMP153
+          prob: 0.10
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsChazer
+          prob: 0.05
+          orGroup: Weapon
+        # Sniper Rifle
+        - id: ClothingBackpackDuffelPUBGWeaponsSV98
+          prob: 0.08
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsSVD
+          prob: 0.02
+          orGroup: Weapon
+        - id: null
+          prob: 0.11
+          orGroup: Weapon
+        # Armor
+        - id: ClothingOuterArmorFagor1
+          prob: 0.02
+          orGroup: Armor
+        - id: ClothingOuterArmorSegment2
+          prob: 0.02
+          orGroup: Armor
+        - id: ClothingOuterArmorTorus
+          prob: 0.02
+          orGroup: Armor
+        - id: null
+          prob: 0.94
+          orGroup: Armor
+        # Helmets
+        - id: PubgClothingMaskHelmetCappa1
+          prob: 0.02
+          orGroup: Helmet
+        - id: PubgClothingMaskHelmetGuard1
+          prob: 0.02
+          orGroup: Helmet
+        - id: PubgClothingMaskHelmetZsh1
+          prob: 0.02
+          orGroup: Helmet
+        - id: null
+          prob: 0.94
+          orGroup: Helmet
+        # Mask
+        - id: PubgClothingMaskCat0
+          prob: 0.005
+          orGroup: Mask
+        - id: PubgClothingMaskCat1
+          prob: 0.005
+          orGroup: Mask
+        - id: PubgClothingMaskCat2
+          prob: 0.005
+          orGroup: Mask
+        - id: PubgClothingMaskMcs
+          prob: 0.005
+          orGroup: Mask
+        - id: null
+          prob: 0.98
+          orGroup: Mask
+        # Medicine
+        - id: PubgStandartMedicine2
+          prob: 0.30
+          orGroup: Medicine
+        - id: PubgStandartMedicine5
+          prob: 0.15
+          orGroup: Medicine
+        - id: PubgStandartMedicineBandage
+          prob: 0.05
+          orGroup: Medicine
+        - id: null
+          prob: 0.50
+          orGroup: Medicine
+        # Other things
+        - id: SmokeGrenade
+          prob: 0.05
+          orGroup: Things
+        - id: GrenadeFlashBang
+          prob: 0.05
+          orGroup: Things
+        - id: null
+          prob: 0.90
+          orGroup: Things
+        - id: SpaceCash100
+          prob: 0.10
+
+- type: entity
+  id: PubgWardrobeTier1_1
+  parent: PubgWardrobeTier1
+  components:
+  - type: EntityStorageVisuals
+    stateBaseClosed: locked_1
+    stateDoorOpen: open_1
+
+- type: entity
+  id: PubgWardrobeTier1_2
+  parent: PubgWardrobeTier1
+  components:
+  - type: EntityStorageVisuals
+    stateBaseClosed: locked_2
+    stateDoorOpen: open_2
+
+- type: entity
+  id: PubgWardrobeTier1_3
+  parent: PubgWardrobeTier1
+  components:
+  - type: EntityStorageVisuals
+    stateBaseClosed: locked_3
+    stateDoorOpen: open_3
+
+- type: entity
+  id: PubgWardrobeTier1_4
+  parent: PubgWardrobeTier1
+  components:
+  - type: EntityStorageVisuals
+    stateBaseClosed: locked_4
+    stateDoorOpen: open_4
+
+# Middle level tier
+- type: entity
+  id: PubgWardrobeTier2
+  parent: PubgCrateBase
+  name: Interesting container
+  description: "What is it..."
+  suffix: Middle level
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: _Pubg/Structures/Crates/crate_steel.rsi
+      layers:
+      - state: locked_0
+        map: [ "enum.StorageVisualLayers.Base" ]
+      - state: open_0
+        map: [ "enum.StorageVisualLayers.Door" ]
+    - type: EntityStorageVisuals
+      stateBaseClosed: locked_0
+      stateDoorOpen: open_0
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 200
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+            params:
+              volume: -3
+    - type: StorageFill
+      contents:
+        # Pistols
+        - id: PubgBoxWeaponPM9
+          prob: 0.03
+          orGroup: Weapon
+        - id: PubgBoxWeaponGrach
+          prob: 0.08
+          orGroup: Weapon
+        - id: PubgBoxWeaponLuger
+          prob: 0.06
+          orGroup: Weapon
+        # SMG
+        - id: ClothingBackpackDuffelPUBGWeaponsMac10
+          prob: 0.06
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsVityaz
+          prob: 0.08
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsP90
+          prob: 0.05
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsCPW
+          prob: 0.03
+          orGroup: Weapon
+        # Sub Rifle
+        - id: ClothingBackpackDuffelPUBGWeaponsSKS
+          prob: 0.08
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsGarand
+          prob: 0.08
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsMerkel
+          prob: 0.03
+          orGroup: Weapon
+        # Rifle
+        - id: ClothingBackpackDuffelPUBGWeaponsA91
+          prob: 0.04
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsBeryl
+          prob: 0.03
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsFNFal
+          prob: 0.01
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsAR18
+          prob: 0.01
+          orGroup: Weapon
+        # Shotguns
+        - id: ClothingBackpackDuffelPUBGWeaponsMP153
+          prob: 0.05
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsChazer
+          prob: 0.08
+          orGroup: Weapon
+        # Sniper Rifle
+        - id: ClothingBackpackDuffelPUBGWeaponsSV98
+          prob: 0.10
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsSVD
+          prob: 0.05
+          orGroup: Weapon
+        - id: null
+          prob: 0.05
+          orGroup: Weapon
+        # Armor
+        - id: ClothingOuterArmorBagarii
+          prob: 0.05
+          orGroup: Armor
+        - id: ClothingOuterArmorKorund
+          prob: 0.05
+          orGroup: Armor
+        - id: ClothingOuterArmorPlitnik
+          prob: 0.03
+          orGroup: Armor
+        - id: ClothingOuterArmorRusarmOlive
+          prob: 0.03
+          orGroup: Armor
+        - id: null
+          prob: 0.84
+          orGroup: Armor
+        # Helmets
+        - id: PubgClothingMaskHelmetAlpha2
+          prob: 0.02
+          orGroup: Helmet
+        - id: PubgClothingMaskHelmetTor2
+          prob: 0.02
+          orGroup: Helmet
+        - id: PubgClothingMaskHelmetZhmb2
+          prob: 0.02
+          orGroup: Helmet
+        - id: null
+          prob: 0.94
+          orGroup: Helmet
+        # Mask
+        - id: PubgClothingMaskCat0
+          prob: 0.005
+          orGroup: Mask
+        - id: PubgClothingMaskCat1
+          prob: 0.005
+          orGroup: Mask
+        - id: PubgClothingMaskCat2
+          prob: 0.005
+          orGroup: Mask
+        - id: PubgClothingMaskMcs
+          prob: 0.005
+          orGroup: Mask
+        - id: null
+          prob: 0.98
+          orGroup: Mask
+        # Medicine
+        - id: PubgStandartMedicine2
+          prob: 0.10
+          orGroup: Medicine
+        - id: PubgStandartMedicine5
+          prob: 0.30
+          orGroup: Medicine
+        - id: PubgStandartMedicineBandage
+          prob: 0.10
+          OrGroup: Medicine
+        - id: null
+          prob: 0.60
+          orGroup: Medicine
+        # Other things
+        - id: SmokeGrenade
+          prob: 0.15
+          orGroup: Things
+        - id: GrenadeFlashBang
+          prob: 0.15
+          orGroup: Things
+        - id: null
+          prob: 0.70
+          orGroup: Things
+        - id: SpaceCash100
+          prob: 0.10
+        - id: SpaceCash500
+          prob: 0.10
+
+- type: entity
+  id: PubgWardrobeTier2_1
+  parent: PubgWardrobeTier2
+  components:
+  - type: EntityStorageVisuals
+    stateBaseClosed: locked_1
+    stateDoorOpen: open_1
+
+- type: entity
+  id: PubgWardrobeTier2_2
+  parent: PubgWardrobeTier2
+  components:
+  - type: EntityStorageVisuals
+    stateBaseClosed: locked_2
+    stateDoorOpen: open_2
+
+- type: entity
+  id: PubgWardrobeTier2_3
+  parent: PubgWardrobeTier2
+  components:
+  - type: EntityStorageVisuals
+    stateBaseClosed: locked_3
+    stateDoorOpen: open_3
+
+- type: entity
+  id: PubgWardrobeTier2_4
+  parent: PubgWardrobeTier2
+  components:
+  - type: EntityStorageVisuals
+    stateBaseClosed: locked_4
+    stateDoorOpen: open_4
+
+- type: entity
+  id: PubgWardrobeTier2_5
+  parent: PubgWardrobeTier2
+  components:
+  - type: EntityStorageVisuals
+    stateBaseClosed: locked_5
+    stateDoorOpen: open_5
+
+# High level tier
+- type: entity
+  id: PubgWardrobeTier3
+  parent: PubgCrateBase
+  name: Interesting container
+  description: "What is it..."
+  suffix: High level
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: _Pubg/Structures/Crates/crate_safe.rsi
+      layers:
+      - state: locked_0
+        map: [ "enum.StorageVisualLayers.Base" ]
+      - state: open_0
+        map: [ "enum.StorageVisualLayers.Door" ]
+    - type: EntityStorageVisuals
+      stateBaseClosed: locked_0
+      stateDoorOpen: open_0
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 200
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalSlam
+            params:
+              volume: 0
+    - type: StorageFill
+      contents:
+        # Pistols
+        - id: PubgBoxWeaponPM9
+          prob: 0.01
+          orGroup: Weapon
+        - id: PubgBoxWeaponGrach
+          prob: 0.02
+          orGroup: Weapon
+        - id: PubgBoxWeaponLuger
+          prob: 0.03
+          orGroup: Weapon
+        # SMG
+        - id: ClothingBackpackDuffelPUBGWeaponsMac10
+          prob: 0.04
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsVityaz
+          prob: 0.03
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsP90
+          prob: 0.08
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsCPW
+          prob: 0.06
+          orGroup: Weapon
+        # Sub Rifle
+        - id: ClothingBackpackDuffelPUBGWeaponsSKS
+          prob: 0.05
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsGarand
+          prob: 0.06
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsMerkel
+          prob: 0.01
+          orGroup: Weapon
+        # Rifle
+        - id: ClothingBackpackDuffelPUBGWeaponsA91
+          prob: 0.07
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsBeryl
+          prob: 0.05
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsFNFal
+          prob: 0.04
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsAR18
+          prob: 0.03
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsASH12
+          prob: 0.02
+          orGroup: Weapon
+        # Shotguns
+        - id: ClothingBackpackDuffelPUBGWeaponsMP153
+          prob: 0.02
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsChazer
+          prob: 0.03
+          orGroup: Weapon
+        # Sniper Rifle
+        - id: ClothingBackpackDuffelPUBGWeaponsSV98
+          prob: 0.10
+          orGroup: Weapon
+        - id: ClothingBackpackDuffelPUBGWeaponsSVD
+          prob: 0.15
+          orGroup: Weapon
+        - id: null
+          prob: 0.10
+          orGroup: Weapon
+        # Armor
+        - id: ClothingOuterArmorBattleAssault
+          prob: 0.05
+          orGroup: Armor
+        - id: ClothingOuterArmorRusarmAssault
+          prob: 0.05
+          orGroup: Armor
+        - id: ClothingOuterArmorSaphire
+          prob: 0.05
+          orGroup: Armor
+        - id: null
+          prob: 0.85
+          orGroup: Armor
+        # Helmets
+        - id: PubgClothingMaskHelmetBerkut3
+          prob: 0.02
+          orGroup: Helmet
+        - id: PubgClothingMaskHelmetSparta3
+          prob: 0.02
+          orGroup: Helmet
+        - id: PubgClothingMaskHelmetSphere3
+          prob: 0.02
+          orGroup: Helmet
+        - id: null
+          prob: 0.94
+          orGroup: Helmet
+        # Mask
+        - id: PubgClothingMaskCat0
+          prob: 0.005
+          orGroup: Mask
+        - id: PubgClothingMaskCat1
+          prob: 0.005
+          orGroup: Mask
+        - id: PubgClothingMaskCat2
+          prob: 0.005
+          orGroup: Mask
+        - id: PubgClothingMaskMcs
+          prob: 0.005
+          orGroup: Mask
+        - id: null
+          prob: 0.98
+          orGroup: Mask
+        # Medicine
+        - id: PubgStandartMedicine
+          prob: 0.15
+          orGroup: Medicine
+        - id: PubgStandartMedicine5
+          prob: 0.25
+          orGroup: Medicine
+        - id: PubgStandartMedicineBandage
+          prob: 0.10
+          orGroup: Medicine
+        - id: null
+          prob: 0.50
+          orGroup: Medicine
+        # Other things
+        - id: SmokeGrenade
+          prob: 0.35
+          orGroup: Things
+        - id: GrenadeFlashBang
+          prob: 0.35
+          orGroup: Things
+        - id: null
+          prob: 0.30
+          orGroup: Things
+        - id: SpaceCash100
+          prob: 0.10
+        - id: SpaceCash500
+          prob: 0.20
+        - id: SpaceCash1000
+          prob: 0.01
+
+- type: entity
+  id: PubgWardrobeTier3_1
+  parent: PubgWardrobeTier3
+  components:
+  - type: EntityStorageVisuals
+    stateBaseClosed: locked_1
+    stateDoorOpen: open_1
+
+- type: entity
+  id: PubgWardrobeTier3_2
+  parent: PubgWardrobeTier3
+  components:
+  - type: EntityStorageVisuals
+    stateBaseClosed: locked_2
+    stateDoorOpen: open_2
+
+- type: entity
+  id: PubgWardrobeTier3_3
+  parent: PubgWardrobeTier3
+  components:
+  - type: EntityStorageVisuals
+    stateBaseClosed: locked_3
+    stateDoorOpen: open_3

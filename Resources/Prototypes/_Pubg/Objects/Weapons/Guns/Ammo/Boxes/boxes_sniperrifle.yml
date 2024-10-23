@@ -1,0 +1,61 @@
+# 7.62x54mm
+- type: entity
+  parent: BaseItem
+  id: BaseMagazineBoxSniperRifle7-62x54mm
+  name: ammunition box (7.62x54mm)
+  components:
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeSniper7-62x54mm
+      proto: CartridgeSniper7-62x54mm
+      capacity: 20
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/AmmoBoxes/ammobox_7.62x54mm.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-1
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance
+
+# 12.7x99mm
+- type: entity
+  parent: BaseItem
+  id: BaseMagazineBoxSniperRifle12-7x99mm
+  name: ammunition box (12.7x99mm)
+  components:
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeSniper12-7x99mm
+      proto: CartridgeSniper12-7x99mm
+      capacity: 10
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/AmmoBoxes/ammobox_12.7x99mm.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-1
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance

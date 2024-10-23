@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "license": "Gersoon",
+  "copyright": "Gersoon",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+      {
+          "name": "k_0",
+          "directions": 4
+      },
+      {
+          "name": "khl_0",
+          "directions": 4
+      },
+      {
+          "name": "khr_0",
+          "directions": 4
+      },
+      {
+          "name": "kl_0",
+          "directions": 4
+      },
+      {
+          "name": "km_0",
+          "directions": 4
+      },
+      {
+          "name": "kr_0",
+          "directions": 4
+      },
+      {
+          "name": "cc_0",
+          "directions": 4
+      }
+  ]
+}

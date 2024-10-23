@@ -1,0 +1,144 @@
+################################## SMG
+# Mac10 Bag
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsMac10
+  suffix: Mac10
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+          # Weapon
+        - id: WeaponSmgMac10
+          orGroup: Weapon
+
+        - id: MagazineSmgMac10
+          prob: 0.50
+          onGroup: Magazine
+        - id: null
+          prob: 0.50
+          onGroup: Magazine
+        - id: MagazineSmgMac10
+          prob: 0.25
+          onGroup: Magazine2
+        - id: null
+          prob: 0.75
+          onGroup: Magazine2
+        - id: MagazineSmgMac10
+          prob: 0.15
+          onGroup: Magazine3
+        - id: null
+          prob: 0.85
+          onGroup: Magazine3
+          # Ammo
+        - id: BaseMagazineBoxPistols9mm
+          prob: 0.20
+
+# Vityaz Bag
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsVityaz
+  suffix: Vityaz
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+        # Weapon
+        - id: WeaponSmgVityaz
+          orGroup: Weapon
+
+        - id: MagazineSmgVityaz
+          prob: 0.60
+          onGroup: Magazine
+        - id: null
+          prob: 0.40
+          onGroup: Magazine
+        - id: MagazineSmgVityaz
+          prob: 0.30
+          onGroup: Magazine2
+        - id: null
+          prob: 0.70
+          onGroup: Magazine2
+        - id: MagazineSmgVityaz
+          prob: 0.20
+          onGroup: Magazine3
+        - id: null
+          prob: 0.80
+          onGroup: Magazine3
+          # Ammo
+        - id: BaseMagazineBoxPistols9mm
+          prob: 0.20
+
+# P90 Bag
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsP90
+  suffix: P90
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+        # Weapon
+        - id: WeaponSmgP90
+          orGroup: Weapon
+
+        - id: MagazineSmgP90
+          prob: 0.40
+          onGroup: Magazine
+        - id: null
+          prob: 0.60
+          onGroup: Magazine
+        - id: MagazineSmgP90
+          prob: 0.25
+          onGroup: Magazine2
+        - id: null
+          prob: 0.75
+          onGroup: Magazine2
+        - id: MagazineSmgP90
+          prob: 0.15
+          onGroup: Magazine3
+        - id: null
+          prob: 0.85
+          onGroup: Magazine3
+          # Ammo
+        - id: BaseMagazineBoxSMG5-7x28mm
+          prob: 0.30
+
+# CPW Bag
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsCPW
+  suffix: CPW
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+        # Weapon
+        - id: WeaponSmgCPW
+          orGroup: Weapon
+
+        - id: MagazineSmgCPW
+          prob: 0.40
+          onGroup: Magazine
+        - id: null
+          prob: 0.60
+          onGroup: Magazine
+        - id: MagazineSmgCPW
+          prob: 0.25
+          onGroup: Magazine2
+        - id: null
+          prob: 0.75
+          onGroup: Magazine2
+        - id: MagazineSmgCPW
+          prob: 0.15
+          onGroup: Magazine3
+        - id: null
+          prob: 0.85
+          onGroup: Magazine3
+          # Ammo
+        - id: BaseMagazineBoxSMG5-7x28mm
+          prob: 0.30

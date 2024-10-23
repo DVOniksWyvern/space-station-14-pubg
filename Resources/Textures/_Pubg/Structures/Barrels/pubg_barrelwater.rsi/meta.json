@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "license": "Niki89",
+    "copyright": "Niki89",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "waterbarrel"
+        },
+        {
+            "name": "waterbarrel2"
+        },
+        {
+            "name": "waterbarrelempty"
+        },
+        {
+            "name": "waterbarrelmini"
+        }
+    ]
+}

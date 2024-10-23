@@ -1,0 +1,52 @@
+- type: entity
+  id: ActionGoidaScream
+  name: GOIDA!
+  description: GOIDA, BROTHERS AND SISTERS, GOIDA!
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 10
+    icon: Interface/Actions/scream.png
+    event: !type:GoidaScreamActionEvent
+    checkCanInteract: false
+
+- type: gamePreset
+  id: Goida
+  alias:
+  - pubg
+  - goida
+  name: ГОЙДА
+  description: ДАЙТЕ ГОЙДУ
+  maxPlayers: 15
+  showInVote: true
+  supportedMaps: GoidaMapPool
+  rules:
+  - Goida
+
+- type: entity
+  id: Goida
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+#  - type: GoidaRule
+  - type: KillCalloutRule
+  - type: PointManager
+
+- type: startingGear
+  id: GoidaGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+    shoes: ClothingShoesBootsJack
+    ears: ClothingHeadsetGrey
+    gloves: ClothingHandsGlovesFingerless
+    id: ERTEngineerPDA
+    pocket1: BaseGoidaShop
+  innerClothingSkirt: ClothingUniformJumpskirtColorWhite
+  inhand:
+  - ToolboxSyndicate
+
+- type: gameMapPool
+  id: GoidaMapPool
+  maps:
+  - MeteorArena
+

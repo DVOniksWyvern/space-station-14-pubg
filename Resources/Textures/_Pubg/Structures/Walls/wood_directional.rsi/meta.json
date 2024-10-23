@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "license": "Gersoon",
+  "copyright": "Gersoon",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "directional_big_wood",
+      "directions": 4
+    },
+    {
+      "name": "directional_wood",
+      "directions": 4
+    },
+    {
+      "name": "corner_big_wood",
+      "directions": 4
+    },
+    {
+      "name": "corner_wood",
+      "directions": 4
+    }
+  ]
+}

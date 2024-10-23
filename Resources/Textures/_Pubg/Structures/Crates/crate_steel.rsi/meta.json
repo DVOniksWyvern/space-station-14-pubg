@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "license": "Gersoon",
+  "copyright": "Gersoon",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+      {
+          "name": "open_0"
+      },
+      {
+          "name": "open_1"
+      },
+      {
+          "name": "open_2"
+      },
+      {
+          "name": "open_3"
+      },
+      {
+          "name": "open_4"
+      },
+      {
+          "name": "open_5"
+      },
+      {
+          "name": "locked_0"
+      },
+      {
+          "name": "locked_1"
+      },
+      {
+          "name": "locked_2"
+      },
+      {
+          "name": "locked_3"
+      },
+      {
+          "name": "locked_4"
+      },
+      {
+          "name": "locked_5"
+      }
+  ]
+}

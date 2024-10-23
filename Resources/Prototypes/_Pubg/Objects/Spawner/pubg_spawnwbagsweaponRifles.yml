@@ -1,0 +1,153 @@
+################################## Rifles
+# A91 Bag
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsA91
+  suffix: A91
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+          # Weapon
+        - id: WeaponRifleA91
+          orGroup: Weapon
+          # Magazine
+        - id: MagazineRifleA91
+          prob: 0.40
+          orGroup: Magazine
+        - id: null
+          prob: 0.60
+          orGroup: Magazine
+        - id: MagazineRifleA91
+          prob: 0.30
+          orGroup: Magazine2
+        - id: null
+          prob: 0.70
+          orGroup: Magazine2
+        - id: MagazineRifleA91
+          prob: 0.30
+          orGroup: Magazine3
+        - id: null
+          prob: 0.70
+          orGroup: Magazine3
+          # Ammo
+        - id: BaseMagazineBoxRifle7-62x39mm
+          prob: 0.10
+
+# Beryl Bag
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsBeryl
+  suffix: Beryl
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+          # Weapon
+        - id: WeaponRifleBeryl
+          orGroup: Weapon
+          # Magazine
+        - id: MagazineRifleBeryl
+          prob: 0.75
+          orGroup: Magazine
+        - id: null
+          prob: 0.25
+          orGroup: Magazine
+        - id: MagazineRifleBeryl
+          prob: 0.30
+          orGroup: Magazine2
+        - id: null
+          prob: 0.70
+          orGroup: Magazine2
+          # Ammo
+        - id: BaseMagazineBoxRifle5-56x45mm
+          prob: 0.50
+
+# FN-Fal Bag
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsFNFal
+  suffix: FN-Fal
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+        # Weapon
+        - id: WeaponRifleFNFAL
+          orGroup: Weapon
+          # Magazine
+        - id: MagazineRifleFNFAL
+          prob: 0.50
+          orGroup: Magazine
+        - id: null
+          prob: 0.50
+          orGroup: Magazine
+        - id: MagazineRifleFNFAL
+          prob: 0.30
+          orGroup: Magazine2
+        - id: null
+          prob: 0.70
+          orGroup: Magazine2
+          # Ammo
+        - id: BaseMagazineBoxRifle7-62x51mm
+          prob: 0.40
+
+# AR-18 Bag
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsAR18
+  suffix: AR-18
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+        # Weapon
+        - id: WeaponRifleAR18-V2
+          orGroup: Weapon
+          # Magazine
+        - id: MagazineRifleAR18-V2
+          prob: 0.75
+          orGroup: Magazine
+        - id: null
+          prob: 0.25
+          orGroup: Magazine
+        - id: MagazineRifleAR18-V2
+          prob: 0.20
+          orGroup: Magazine2
+        - id: null
+          prob: 0.80
+          orGroup: Magazine2
+          # Ammo
+        - id: BaseMagazineBoxRifle5-56x45mm
+          prob: 0.40
+
+# ASH-12 Bag
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsASH12
+  suffix: ASH-12
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+  - type: StorageFill
+    contents:
+    # Weapon
+    - id: WeaponRifleAsh12
+      orGroup: Weapon
+      # Magazine
+    - id: MagazineRifleASH12
+      prob: 0.75
+      orGroup: Magazine
+    - id: null
+      prob: 0.25
+      orGroup: Magazine
+    - id: MagazineRifleASH12
+      prob: 0.50
+      orGroup: Magazine2
+    - id: null
+      prob: 0.50
+      orGroup: Magazine2

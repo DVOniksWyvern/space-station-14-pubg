@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "A91 Mag Warete",
+    "copyright": "Warete",
+    "states": [
+        {
+            "name": "base"
+        }
+    ]
+}

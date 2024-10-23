@@ -1,0 +1,256 @@
+# Metal Rack - стойка с предметами
+- type: entity
+  id: PubgMetalRackRandom
+  parent: PubgMetalRack
+  name: Metal Rack
+  description: "Old world rack with some scrap..."
+  suffix: Random
+  components:
+    - type: StorageFill
+      contents:
+        # Weapons
+        - id: WeaponSubRifleSKS
+          prob: 0.005
+        - id: WeaponRifleA91
+          prob: 0.004
+        - id: WeaponSubRifleGarand
+          prob: 0.005
+        - id: WeaponRifleFNFAL
+          prob: 0.005
+        - id: WeaponPistolGrach
+          prob: 0.005
+        - id: WeaponPistolPM9
+          prob: 0.005
+        - id: WeaponSmgMac10
+          prob: 0.005
+        - id: WeaponSmgVityaz
+          prob: 0.005
+        - id: WeaponPistolLuger
+          prob: 0.005
+        - id: WeaponShotgunMP153
+          prob: 0.005
+        - id: WeaponShotgunChazer
+          prob: 0.005
+        - id: WeaponRifleAR18-V2
+          prob: 0.003
+        - id: WeaponRifleBeryl
+          prob: 0.004
+        - id: WeaponSniperRifleSVD
+          prob: 0.002
+        - id: WeaponSniperRifleSV98
+          prob: 0.008
+        - id: WeaponSniperRifleBarrett
+          prob: 0.001
+        - id: WeaponSmgP90
+          prob: 0.008
+        - id: WeaponSmgCPW
+          prob: 0.005
+        - id: WeaponSubRifleMerkel
+          prob: 0.008
+        - id: WeaponRifleOhioOrdance
+          prob: 0.006
+
+        # Magazines
+        - id: MagazinePistol9mm
+          prob: 0.04
+        - id: MagazinePistolGrach9mm
+          prob: 0.03
+        - id: MagazinePistolLuger7-65mm
+          prob: 0.02
+        - id: MagazineRifleAR18-V2
+          prob: 0.08
+        - id: MagazineRifleFNFAL
+          prob: 0.09
+        - id: MagazineRifleA91
+          prob: 0.05
+        - id: MagazineRifleBeryl
+          prob: 0.07
+        - id: MagazineSniperRifleSVD
+          prob: 0.06
+        - id: MagazineSniperRifleSV-98
+          prob: 0.07
+        - id: MagazineSniperRifleBarrett
+          prob: 0.02
+        - id: MagazineSmgMac10
+          prob: 0.09
+        - id: MagazineSmgP90
+          prob: 0.07
+        - id: MagazineSmgVityaz
+          prob: 0.06
+        - id: MagazineSmgCPW
+          prob: 0.04
+        - id: MagazineRifleSKS
+          prob: 0.06
+        - id: MagazineRifleGarand
+          prob: 0.07
+        - id: MagazineRifleMerkel
+          prob: 0.08
+        - id: MagazineRifleOhioOrdance
+          prob: 0.05
+
+        # Armor
+        - id: ClothingOuterArmorFagor1
+          prob: 0.008
+        - id: ClothingOuterArmorSegment2
+          prob: 0.008
+        - id: ClothingOuterArmorTorus
+          prob: 0.008
+        - id: ClothingOuterArmorBagarii
+          prob: 0.007
+        - id: ClothingOuterArmorKorund
+          prob: 0.007
+        - id: ClothingOuterArmorPlitnik
+          prob: 0.007
+        - id: ClothingOuterArmorRusarmOlive
+          prob: 0.007
+        - id: ClothingOuterArmorBattleAssault
+          prob: 0.005
+        - id: ClothingOuterArmorRusarmAssault
+          prob: 0.005
+        - id: ClothingOuterArmorSaphire
+          prob: 0.004
+        # Helmet
+        - id: PubgClothingMaskHelmetCappa1
+          prob: 0.009
+        - id: PubgClothingMaskHelmetGuard1
+          prob: 0.009
+        - id: PubgClothingMaskHelmetZsh1
+          prob: 0.009
+        - id: PubgClothingMaskHelmetAlpha2
+          prob: 0.006
+        - id: PubgClothingMaskHelmetTor2
+          prob: 0.006
+        - id: PubgClothingMaskHelmetZhmb2
+          prob: 0.006
+        - id: PubgClothingMaskHelmetBerkut3
+          prob: 0.004
+        - id: PubgClothingMaskHelmetSparta3
+          prob: 0.004
+        - id: PubgClothingMaskHelmetSphere3
+          prob: 0.004
+        - id: PubgClothingMaskHelmetAltyn
+          prob: 0.001
+        # Mask
+        - id: PubgClothingMaskCat0
+          prob: 0.01
+        - id: PubgClothingMaskCat1
+          prob: 0.01
+        - id: PubgClothingMaskCat2
+          prob: 0.01
+        - id: PubgClothingMaskMcs
+          prob: 0.01
+        # Ammo boxes
+        - id: BaseMagazineBoxRifle7-62x39mm
+          prob: 0.08
+        - id: BaseMagazineBoxRifle7-62x51mm
+          prob: 0.06
+        - id: BaseMagazineBoxPistols9mm
+          prob: 0.09
+        - id: BaseMagazineBoxPistols7-65mm
+          prob: 0.08
+        - id: BaseMagazineBoxShotgun23x75
+          prob: 0.09
+        - id: BaseMagazineBoxShotgun12x70
+          prob: 0.08
+        - id: BaseMagazineBoxRifle5-56x45mm
+          prob: 0.07
+        - id: BaseMagazineBoxRifle9x39mm
+          prob: 0.05
+        - id: BaseMagazineBoxSniperRifle7-62x54mm
+          prob: 0.06
+        - id: BaseMagazineBoxSniperRifle12-7x99mm
+          prob: 0.04
+        - id: BaseMagazineBoxSMG5-7x28mm
+          prob: 0.08
+        - id: MagazineRifleOhioOrdance
+          prob: 0.03
+
+        # Medicine
+        - id: PubgStandartMedicine
+          prob: 0.01
+        - id: PubgStandartMedicine5
+          prob: 0.03
+        - id: PubgStandartMedicine2
+          prob: 0.05
+        - id: PubgStandartMedicineBandage
+          prob: 0.1
+
+        # Suply things
+        - id: FlashlightLantern
+          prob: 0.05
+        - id: FlashlightSeclite
+          prob: 0.01
+        - id: SmokeGrenade
+          prob: 0.005
+        - id: GrenadeFlashBang
+          prob: 0.005
+        - id: SpaceCash100
+          prob: 0.01
+        - id: SpaceCash500
+          prob: 0.005
+        - id: SpaceCash1000
+          prob: 0.001
+
+        # Materials
+        - id: SheetGlass10
+          prob: 0.1
+        - id: SheetSteel10
+          prob: 0.1
+        - id: PartRodMetal10
+          prob: 0.1
+        - id: MaterialWoodPlank10
+          prob: 0.1
+
+        # Melee weapons
+        - id: CombatKnife
+          prob: 0.09
+        - id: SurvivalKnife
+          prob: 0.06
+        - id: KukriKnife
+          prob: 0.01
+        - id: BaseBallBat
+          prob: 0.08
+        - id: Sledgehammer
+          prob: 0.07
+        - id: FireAxe
+          prob: 0.03
+        - id: Claymore
+          prob: 0.01
+        - id: Stunbaton
+          prob: 0.01
+
+        # Trash
+        - id: FoodPlateSmallTrash
+          prob: 0.1
+        - id: FoodBowlBigTrash
+          prob: 0.1
+        - id: FoodPacketBoritosTrash
+          prob: 0.1
+        - id: FoodPacketCheesieTrash
+          prob: 0.1
+        - id: FoodPacketChipsTrash
+          prob: 0.1
+        - id: FoodPacketChocolateTrash
+          prob: 0.1
+        - id: FoodPacketChowMeinTrash
+          prob: 0.1
+        - id: FoodPacketCnDsTrash
+          prob: 0.1
+        - id: FoodPacketDanDanTrash
+          prob: 0.1
+        - id: FoodPacketEnergyTrash
+          prob: 0.1
+        - id: FoodPacketPistachioTrash
+          prob: 0.1
+        - id: FoodPacketPopcornTrash
+          prob: 0.1
+        - id: FoodPacketRaisinsTrash
+          prob: 0.1
+        - id: FoodPacketSemkiTrash
+          prob: 0.1
+        - id: FoodPacketSusTrash
+          prob: 0.1
+        - id: FoodPacketSyndiTrash
+          prob: 0.1
+        - id: BrokenBottle
+          prob: 0.1

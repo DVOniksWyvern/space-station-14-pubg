@@ -1,0 +1,346 @@
+# PUBG Fuel Barrel
+- type: entity
+  id: PubgFuelBarrel
+  parent: StorageTank
+  name: Fuel Barrel
+  description: A fuel Barrel.
+  suffix: Empty
+  placement:
+    mode: PlaceFree
+  components:
+  - type: StaticPrice
+    price: 750
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelfuel.rsi
+    layers:
+    - state: fuelbarrel
+  - type: Appearance
+  - type: ExaminableSolution
+    solution: tank
+  - type: ReagentTank
+    tankType: Fuel
+
+- type: entity
+  id: PubgFuelBarrelFull
+  parent: PubgFuelBarrel
+  suffix: Full
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelfuel.rsi
+    layers:
+    - state: fuelbarrel2
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 1500
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 120 # ~ 5 tile radius
+
+- type: entity
+  id: PubgFuelBarrelActive
+  parent: PubgFuelBarrel
+  suffix: Half
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelfuel.rsi
+    layers:
+    - state: fuelbarrelactive
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 200
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 20
+
+- type: entity
+  id: PubgFuelBarrelMini
+  parent: PubgFuelBarrel
+  suffix: Full
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelfuel.rsi
+    layers:
+    - state: fuelbarrelmini
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 500
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 50
+
+# PUBG Water Barrel
+- type: entity
+  id: PubgWaterBarrel
+  parent: StorageTank
+  name: Water Barrel
+  description: A water Barrel.
+  suffix: Empty
+  placement:
+    mode: PlaceFree
+  components:
+  - type: StaticPrice
+    price: 750
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelwater.rsi
+    layers:
+    - state: waterbarrelempty
+  - type: Appearance
+  - type: ExaminableSolution
+    solution: tank
+  - type: ReagentTank
+    tankType: Fuel
+
+- type: entity
+  id: PubgWaterBarrelFull
+  parent: PubgWaterBarrel
+  suffix: Full
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelwater.rsi
+    layers:
+    - state: waterbarrel2
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: Water
+          Quantity: 1500
+
+- type: entity
+  id: PubgWaterBarrelEmpty2
+  parent: PubgWaterBarrel
+  suffix: Empty
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelwater.rsi
+    layers:
+    - state: waterbarrel
+
+- type: entity
+  id: PubgWaterBarrelMini
+  parent: PubgWaterBarrel
+  suffix: Full
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelwater.rsi
+    layers:
+    - state: waterbarrelmini
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: Water
+          Quantity: 500
+
+# PUBG Steel Barrel
+- type: entity
+  id: PubgSteelBarrel
+  parent: StorageTank
+  name: Steel Barrel
+  description: A steel Barrel.
+  placement:
+    mode: PlaceFree
+  components:
+  - type: StaticPrice
+    price: 750
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelsteel.rsi
+    layers:
+    - state: steelbarrel
+  - type: Appearance
+  - type: ExaminableSolution
+    solution: tank
+  - type: ReagentTank
+    tankType: Fuel
+
+- type: entity
+  id: PubgSteelBarrelRust
+  parent: PubgSteelBarrel
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelsteel.rsi
+    layers:
+    - state: steelbarrelold
+
+- type: entity
+  id: PubgSteelBarrelMini
+  parent: PubgSteelBarrel
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelsteel.rsi
+    layers:
+    - state: steelbarrelmini
+
+# PUBG Rad Barrel
+- type: entity
+  id: PubgRadBarrel
+  parent: StorageTank
+  suffix: Full
+  name: Rad Barrel
+  description: A rad Barrel.
+  placement:
+    mode: PlaceFree
+  components:
+  - type: StaticPrice
+    price: 750
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelrad.rsi
+    layers:
+    - state: radbarrel
+  - type: Appearance
+  - type: ExaminableSolution
+    solution: tank
+  - type: ReagentTank
+    tankType: Fuel
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: Radium
+          Quantity: 1500
+  - type: RadiationSource
+    intensity: 2
+    slope: 0.5
+
+- type: entity
+  id: PubgRadBarrel2
+  parent: StorageTank
+  suffix: Full
+  name: Rad Barrel
+  description: A rad Barrel.
+  components:
+  - type: StaticPrice
+    price: 750
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelrad.rsi
+    layers:
+    - state: radbarrel2
+  - type: Appearance
+  - type: ExaminableSolution
+    solution: tank
+  - type: ReagentTank
+    tankType: Fuel
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: Radium
+          Quantity: 1500
+  - type: RadiationSource
+    intensity: 2
+    slope: 0.5
+
+- type: entity
+  id: PubgRadBarrelEmpty
+  parent: PubgRadBarrel
+  suffix: Empty
+  name: Rad Barrel
+  description: A rad Barrel.
+  components:
+  - type: StaticPrice
+    price: 750
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelrad.rsi
+    layers:
+    - state: radbarrelempty
+  - type: Appearance
+  - type: ExaminableSolution
+    solution: tank
+  - type: ReagentTank
+    tankType: Fuel
+
+- type: entity
+  id: PubgRadBarrelActive
+  parent: PubgRadBarrel
+  suffix: Radiation
+  name: Rad Barrel
+  description: A active rad Barrel.
+  components:
+  - type: StaticPrice
+    price: 750
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelrad.rsi
+    layers:
+    - state: radbarrelactive
+  - type: Appearance
+  - type: ExaminableSolution
+    solution: tank
+  - type: ReagentTank
+    tankType: Fuel
+  - type: RadiationSource
+    intensity: 10
+    slope: 2.5
+  - type: PointLight
+    color: "#3cf21f"
+    radius: 1.5
+    softness: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 500
+      behaviors:
+      - !type:SolutionExplosionBehavior
+        solution: tank
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Piercing
+        damage: 500
+      behaviors:
+      - !type:SolutionExplosionBehavior
+        solution: tank
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:SpillBehavior
+        solution: tank
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  id: PubgRadBarrelMini
+  parent: PubgRadBarrel
+  suffix: Full
+  name: Rad Barrel
+  description: A rad Barrel.
+  components:
+  - type: StaticPrice
+    price: 750
+  - type: Sprite
+    sprite: _Pubg/Structures/Barrels/pubg_barrelrad.rsi
+    layers:
+    - state: radbarrelmini
+  - type: Appearance
+  - type: ExaminableSolution
+    solution: tank
+  - type: ReagentTank
+    tankType: Fuel
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: Radium
+          Quantity: 500
+  - type: RadiationSource
+    intensity: 1
+    slope: 0.5

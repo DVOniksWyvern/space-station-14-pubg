@@ -1,0 +1,54 @@
+# SpeedLoader
+# Smith
+- type: entity
+  id: SpeedLoaderSmith
+  name: "speed loader (500mm)"
+  parent: BaseSpeedLoaderMagnum
+  components:
+    - type: Tag
+      tags:
+        - SpeedLoaderSmith
+    - type: BallisticAmmoProvider
+      whitelist:
+        tags:
+          - CartridgeRevolverMagnum500
+      proto: CartridgeRevolverMagnum500
+    - type: Sprite
+      sprite: _Pubg/Magazine/Revolvers/speedloader_smith.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: base-6
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: MagazineVisuals
+      magState: base
+      steps: 7
+      zeroVisible: false
+    - type: Appearance
+
+# Rex
+- type: entity
+  id: SpeedLoaderRex
+  name: "speed loader (357mm)"
+  parent: BaseSpeedLoaderMagnum
+  components:
+    - type: Tag
+      tags:
+        - SpeedLoaderRex
+    - type: BallisticAmmoProvider
+      whitelist:
+        tags:
+          - CartridgeRevolverMagnum357
+      proto: CartridgeRevolverMagnum357
+    - type: Sprite
+      sprite: _Pubg/Magazine/Revolvers/speedloader_rex.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: base-6
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: MagazineVisuals
+      magState: base
+      steps: 7
+      zeroVisible: false
+    - type: Appearance

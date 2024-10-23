@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "license": "Grablya",
+  "copyright": "Grablya",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "armor1"
+    },
+    {
+      "name": "armor2"
+    },
+    {
+      "name": "armor3"
+    },
+    {
+      "name": "armor4"
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    }
+  ]
+}

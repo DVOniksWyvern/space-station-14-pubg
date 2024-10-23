@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "license": "omsoyk",
+    "copyright": "omsoyk",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "bushsnowb1"
+        },
+        {
+            "name": "bushsnowb2"
+        },
+        {
+            "name": "bushsnowb3"
+        },
+        {
+            "name": "bushsnowb4"
+        },
+        {
+            "name": "bushsnowb5"
+        },
+        {
+            "name": "bushsnowb6"
+        }
+    ]
+}

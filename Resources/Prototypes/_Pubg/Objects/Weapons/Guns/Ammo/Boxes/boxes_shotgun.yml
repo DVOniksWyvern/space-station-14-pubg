@@ -1,0 +1,61 @@
+# 12x70
+- type: entity
+  parent: BaseItem
+  id: BaseMagazineBoxShotgun12x70
+  name: ammunition box (12x70)
+  components:
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - ShellShotgun12x70
+      proto: ShellShotgun12x70
+      capacity: 10
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/AmmoBoxes/ammobox_12x70.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-1
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance
+
+# 12x70
+- type: entity
+  parent: BaseItem
+  id: BaseMagazineBoxShotgun23x75
+  name: ammunition box (23x75)
+  components:
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - ShellShotgun23x75
+      proto: ShellShotgun23x75
+      capacity: 12
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/AmmoBoxes/ammobox_23x75.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-1
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance

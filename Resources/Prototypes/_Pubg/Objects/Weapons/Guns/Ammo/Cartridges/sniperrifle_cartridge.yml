@@ -1,0 +1,43 @@
+# SVD, SV-98
+- type: entity
+  parent: BaseCartridge
+  id: CartridgeSniper7-62x54mm
+  name: cartridge (7.62x54mm)
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - CartridgeSniper7-62x54mm
+    - type: CartridgeAmmo
+      proto: BulletSniper7-62x54mm
+    - type: Sprite
+      sprite: _Pubg/Ammunition/7.62x54mm.rsi
+      layers:
+        - state: base
+          map: ["enum.AmmoVisualLayers.Base"]
+    - type: Appearance
+    - type: SpentAmmoVisuals
+    - type: StaticPrice
+      price: 20
+
+# Barrett
+- type: entity
+  parent: BaseCartridge
+  id: CartridgeSniper12-7x99mm
+  name: cartridge (12.7x99mm)
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - CartridgeSniper12-7x99mm
+    - type: CartridgeAmmo
+      proto: BulletSniper12-7x99mm
+    - type: Sprite
+      sprite: _Pubg/Ammunition/12.7x99mm.rsi
+      layers:
+        - state: base
+          map: ["enum.AmmoVisualLayers.Base"]
+    - type: Appearance
+    - type: SpentAmmoVisuals
+    - type: StaticPrice
+      price: 20

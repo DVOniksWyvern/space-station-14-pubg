@@ -1,0 +1,389 @@
+- type: entity
+  id: PubgWallDirectional
+  parent: BaseStructure
+  name: directional wall
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Occluder
+    enabled: true
+    boundingBox: "-0.49,-0.49,0.49,0"
+  - type: WallMount
+    arc: 360 # interact despite grilles
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: WoodDestroy
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Structures/Windows/directional.rsi # LMAO
+    state: window
+  - type: Icon
+    sprite: Structures/Windows/directional.rsi
+    state: window
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0"
+        density: 1500
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Airtight
+    noAirWhenFullyAirBlocked: false
+    airBlockedDirection:
+    - South
+  - type: StaticPrice
+    price: 10
+
+# WOODEN
+## BIG
+- type: entity
+  id: PubgWoodenWallBigDirectional
+  parent: PubgWallDirectional
+  name: directional big wooden wall
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Walls/wood_directional.rsi
+    state: directional_big_wood
+  - type: Icon
+    sprite: _Pubg/Structures/Walls/wood_directional.rsi
+    state: directional_big_wood
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0"
+        density: 1500
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 30
+
+- type: entity
+  id: PubgWoodenWallBigCornerDirectional
+  parent: PubgWallDirectional
+  name: directional big wooden corner
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Occluder
+    enabled: false
+  - type: Sprite
+    sprite: _Pubg/Structures/Walls/wood_directional.rsi
+    state: corner_big_wood
+  - type: Icon
+    sprite: _Pubg/Structures/Walls/wood_directional.rsi
+    state: corner_big_wood
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,0.49,0,0"
+        density: 1500
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 30
+
+## SMALL
+- type: entity
+  id: PubgWoodenWallDirectional
+  parent: PubgWallDirectional
+  name: directional wooden wall
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Occluder
+    enabled: true
+    boundingBox: "-0.49,-0.49,0.49,-0.25"
+  - type: Sprite
+    sprite: _Pubg/Structures/Walls/wood_directional.rsi
+    state: directional_wood
+  - type: Icon
+    sprite: _Pubg/Structures/Walls/wood_directional.rsi
+    state: directional_wood
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,-0.25"
+        density: 1500
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 30
+
+- type: entity
+  id: PubgWoodenWallCornerDirectional
+  parent: PubgWallDirectional
+  name: directional wooden corner
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Occluder
+    enabled: false
+  - type: Sprite
+    sprite: _Pubg/Structures/Walls/wood_directional.rsi
+    state: corner_wood
+  - type: Icon
+    sprite: _Pubg/Structures/Walls/wood_directional.rsi
+    state: corner_wood
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,0.49,-0.25,0.25"
+        density: 1500
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 30
+
+# STEEL
+## BIG
+- type: entity
+  id: PubgSteelWallBigDirectional
+  parent: PubgWallDirectional
+  name: directional big steel wall
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Walls/steel_directional.rsi
+    state: directional_big_steel
+  - type: Icon
+    sprite: _Pubg/Structures/Walls/steel_directional.rsi
+    state: directional_big_steel
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0"
+        density: 1500
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 30
+
+- type: entity
+  id: PubgSteelWallBigCornerDirectional
+  parent: PubgWallDirectional
+  name: directional big steel corner
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Occluder
+    enabled: false
+  - type: Sprite
+    sprite: _Pubg/Structures/Walls/steel_directional.rsi
+    state: corner_big_steel
+  - type: Icon
+    sprite: _Pubg/Structures/Walls/steel_directional.rsi
+    state: corner_big_steel
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,0.49,0,0"
+        density: 1500
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 30
+
+## SMALL
+- type: entity
+  id: PubgSteelWallDirectional
+  parent: PubgWallDirectional
+  name: directional steel wall
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Occluder
+    enabled: true
+    boundingBox: "-0.49,-0.49,0.49,-0.25"
+  - type: Sprite
+    sprite: _Pubg/Structures/Walls/steel_directional.rsi
+    state: directional_steel
+  - type: Icon
+    sprite: _Pubg/Structures/Walls/steel_directional.rsi
+    state: directional_steel
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,-0.25"
+        density: 1500
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 30
+
+- type: entity
+  id: PubgSteelWallCornerDirectional
+  parent: PubgWallDirectional
+  name: directional steel corner
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Occluder
+    enabled: false
+  - type: Sprite
+    sprite: _Pubg/Structures/Walls/steel_directional.rsi
+    state: corner_steel
+  - type: Icon
+    sprite: _Pubg/Structures/Walls/steel_directional.rsi
+    state: corner_steel
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,0.49,-0.25,0.25"
+        density: 1500
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 30

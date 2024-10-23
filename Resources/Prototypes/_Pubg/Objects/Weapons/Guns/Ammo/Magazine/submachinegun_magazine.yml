@@ -1,0 +1,113 @@
+# MAC10 do parent with THIS
+- type: entity
+  id: MagazineSmgMac10
+  name: "magazine Mac10 (9mm)"
+  parent: BaseItem
+  components:
+    - type: Tag
+      tags:
+        - MagazineSmgMac10
+    - type: Item
+      size: Small
+    - type: BallisticAmmoProvider
+      proto: CartridgePistol9mm
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgePistol9mm
+      capacity: 30
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/Magazine/SMG/mac10_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance
+
+# P90
+- type: entity
+  id: MagazineSmgP90
+  name: "magazine P90(5.7x28mm)"
+  parent: MagazineSmgMac10
+  components:
+    - type: Tag
+      tags:
+        - MagazineSmgP90
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeSmg5-7x28mm
+      proto: CartridgeSmg5-7x28mm
+      capacity: 50
+    - type: Sprite
+      sprite: _Pubg/Magazine/SMG/p90_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 6
+      zeroVisible: false
+    - type: Appearance
+
+# Vityaz
+- type: entity
+  id: MagazineSmgVityaz
+  name: "magazine Vityaz(9mm)"
+  parent: MagazineSmgMac10
+  components:
+    - type: Tag
+      tags:
+        - MagazineSmgVityaz
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgePistol9mm
+      proto: CartridgePistol9mm
+      capacity: 30
+    - type: Sprite
+      sprite: _Pubg/Magazine/SMG/vityaz_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+
+# CPW
+- type: entity
+  id: MagazineSmgCPW
+  name: "magazine CPW(9mm)"
+  parent: MagazineSmgMac10
+  components:
+    - type: Tag
+      tags:
+        - MagazineSmgCPW
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeSmg5-7x28mm
+      proto: CartridgeSmg5-7x28mm
+      capacity: 30
+    - type: Sprite
+      sprite: _Pubg/Magazine/SMG/cpw_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 6
+      zeroVisible: false
+    - type: Appearance

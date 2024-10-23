@@ -1,0 +1,342 @@
+# Tier 0
+- type: entity
+  parent: Clothing
+  id: PubgClothingMaskCat0
+  name: Airsoft cat
+  description: "Not bad mask... For cats"
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Helmets/tier0/Blackcat-0.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Pubg/Armor/Helmets/tier0/Blackcat-0.rsi
+      slots:
+        - HEAD
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.95
+          Slash: 0.95
+          Piercing: 0.95
+    - type: Item
+      size: Small
+      storedRotation: -90
+
+- type: entity
+  parent: Clothing
+  id: PubgClothingMaskCat1
+  name: Airsoft cat
+  description: "Not bad mask... For cats"
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Helmets/tier0/Blackcat-1.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Pubg/Armor/Helmets/tier0/Blackcat-1.rsi
+      slots:
+        - HEAD
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.95
+          Slash: 0.95
+          Piercing: 0.95
+    - type: Item
+      size: Small
+      storedRotation: -90
+
+- type: entity
+  parent: Clothing
+  id: PubgClothingMaskCat2
+  name: Airsoft cat
+  description: "Not bad mask... For cats"
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Helmets/tier0/Blackcat-2.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Pubg/Armor/Helmets/tier0/Blackcat-2.rsi
+      slots:
+        - HEAD
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.95
+          Slash: 0.95
+          Piercing: 0.95
+    - type: Item
+      size: Small
+      storedRotation: -90
+
+- type: entity
+  parent: Clothing
+  id: PubgClothingMaskMcs
+  name: Airsoft Gas mask
+  description: "Airsoft gas mask"
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Helmets/tier0/Mcs-0.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Pubg/Armor/Helmets/tier0/Mcs-0.rsi
+      slots:
+        - HEAD
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.95
+          Slash: 0.95
+          Piercing: 0.95
+    - type: Item
+      size: Small
+      storedRotation: -90
+
+# Tier 1
+
+- type: entity
+  parent: Clothing
+  id: PubgClothingMaskHelmetCappa1
+  name: Cappa helmet
+  description: "Not bad helmet"
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Helmets/tier1/Cappa-1.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Pubg/Armor/Helmets/tier1/Cappa-1.rsi
+      slots:
+        - HEAD
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.90
+          Slash: 0.90
+          Piercing: 0.90
+    - type: Item
+      size: Small
+      storedRotation: -90
+
+- type: entity
+  parent: Clothing
+  id: PubgClothingMaskHelmetGuard1
+  name: Guard helmet
+  description: "Not bad helmet"
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Helmets/tier1/Guard-1.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Pubg/Armor/Helmets/tier1/Guard-1.rsi
+      slots:
+        - HEAD
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.90
+          Slash: 0.95
+          Piercing: 0.95
+    - type: Item
+      size: Small
+      storedRotation: -90
+
+- type: entity
+  parent: Clothing
+  id: PubgClothingMaskHelmetZsh1
+  name: Zsh helmet
+  description: "Not bad helmet"
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Helmets/tier1/Zsh-1.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Pubg/Armor/Helmets/tier1/Zsh-1.rsi
+      slots:
+        - HEAD
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.95
+          Slash: 0.95
+          Piercing: 0.90
+    - type: Item
+      size: Small
+      storedRotation: -90
+
+# Tier 2
+
+- type: entity
+  parent: Clothing
+  id: PubgClothingMaskHelmetAlpha2
+  name: Alpha2 helmet
+  description: "Not bad helmet"
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Helmets/tier2/Alpha-2.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Pubg/Armor/Helmets/tier2/Alpha-2.rsi
+      slots:
+        - HEAD
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.90
+          Slash: 0.80
+          Piercing: 0.90
+    - type: Item
+      size: Small
+      storedRotation: -90
+
+- type: entity
+  parent: Clothing
+  id: PubgClothingMaskHelmetTor2
+  name: Tor2 helmet
+  description: "Not bad helmet"
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Helmets/tier2/Tor-2.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Pubg/Armor/Helmets/tier2/Tor-2.rsi
+      slots:
+        - HEAD
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.70
+          Piercing: 0.90
+    - type: Item
+      size: Small
+      storedRotation: -90
+
+- type: entity
+  parent: Clothing
+  id: PubgClothingMaskHelmetZhmb2
+  name: Zhmb2 helmet
+  description: "Not bad helmet"
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Helmets/tier2/Zhmb-2.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Pubg/Armor/Helmets/tier2/Zhmb-2.rsi
+      slots:
+        - HEAD
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.90
+          Piercing: 0.85
+    - type: Item
+      size: Small
+      storedRotation: -90
+
+# Tier 3
+
+- type: entity
+  parent: Clothing
+  id: PubgClothingMaskHelmetBerkut3
+  name: Berkut3 helmet
+  description: "Not bad helmet"
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Helmets/tier3/Berkut-3.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Pubg/Armor/Helmets/tier3/Berkut-3.rsi
+      slots:
+        - HEAD
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.80
+          Piercing: 0.80
+    - type: ClothingSpeedModifier
+      walkModifier: 0.95
+      sprintModifier: 0.95
+    - type: Item
+      size: Small
+      storedRotation: -90
+
+- type: entity
+  parent: Clothing
+  id: PubgClothingMaskHelmetSparta3
+  name: Sparta3 helmet
+  description: "Not bad helmet"
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Helmets/tier3/Sparta-3.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Pubg/Armor/Helmets/tier3/Sparta-3.rsi
+      slots:
+        - HEAD
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.85
+          Piercing: 0.75
+    - type: ClothingSpeedModifier
+      walkModifier: 0.95
+      sprintModifier: 0.95
+    - type: Item
+      size: Small
+      storedRotation: -90
+
+- type: entity
+  parent: Clothing
+  id: PubgClothingMaskHelmetSphere3
+  name: Sphere3 helmet
+  description: "Not bad helmet"
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Helmets/tier3/Sphere-3.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Pubg/Armor/Helmets/tier3/Sphere-3.rsi
+      slots:
+        - HEAD
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.60
+          Piercing: 0.75
+    - type: ClothingSpeedModifier
+      walkModifier: 0.90
+      sprintModifier: 0.90
+    - type: Item
+      size: Small
+      storedRotation: -90
+
+# Special - Tier 4
+
+- type: entity
+  parent: Clothing
+  id: PubgClothingMaskHelmetAltyn
+  name: Altyn helmet
+  description: "That's mine!"
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Helmets/special/Altyn-4.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Pubg/Armor/Helmets/special/Altyn-4.rsi
+      slots:
+        - HEAD
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.80
+          Slash: 0.50
+          Piercing: 0.70
+    - type: ClothingSpeedModifier
+      walkModifier: 0.85
+      sprintModifier: 0.85
+    - type: Item
+      size: Small
+      storedRotation: -90

@@ -1,0 +1,72 @@
+################################## Sniper Rifles
+# SV-98 Bag
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsSV98
+  suffix: SV-98
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+        # Weapon
+        - id: WeaponSniperRifleSV98
+          orGroup: Weapon
+          # Magazine
+        - id: MagazineSniperRifleSV-98
+          prob: 0.80
+          orGroup: Magazine
+        - id: null
+          prob: 0.20
+          orGroup: Magazine
+        - id: MagazineSniperRifleSV-98
+          prob: 0.20
+          orGroup: Magazine2
+        - id: null
+          prob: 0.80
+          orGroup: Magazine2
+        - id: MagazineSniperRifleSV-98
+          prob: 0.10
+          orGroup: Magazine3
+        - id: null
+          prob: 0.90
+          orGroup: Magazine3
+          # Ammo
+        - id: BaseMagazineBoxSniperRifle7-62x54mm
+          prob: 0.50
+
+# SVD Bag
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsSVD
+  suffix: SVD
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+        # Weapon
+        - id: WeaponSniperRifleSVD
+          orGroup: Weapon
+          # Magazine
+        - id: MagazineSniperRifleSVD
+          prob: 0.50
+          orGroup: Magazine
+        - id: null
+          prob: 0.50
+          orGroup: Magazine
+        - id: MagazineSniperRifleSVD
+          prob: 0.20
+          orGroup: Magazine2
+        - id: null
+          prob: 0.80
+          orGroup: Magazine2
+        - id: MagazineSniperRifleSVD
+          prob: 0.20
+          orGroup: Magazine3
+        - id: null
+          prob: 0.80
+          orGroup: Magazine3
+          # Ammo
+        - id: BaseMagazineBoxSniperRifle7-62x54mm
+          prob: 0.40

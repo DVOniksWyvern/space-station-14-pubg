@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "license": "Gersoon",
+  "copyright": "Gersoon",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "base"
+    },
+    {
+      "name": "smooth",
+      "directions": 4
+    },
+    {
+      "name": "scrap-0"
+    },
+    {
+      "name": "scrap-1"
+    },
+    {
+      "name": "scrap-2"
+    },
+    {
+      "name": "scrap-3"
+    },
+    {
+      "name": "scrap-4"
+    },
+    {
+      "name": "scrap-5"
+    },
+    {
+      "name": "scrap-6"
+    },
+    {
+      "name": "scrap-7"
+    },
+    {
+      "name": "scrap-8"
+    },
+    {
+      "name": "scrap-9"
+    },
+    {
+      "name": "scrap-10"
+    },
+    {
+      "name": "scrap-11"
+    },
+    {
+      "name": "scrap-12"
+    },
+    {
+      "name": "scrap-13"
+    }
+  ]
+}

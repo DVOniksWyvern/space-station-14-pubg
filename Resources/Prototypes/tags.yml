@@ -1442,3 +1442,149 @@
   id: WriteIgnoreStamps
 
 # ALPHABETICAL
+
+################ PUBG
+
+####### AMMO
+
+# PISTOLS
+- type: Tag
+  id: CartridgePistol9mm
+
+- type: Tag
+  id: CartridgePistol7-65mm
+
+- type: Tag
+  id: CartridgePistol50bmg
+
+# REVOLVERS
+- type: Tag
+  id: CartridgeRevolverMagnum500
+
+- type: Tag
+  id: CartridgeRevolverMagnum357
+
+# RIFLES
+- type: Tag
+  id: CartridgeRifle7-62x39mm
+
+- type: Tag
+  id: CartridgeRifle5-56x45mm
+
+- type: Tag
+  id: CartridgeRifle7-62x51mm
+
+- type: Tag
+  id: CartridgeRifle9x39mm
+
+- type: Tag
+  id: CartridgeRifle30-06spr
+
+- type: Tag
+  id: CartridgeRifle12x55mm
+
+# SHOTGUNS
+- type: Tag
+  id: ShellShotgun23x75
+
+- type: Tag
+  id: ShellShotgun12x70
+
+# SMG
+- type: Tag
+  id: CartridgeSmg5-7x28mm
+
+- type: Tag
+  id: CartridgeSmg9x19mm
+
+# SNIPER RIFLE
+- type: Tag
+  id: CartridgeSniper7-62x54mm
+
+- type: Tag
+  id: CartridgeSniper12-7x99mm
+
+# GRENADE LAUNCHER
+- type: Tag
+  id: CartridgeGL-40mm
+
+####### MAGZ
+
+# PISTOLS
+- type: Tag
+  id: MagazinePistol9mm
+
+- type: Tag
+  id: MagazinePistolGrach9mm
+
+- type: Tag
+  id: MagazinePistolLuger7-65mm
+
+- type: Tag
+  id: MagazinePistolDesertEagle50bmg
+
+# REVOLVERS
+- type: Tag
+  id: SpeedLoaderSmith
+
+- type: Tag
+  id: SpeedLoaderRex
+
+# RIFLE
+- type: Tag
+  id: MagazineRifleAR18-V2
+
+- type: Tag
+  id: MagazineRifleFNFAL
+
+- type: Tag
+  id: MagazineRifleASVAL
+
+- type: Tag
+  id: MagazineRifleA91
+
+- type: Tag
+  id: MagazineRifleBeryl
+
+- type: Tag
+  id: MagazineRifleOhioOrdance
+
+- type: Tag
+  id: MagazineRifleASH12
+
+# SNIPER RIFLE
+- type: Tag
+  id: MagazineSniperRifleSVD
+
+- type: Tag
+  id: MagazineSniperRifleBarrett
+
+- type: Tag
+  id: MagazineSniperRifleSV-98
+
+# SMG
+- type: Tag
+  id: MagazineSmgMac10
+
+- type: Tag
+  id: MagazineSmgP90
+
+- type: Tag
+  id: MagazineSmgVityaz
+
+- type: Tag
+  id: MagazineSmgCPW
+
+# SUB RIFLE
+- type: Tag
+  id: MagazineRifleSKS
+
+- type: Tag
+  id: MagazineRifleGarand
+
+- type: Tag
+  id: MagazineRifleMerkel
+
+# LMG
+- type: Tag
+  id: MagazineLmgRPD

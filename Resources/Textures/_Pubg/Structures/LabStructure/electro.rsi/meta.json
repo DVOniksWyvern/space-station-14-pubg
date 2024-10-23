@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "license": "Warete",
+  "copyright": "Warete",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "computer"
+    },
+    {
+      "name": "electricalpanel"
+    },
+    {
+      "name": "electropanelone"
+    },
+    {
+      "name": "intercome"
+    },
+    {
+      "name": "intercome2"
+    },
+    {
+      "name": "monitor"
+    },
+    {
+      "name": "server"
+    }
+  ]
+}

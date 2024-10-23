@@ -1,0 +1,106 @@
+
+
+# PM9
+- type: entity
+  name: There you got something
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: PubgBoxWeaponPM9
+  description: Contains some weapon.
+  components:
+    - type: StorageFill
+      contents:
+        # Weapon
+        - id: WeaponPistolPM9
+          orGroup: Weapon
+          # Magazine
+        - id: MagazinePistol9mm
+          prob: 0.50
+          orGroup: Magazine
+        - id: null
+          prob: 0.50
+          orGroup: Magazine
+        - id: MagazinePistol9mm
+          prob: 0.40
+          orGroup: Magazine2
+        - id: null
+          prob: 0.60
+          orGroup: Magazine2
+        - id: MagazinePistol9mm
+          prob: 0.30
+          orGroup: Magazine3
+        - id: null
+          prob: 0.70
+          orGroup: Magazine3
+          # Ammo
+        - id: BaseMagazineBoxPistols9mm
+          prob: 0.40
+
+# Grach
+- type: entity
+  name: There you got something
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: PubgBoxWeaponGrach
+  description: Contains some weapon.
+  components:
+    - type: StorageFill
+      contents:
+        # Weapon
+        - id: WeaponPistolGrach
+          orGroup: Weapon
+          # Magazine
+        - id: MagazinePistolGrach9mm
+          prob: 0.40
+          orGroup: Magazine
+        - id: null
+          prob: 0.60
+          orGroup: Magazine
+        - id: MagazinePistolGrach9mm
+          prob: 0.30
+          orGroup: Magazine2
+        - id: null
+          prob: 0.70
+          orGroup: Magazine2
+        - id: MagazinePistolGrach9mm
+          prob: 0.30
+          orGroup: Magazine3
+        - id: null
+          prob: 0.70
+          orGroup: Magazine3
+          # Ammo
+        - id: BaseMagazineBoxPistols9mm
+          prob: 0.30
+
+# Luger
+- type: entity
+  name: There you got something
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: PubgBoxWeaponLuger
+  description: Contains some weapon.
+  components:
+    - type: StorageFill
+      contents:
+        # Weapon
+        - id: WeaponPistolLuger
+          orGroup: Weapon
+          # Magazine
+        - id: MagazinePistolLuger7-65mm
+          prob: 0.70
+          orGroup: Magazine
+        - id: null
+          prob: 0.30
+          orGroup: Magazine
+        - id: MagazinePistolLuger7-65mm
+          prob: 0.30
+          orGroup: Magazine2
+        - id: null
+          prob: 0.70
+          orGroup: Magazine2
+        - id: MagazinePistolLuger7-65mm
+          prob: 0.30
+          orGroup: Magazine3
+        - id: null
+          prob: 0.70
+          orGroup: Magazine3
+          # Ammo
+        - id: BaseMagazineBoxPistols7-65mm
+          prob: 0.40

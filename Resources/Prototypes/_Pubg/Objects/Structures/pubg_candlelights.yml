@@ -1,0 +1,195 @@
+# Candle 1 light
+
+- type: entity
+  name: Candle
+  description: Nice Candle.
+  parent: BaseItem
+  suffix: Light
+  id: PubgCandleInfinite1Gold
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Pubg/Structures/Lights/pubg_lights.rsi
+    layers:
+    - state: lightgold
+    - state: fire-small
+      shader: unshaded
+  - type: PointLight
+    color: "#e39c40"
+    radius: 2.5
+    power: 10
+
+- type: entity
+  name: Candle
+  description: Nice Candle.
+  parent: BaseItem
+  suffix: Light
+  id: PubgCandleInfiniteSteel
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Pubg/Structures/Lights/pubg_lights.rsi
+    layers:
+    - state: lightsteel
+    - state: fire-small
+      shader: unshaded
+  - type: PointLight
+    color: "#e39c40"
+    radius: 2.5
+    power: 10
+
+# Candles 3 lights
+
+- type: entity
+  name: Candle
+  description: Nice Candle.
+  parent: BaseItem
+  suffix: Light
+  id: PubgCandleInfinite3GoldV1
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Pubg/Structures/Lights/pubg_lights3.rsi
+    layers:
+    - state: lightgold3
+    - state: fire-small
+      shader: unshaded
+  - type: PointLight
+    color: "#e39c40"
+    radius: 3.5
+    power: 10
+
+- type: entity
+  name: Candle
+  description: Nice Candle.
+  parent: BaseItem
+  suffix: Light
+  id: PubgCandleInfinite3GoldV2
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Pubg/Structures/Lights/pubg_lights3.rsi
+    layers:
+    - state: lightgold3v2
+    - state: fire-small
+      shader: unshaded
+  - type: PointLight
+    color: "#e39c40"
+    radius: 3.5
+    power: 10
+
+- type: entity
+  name: Candle
+  description: Nice Candle.
+  parent: BaseItem
+  suffix: Light
+  id: PubgCandleInfinite3GoldV3
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Pubg/Structures/Lights/pubg_lights3.rsi
+    layers:
+    - state: lightgold3v3
+    - state: fire-small
+      shader: unshaded
+  - type: PointLight
+    color: "#e39c40"
+    radius: 3.5
+    power: 10
+
+- type: entity
+  name: Candle
+  description: Nice Candle.
+  parent: BaseItem
+  suffix: Light
+  id: PubgCandleInfinite3Steel
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Pubg/Structures/Lights/pubg_lights3.rsi
+    layers:
+    - state: lightsteel3
+    - state: fire-small
+      shader: unshaded
+  - type: PointLight
+    color: "#e39c40"
+    radius: 3.5
+    power: 10
+
+# Table candle Light
+
+- type: entity
+  name: Candle
+  description: Nice Candle.
+  parent: BaseItem
+  suffix: Light
+  id: PubgCandleInfiniteTableGold
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Pubg/Structures/Lights/pubg_lightstable.rsi
+    layers:
+    - state: lightgoldtable
+    - state: fire-small
+      shader: unshaded
+  - type: PointLight
+    color: "#e39c40"
+    radius: 1.5
+    power: 10
+
+- type: entity
+  name: Candle
+  description: Nice Candle.
+  parent: BaseItem
+  suffix: Light
+  id: PubgCandleInfiniteTableGoldV2
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Pubg/Structures/Lights/pubg_lightstable.rsi
+    layers:
+    - state: lightgoldtableV2
+    - state: fire-small
+      shader: unshaded
+  - type: PointLight
+    color: "#e39c40"
+    radius: 1.5
+    power: 10
+
+- type: entity
+  name: Candle
+  description: Nice Candle.
+  parent: BaseItem
+  suffix: Light
+  id: PubgCandleInfiniteTableGoldV3
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Pubg/Structures/Lights/pubg_lightstable.rsi
+    layers:
+    - state: lightgoldtableV3
+    - state: fire-small
+      shader: unshaded
+  - type: PointLight
+    color: "#e39c40"
+    radius: 1.5
+    power: 10
+
+- type: entity
+  name: Candle
+  description: Nice Candle.
+  parent: BaseItem
+  suffix: Light
+  id: PubgCandleInfiniteTableSteel
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Pubg/Structures/Lights/pubg_lightstable.rsi
+    layers:
+    - state: lightsteeltable
+    - state: fire-small
+      shader: unshaded
+  - type: PointLight
+    color: "#e39c40"
+    radius: 1.5
+    power: 10

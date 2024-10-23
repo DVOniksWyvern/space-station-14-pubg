@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "license": "Warete",
+  "copyright": "9mm box Warete",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "base"
+    },
+    {
+      "name": "mag-1"
+    }
+  ]
+}

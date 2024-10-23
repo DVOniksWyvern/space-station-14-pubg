@@ -1,0 +1,60 @@
+## Armor Plates for SpacePubg
+#
+## Armor plate 1
+#- type: entity
+#  name: Armor Plate 1
+#  parent: BaseItem
+#  id: ArmorPlate1
+#  description: 'Armor Plate tier 1'
+#  components:
+#    - type: Sprite
+#      sprite: ForPubg\Textures\Armor\ArmorPlates\armorplates.rsi
+#      state: armor1
+#    - type: Item
+#      size: Normal
+#    - type: Tag
+#      tags:
+#        - ArmorPlate
+#    - type: Damageable
+#      damageModifierSet: ####
+#    - type: Destructible
+#      thresholds:
+#        - trigger:
+#            !type:DamageTrigger
+#            damage: 15
+#          behaviors:
+#            - !type:DoActsBehavior
+#              acts: [ "Destruction" ]
+#
+## Armor plate 2
+#- type: entity
+#  name: Armor Plate
+#  parent: ArmorPlate1
+#  id: ArmorPlate2
+#  description: 'Armor Plate tier 2'
+#  components:
+#    - type: Sprite
+#      sprite: ForPubg\Textures\Armor\ArmorPlates\armorplates.rsi
+#      state: armor2
+#      
+## Armor plate 3
+#- type: entity
+#  name: Armor Plate
+#  parent: ArmorPlate1
+#  id: ArmorPlate3
+#  description: 'Armor Plate tier 3'
+#  components:
+#    - type: Sprite
+#      sprite: ForPubg\Textures\Armor\ArmorPlates\armorplates.rsi
+#      state: armor3
+#      
+## Armor plate 4
+#- type: entity
+#  name: Armor Plate
+#  parent: ArmorPlate1
+#  id: ArmorPlate4
+#  description: 'Armor Plate tier 4'
+#  components:
+#    - type: Sprite
+#      sprite: ForPubg\Textures\Armor\ArmorPlates\armorplates.rsi
+#      state: armor4

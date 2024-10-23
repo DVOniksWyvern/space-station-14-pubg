@@ -1,0 +1,91 @@
+# SKS
+- type: entity
+  id: MagazineRifleSKS
+  name: "magazine SKS (7.62x39mm rifle)"
+  parent: BaseItem
+  components:
+    - type: Tag
+      tags:
+        - MagazineRifleSKS
+    - type: Item
+      size: Small
+    - type: BallisticAmmoProvider
+      proto: CartridgeRifle7-62x39mm
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeRifle7-62x39mm
+      capacity: 15
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/Magazine/SR/sks_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance
+
+# Garand
+- type: entity
+  id: MagazineRifleGarand
+  name: "magazine Garand(7.62x51mm rifle)"
+  parent: MagazineRifleSKS
+  components:
+    - type: Tag
+      tags:
+        - MagazineRifleGarand
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeRifle7-62x51mm
+      proto: CartridgeRifle7-62x51mm
+      capacity: 8
+    - type: Sprite
+      sprite: _Pubg/Magazine/SR/garand_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 6
+      zeroVisible: false
+    - type: Appearance
+
+# Merkel Sr1
+- type: entity
+  id: MagazineRifleMerkel
+  name: "magazine Merkel(30-06spr rifle)"
+  parent: MagazineRifleSKS
+  components:
+    - type: Tag
+      tags:
+        - MagazineRifleMerkel
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeRifle30-06spr
+      proto: CartridgeRifle30-06spr
+      capacity: 3
+    - type: Sprite
+      sprite: _Pubg/Magazine/SR/merkel_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 4
+      zeroVisible: false
+    - type: Appearance

@@ -1,0 +1,131 @@
+# SKS, RPD, A91
+- type: entity
+  parent: BaseCartridge
+  id: CartridgeRifle7-62x39mm
+  name: cartridge (7.62x39mm)
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - CartridgeRifle7-62x39mm
+    - type: CartridgeAmmo
+      proto: BulletRifle7-62x39mm
+    - type: Sprite
+      sprite: _Pubg/Ammunition/7.62x39mm.rsi
+      layers:
+        - state: base
+          map: ["enum.AmmoVisualLayers.Base"]
+    - type: Appearance
+    - type: SpentAmmoVisuals
+    - type: StaticPrice
+      price: 20
+
+# AR-18, Beryl
+- type: entity
+  parent: CartridgeRifle7-62x39mm
+  id: CartridgeRifle5-56x45mm
+  name: cartridge (5.56x45mm)
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - CartridgeRifle5-56x45mm
+    - type: CartridgeAmmo
+      proto: BulletRifle5-56x45mm
+    - type: Sprite
+      sprite: _Pubg/Ammunition/5.56x45mm.rsi
+      layers:
+        - state: base
+          map: [ "enum.AmmoVisualLayers.Base" ]
+    - type: Appearance
+    - type: SpentAmmoVisuals
+    - type: StaticPrice
+      price: 20
+
+# FN-FAL, Garand
+- type: entity
+  parent: CartridgeRifle7-62x39mm
+  id: CartridgeRifle7-62x51mm
+  name: cartridge (7.62x51mm)
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - CartridgeRifle7-62x51mm
+    - type: CartridgeAmmo
+      proto: BulletRifle7-62x51mm
+    - type: Sprite
+      sprite: _Pubg/Ammunition/7.62x51mm.rsi
+      layers:
+        - state: base
+          map: [ "enum.AmmoVisualLayers.Base" ]
+    - type: Appearance
+    - type: SpentAmmoVisuals
+    - type: StaticPrice
+      price: 20
+
+# AS Val
+- type: entity
+  parent: CartridgeRifle7-62x39mm
+  id: CartridgeRifle9x39mm
+  name: cartridge (9x39mm)
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - CartridgeRifle9x39mm
+    - type: CartridgeAmmo
+      proto: BulletRifle9x39mm
+    - type: Sprite
+      sprite: _Pubg/Ammunition/9x39mm.rsi
+      layers:
+        - state: base
+          map: [ "enum.AmmoVisualLayers.Base" ]
+    - type: Appearance
+    - type: SpentAmmoVisuals
+    - type: StaticPrice
+      price: 20
+
+# Merkel, Ohio-Ordance1918
+- type: entity
+  parent: CartridgeRifle7-62x39mm
+  id: CartridgeRifle30-06spr
+  name: cartridge (30-06spr)
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - CartridgeRifle30-06spr
+    - type: CartridgeAmmo
+      proto: BulletRifle30-06spr
+    - type: Sprite
+      sprite: _Pubg/Ammunition/30-06spr.rsi
+      layers:
+        - state: base
+          map: [ "enum.AmmoVisualLayers.Base" ]
+    - type: Appearance
+    - type: SpentAmmoVisuals
+    - type: StaticPrice
+      price: 20
+
+# ASH-12
+- type: entity
+  parent: CartridgeRifle7-62x39mm
+  id: CartridgeRifle12x55mm
+  name: cartridge (12x55mm)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeRifle12x55mm
+  - type: CartridgeAmmo
+    proto: BulletRifle12x55mm
+  - type: Sprite
+    sprite: _Pubg/Ammunition/12x55mm.rsi
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 20

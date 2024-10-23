@@ -1,0 +1,98 @@
+- type: entity
+  id: PubgRandomBushSpawnerV1
+  name: Bush spawner
+  parent: MarkerBase
+  suffix: 10%
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Pubg/Structures/Bushes/pubg_bush.rsi
+      state: bushsnowb3
+  - type: RandomSpawner
+    prototypes:
+    - PubgBush
+    chance: 0.10
+    rarePrototypes:
+    - PubgBigBush
+    rareChance: 0.01
+    offset: 0.35
+
+- type: entity
+  id: PubgRandomBushSpawnerV2
+  name: Bush spawner
+  parent: MarkerBase
+  suffix: 25%
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Pubg/Structures/Bushes/pubg_bush.rsi
+      state: bushsnowb4
+  - type: RandomSpawner
+    prototypes:
+    - PubgBush
+    chance: 0.25
+    rarePrototypes:
+    - PubgBigBush
+    rareChance: 0.01
+    offset: 0.35
+
+- type: entity
+  id: PubgRandomBushSpawnerV3
+  name: Bush spawner
+  parent: MarkerBase
+  suffix: 50%
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Pubg/Structures/Bushes/pubg_bush.rsi
+      state: bushsnowb2
+  - type: RandomSpawner
+    prototypes:
+    - PubgBush
+    chance: 0.25
+    rarePrototypes:
+    - PubgBigBush
+    rareChance: 0.01
+    offset: 0.35
+
+- type: entity
+  id: PubgRandomBushSpawnerV4
+  name: Bush spawner
+  parent: MarkerBase
+  suffix: 75%
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Pubg/Structures/Bushes/pubg_bush.rsi
+      state: bushsnowb5
+  - type: RandomSpawner
+    prototypes:
+    - PubgBush
+    chance: 0.75
+    rarePrototypes:
+    - PubgBigBush
+    rareChance: 0.01
+    offset: 0.35
+
+- type: entity
+  id: PubgRandomBushSpawnerV5
+  name: Bush spawner
+  parent: MarkerBase
+  suffix: 100%
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Pubg/Structures/Bushes/pubg_bush.rsi
+      state: bushsnowb1
+  - type: RandomSpawner
+    prototypes:
+    - PubgBush
+    rarePrototypes:
+    - PubgBigBush
+    rareChance: 0.03
+    offset: 0.35

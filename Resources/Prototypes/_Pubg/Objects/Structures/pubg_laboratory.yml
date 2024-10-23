@@ -1,0 +1,135 @@
+- type: entity
+  id: PubgLabElectricalPanel
+  parent: BaseStructure
+  name: Electrical Panel
+  description: Bjjjjjjj
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/LabStructure/electro.rsi
+    drawdepth: Items
+    layers:
+    - state: electricalpanel
+  - type: Appearance
+  - type: Damageable
+    damageModifierSet: Metallic
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Tag
+    tags:
+    - Structure
+    - Metal
+  - type: Physics
+    bodyType: Static
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        density: 100
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Transform
+    anchored: false
+
+- type: entity
+  id: PubgLabElectropanelone
+  parent: PubgLabElectricalPanel
+  name: Electro Panel One
+  description: Bjjjjjjj
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/LabStructure/electro.rsi
+    layers:
+    - state: electropanelone
+
+
+- type: entity
+  id: PubgLabComputer
+  parent: PubgLabElectricalPanel
+  name: Computer
+  description: Bjjjjjjj
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/LabStructure/electro.rsi
+    layers:
+    - state: computer
+
+
+- type: entity
+  id: PubgLabMonitor
+  parent: PubgLabElectricalPanel
+  name: Monitor
+  description: Bjjjjjjj
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/LabStructure/electro.rsi
+    layers:
+    - state: monitor
+
+
+- type: entity
+  id: PubgLabServer
+  parent: PubgLabElectricalPanel
+  name: Server
+  description: Bjjjjjjj
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/LabStructure/electro.rsi
+    layers:
+    - state: server
+
+
+- type: entity
+  id: PubgLabIntercome
+  parent: PubgLabElectricalPanel
+  name: Intercome
+  description: Bjjjjjjj
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/LabStructure/electro.rsi
+    layers:
+    - state: intercome
+
+
+- type: entity
+  id: PubgLabIntercome2
+  parent: PubgLabElectricalPanel
+  name: Intercome 2
+  description: Bjjjjjjj
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/LabStructure/electro.rsi
+    layers:
+    - state: intercome2
+
+
+- type: entity
+  id: PubgLabLogo
+  parent: PubgLabElectricalPanel
+  name: Logo
+  description: Bjjjjjjj
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/LabStructure/logo.rsi
+    layers:
+    - state: labaratorylogo
+  - type: PointLight
+    radius: 5.0
+    energy: 3
+    color: "#18abf5"
+  - type: Transform
+    anchored: true

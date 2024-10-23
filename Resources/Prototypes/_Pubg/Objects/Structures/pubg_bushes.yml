@@ -1,0 +1,84 @@
+- type: entity
+  id: PubgBush
+  name: Bush
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path:
+          "/Audio/Effects/weak_hit1.ogg"
+  - type: SpriteFade
+  - type: Sprite
+    sprite: _Pubg/Structures/Bushes/pubg_bush.rsi
+    layers:
+    - state: bushsnowb1
+      map: ["spiderWebLayer"] # Да ебать, это паутина нахуй, угарайте.
+    drawdepth: Overdoors
+    noRot: true
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.SpiderWebVisuals.Variant:
+        spiderWebLayer:
+          1:  {state: bushsnowb1}
+          2:  {state: bushsnowb2}
+          3:  {state: bushsnowb3}
+          4:  {state: bushsnowb4}
+          5:  {state: bushsnowb5}
+          6:  {state: bushsnowb6}
+  - type: Clickable
+  - type: Transform
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        density: 7
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.35,0.35,0.35"
+        layer:
+        - MidImpassable
+  - type: Damageable
+    damageModifierSet: Web
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SpiderWebObject
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.75
+    sprintSpeedModifier: 0.75
+
+- type: entity
+  id: PubgBigBush
+  name: Big Bush
+  parent: PubgBush
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Bushes/pubg_bigbush.rsi
+    layers:
+    - state: bushsnowb48
+      map: [ "spiderWebLayer" ] # Да ебать, это паутина нахуй, угарайте.
+  - type: GenericVisualizer
+    visuals:
+      enum.SpiderWebVisuals.Variant:
+        spiderWebLayer:
+          1: { state: bushsnowb48 }
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        density: 7
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.60,-0.60,0.60,0.60"
+        layer:
+        - MidImpassable
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.50
+    sprintSpeedModifier: 0.50

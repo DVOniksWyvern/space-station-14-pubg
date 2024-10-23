@@ -1,0 +1,19 @@
+# P90, CPW
+- type: entity
+  id: CartridgeSmg5-7x28mm
+  name: cartridge (5.7x28mm)
+  parent: BaseCartridge
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - CartridgeSmg5-7x28mm
+    - type: CartridgeAmmo
+      proto: BulletPistol5-7x28mm
+    - type: Sprite
+      sprite: _Pubg/Ammunition/5.7x28mm.rsi
+      layers:
+        - state: base
+          map: ["enum.AmmoVisualLayers.Base"]
+    - type: Appearance
+    - type: SpentAmmoVisuals

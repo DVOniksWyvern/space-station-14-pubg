@@ -1,0 +1,115 @@
+# Standart Medicine
+- type: stack
+  id: PubgStandartMedicine
+  name: PubgStandartMedicine
+  icon: { sprite: "/_Pubg/Medicine/medicinepack.rsi", state: icon }
+  spawn: PubgStandartMedicine
+  maxCount: 10
+  itemSize: 1
+
+- type: entity
+  name: medical pack
+  description: For heal your ass.
+  parent: BaseHealingItem
+  id: PubgStandartMedicine
+  suffix: 10
+  components:
+    - type: Tag
+      tags:
+        - Brutepack
+    - type: Sprite
+      layers:
+        - sprite: _Pubg/Medicine/medicinepack.rsi
+          state: icon
+    - type: Item
+      size: Small
+      sprite: _Pubg/Medicine/medicinepack.rsi
+      heldPrefix: icon
+    - type: Healing
+      delay: 3.0 # Standart heal time
+      damageContainers:
+        - Biological
+      damage:
+        groups:
+          Brute: -22.5 # 5 for each type in the group
+      bloodlossModifier: -10
+      ModifyBloodLevel: 15
+      selfHealPenaltyMultiplier: 1.0
+      healingBeginSound:
+        path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      healingEndSound:
+        path: "/Audio/Items/Medical/brutepack_end.ogg"
+    - type: Stack
+      stackType: PubgStandartMedicine
+      count: 10
+    - type: StackPrice
+      price: 5
+
+- type: entity
+  name: medical pack
+  description: For heal your ass.
+  parent: PubgStandartMedicine
+  id: PubgStandartMedicine5
+  suffix: 5
+  components:
+    - type: Stack
+      stackType: PubgStandartMedicine
+      count: 5
+
+- type: entity
+  name: medical pack
+  description: For heal your ass.
+  parent: PubgStandartMedicine
+  id: PubgStandartMedicine2
+  suffix: 2
+  components:
+    - type: Stack
+      stackType: PubgStandartMedicine
+      count: 2
+
+# Fast bandage
+- type: stack
+  id: PubgStandartMedicineBandage
+  name: PubgStandartMedicineBandage
+  icon: { sprite: "/_Pubg/Medicine/medicinepack.rsi", state: icon }
+  spawn: PubgStandartMedicineBandage
+  maxCount: 10
+  itemSize: 1
+
+- type: entity
+  name: medical bandage
+  description: For heal your ass faster.
+  parent: BaseHealingItem
+  id: PubgStandartMedicineBandage
+  suffix: 5
+  components:
+    - type: Tag
+      tags:
+        - Brutepack
+    - type: Sprite
+      layers:
+        - sprite: _Pubg/Medicine/bandage.rsi
+          state: icon
+    - type: Item
+      size: Small
+      sprite: _Pubg/Medicine/bandage.rsi
+      heldPrefix: icon
+    - type: Healing
+      delay: 1.0 # For faster healing
+      damageContainers:
+        - Biological
+      damage:
+        groups:
+          Brute: -7.5 # 5 for each type in the group
+      bloodlossModifier: -1
+      ModifyBloodLevel: 3
+      selfHealPenaltyMultiplier: 0.33
+      healingBeginSound:
+        path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      healingEndSound:
+        path: "/Audio/Items/Medical/brutepack_end.ogg"
+    - type: Stack
+      stackType: PubgStandartMedicineBandage
+      count: 5
+    - type: StackPrice
+      price: 5

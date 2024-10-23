@@ -1,0 +1,31 @@
+# KS23
+- type: entity
+  id: PelletShotgunSlug23x75
+  name: pellet (23x75)
+  noSpawn: true
+  parent: BaseBullet
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+      state: slug
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 10
+          Blunt: 5
+
+# MP153
+- type: entity
+  id: PelletShotgunSlug12x70
+  name: pellet (12x70)
+  noSpawn: true
+  parent: BaseBullet
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+      state: slug
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 7.5
+          Blunt: 2.5

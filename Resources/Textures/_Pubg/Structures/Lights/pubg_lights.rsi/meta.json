@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "license": "Niki89",
+    "copyright": "Niki89",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "lightgold"
+        },
+
+        {
+            "name": "lightsteel"
+        },
+        {
+            "name": "fire-small",
+            "delays": [
+                [
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15
+                ]
+            ]
+        }
+    ]
+}

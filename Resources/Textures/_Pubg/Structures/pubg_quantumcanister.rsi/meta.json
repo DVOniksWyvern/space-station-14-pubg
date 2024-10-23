@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "license": "Gersoon",
+    "copyright": "Gersoon",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "overlay",
+            "directions": 1,
+            "delays": [
+                [
+                    0.25,
+                    0.25,
+                    0.25,
+                    0.25
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,221 @@
+# SVD
+- type: entity
+  name: WeaponSniperRifleSVD
+  parent: BaseItem
+  id: WeaponSniperRifleSVD
+  description: SVD this is SNIPER!
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Sniper/svd.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-0
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: Item
+      size: Huge
+      shape:
+        - 0,0,6,2
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+      wieldTime: 0
+    - type: GunWieldBonus
+      minAngle: -50
+      maxAngle: -80
+    - type: Gun
+      minAngle: 50
+      maxAngle: 80
+      angleIncrease: 4
+      angleDecay: 16
+      fireRate: 3
+      projectileSpeed: 40
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Sniper/svd_gunshot.ogg
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineSniperRifleSVD
+          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineSniperRifleSVD
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeSniper7-62x54mm
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgeSniper7-62x54mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.04
+
+# SV-98
+- type: entity
+  name: WeaponSniperRifleSV98
+  parent: BaseItem
+  id: WeaponSniperRifleSV98
+  description: SV-98 this is SNIPER!
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Sniper/sv98.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-0
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: Item
+      size: Huge
+      shape:
+        - 0,0,6,1
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+      wieldTime: 0
+    - type: GunWieldBonus
+      minAngle: -50
+      maxAngle: -80
+    - type: Gun
+      minAngle: 50
+      maxAngle: 80
+      angleIncrease: 4
+      angleDecay: 16
+      fireRate: 1
+      projectileSpeed: 50
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Sniper/sv98_gunshot.ogg
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineSniperRifleSV-98
+          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineSniperRifleSV-98
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeSniper7-62x54mm
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgeSniper7-62x54mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.04
+
+# Barrett
+- type: entity
+  name: WeaponSniperRifleBarrett
+  parent: BaseItem
+  id: WeaponSniperRifleBarrett
+  description: Barrett this is SNIPER!
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Sniper/barrett.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-0
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: Item
+      size: Huge
+      shape:
+        - 0,0,6,2
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+      wieldTime: 0
+    - type: GunWieldBonus
+      minAngle: -50
+      maxAngle: -80
+    - type: Gun
+      minAngle: 50
+      maxAngle: 80
+      angleIncrease: 4
+      angleDecay: 16
+      fireRate: 1
+      projectileSpeed: 50
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Sniper/barrett_gunshot.ogg
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineSniperRifleBarrett
+          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineSniperRifleBarrett
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeSniper12-7x99mm
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgeSniper12-7x99mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.04

@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "license": "Warete",
+  "copyright": "Warete",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "brutepen"
+    },
+    {
+      "name": "brutepen-empty"
+    },
+    {
+      "name": "superbrutepen"
+    },
+    {
+      "name": "superbrutepen-empty"
+    },
+    {
+      "name": "regeneratorpen"
+    },
+    {
+      "name": "regeneratorpen-empty"
+    },
+    {
+      "name": "speedpen"
+    },
+    {
+      "name": "speedpen-empty"
+    },
+    {
+      "name": "superspeedpen"
+    },
+    {
+      "name": "superspeedpen-empty"
+    },
+    {
+      "name": "obdalbospen"
+    },
+    {
+      "name": "obdalbospen-empty"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+# KS-23
+- type: entity
+  name: WeaponShotgunKS-23
+  parent: BaseItem
+  id: WeaponShotgunKS-23
+  description: KS-23 Yeaaaaaah.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Shotguns/kc23.rsi
+      layers:
+        - state: icon
+          map: [ "enum.GunVisualLayers.Base" ]
+    - type: Item
+      # If you update this also update the bulldog's size. SS14
+      # Боже сука, ленивая мразь не смогла пару параметров отредачить
+      size: Large
+      shape:
+        - 0,0,4,0
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Gun
+      fireRate: 3
+      projectileSpeed: 35
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Shotguns/ks23_gunshot.ogg
+      soundEmpty:
+        path: /Audio/Weapons/Guns/Empty/empty.ogg
+    - type: BallisticAmmoProvider
+      whitelist:
+        tags:
+          - ShellShotgun23x75
+      capacity: 4
+      proto: ShellShotgun23x75
+      soundInsert:
+        path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.15
+
+# Baikal MP153
+- type: entity
+  name: WeaponShotgunMP153
+  parent: BaseItem
+  id: WeaponShotgunMP153
+  description: Baikal MP-153 Yeaaaaaah.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Shotguns/mp153.rsi
+      layers:
+        - state: icon
+          map: [ "enum.GunVisualLayers.Base" ]
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,0
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+      wieldTime: 0
+    - type: Gun
+      fireRate: 1
+      projectileSpeed: 25 # Standart 25f
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Shotguns/mp153_gunshot.ogg
+      soundEmpty:
+        path: /Audio/Weapons/Guns/Empty/empty.ogg
+    - type: BallisticAmmoProvider
+      whitelist:
+        tags:
+          - ShellShotgun12x70
+      capacity: 5
+      proto: ShellShotgun12x70
+      soundInsert:
+        path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.15
+
+# Chazer
+- type: entity
+  name: WeaponShotgunChazer
+  parent: BaseItem
+  id: WeaponShotgunChazer
+  description: Chazer Yeaaaaaah.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Shotguns/chazer.rsi
+      layers:
+        - state: icon
+          map: [ "enum.GunVisualLayers.Base" ]
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,0
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+      wieldTime: 0
+    - type: Gun
+      fireRate: 2
+      projectileSpeed: 25 # Standart 25f
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Shotguns/chazer_gunshot.ogg
+      soundEmpty:
+        path: /Audio/Weapons/Guns/Empty/empty.ogg
+    - type: BallisticAmmoProvider
+      whitelist:
+        tags:
+          - ShellShotgun12x70
+      capacity: 7
+      proto: ShellShotgun12x70
+      soundInsert:
+        path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.15

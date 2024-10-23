@@ -1,0 +1,498 @@
+# AR-18
+- type: entity
+  name: WeaponRifleAR18-V2
+  parent: BaseItem
+  id: WeaponRifleAR18-V2
+  description: AR-18 yeah boy.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Rifles/ar18.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-0
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: Item
+      size: Huge
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -23
+      maxAngle: -29
+    - type: Gun
+      minAngle: 24
+      maxAngle: 30
+      angleIncrease: 4
+      angleDecay: 16
+      fireRate: 10
+      projectileSpeed: 35
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Rifles/ar18_gunshot.ogg
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineRifleAR18-V2
+          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineRifleAR18-V2
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeRifle5-56x45mm
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgeRifle5-56x45mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.08
+
+# Beryl
+- type: entity
+  name: WeaponRifleBeryl
+  parent: BaseItem
+  id: WeaponRifleBeryl
+  description: Beryl yeah boy.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Rifles/beryl.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-0
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: Item
+      size: Huge
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -21
+      maxAngle: -27
+    - type: Gun
+      minAngle: 24
+      maxAngle: 30
+      angleIncrease: 4
+      angleDecay: 16
+      fireRate: 8
+      selectedMode: FullAuto
+      projectileSpeed: 35
+      availableModes:
+        - FullAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Rifles/beryl_gunshot.ogg
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineRifleBeryl
+          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineRifleBeryl
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeRifle5-56x45mm
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgeRifle5-56x45mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.08
+
+# FN-FAL
+- type: entity
+  name: WeaponRifleFNFAL
+  parent: BaseItem
+  id: WeaponRifleFNFAL
+  description: FNFAL yeah boy.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Rifles/fnfal.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-0
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: Item
+      size: Huge
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -22
+      maxAngle: -28
+    - type: Gun
+      minAngle: 24
+      maxAngle: 30
+      angleIncrease: 4
+      angleDecay: 16
+      fireRate: 8
+      projectileSpeed: 35
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Rifles/fnfal_gunshot.ogg
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineRifleFNFAL
+          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineRifleFNFAL
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeRifle7-62x51mm
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgeRifle7-62x51mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.08
+
+# AS Val
+- type: entity
+  name: WeaponRifleAsVal
+  parent: BaseItem
+  id: WeaponRifleAsVal
+  description: As Val yeah boy.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Rifles/asval.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-0
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: Item
+      size: Huge
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -21
+      maxAngle: -27
+    - type: Gun
+      minAngle: 24
+      maxAngle: 30
+      angleIncrease: 4
+      angleDecay: 16
+      fireRate: 10
+      projectileSpeed: 25 # Standart 25f
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Rifles/asval_gunshot.ogg
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineRifleASVAL
+          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineRifleASVAL
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeRifle9x39mm
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgeRifle9x39mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.08
+
+# A91
+- type: entity
+  name: WeaponRifleA91
+  parent: BaseItem
+  id: WeaponRifleA91
+  description: A91 yeah boy.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Rifles/a91.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-0
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: Item
+      size: Huge
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -20
+      maxAngle: -26
+    - type: Gun
+      minAngle: 24
+      maxAngle: 30
+      angleIncrease: 4
+      angleDecay: 16
+      fireRate: 8
+      projectileSpeed: 35 # Standart 25f
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Rifles/a91_gunshot.ogg
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineRifleA91
+          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineRifleA91
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeRifle7-62x39mm
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgeRifle7-62x39mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.08
+
+# Ohio Ordance 1918
+- type: entity
+  name: WeaponRifleOhioOrdance
+  parent: BaseItem
+  id: WeaponRifleOhioOrdance
+  description: Ohio Ordance oh my goood.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Rifles/ohioordnance1918.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-0
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: Item
+      size: Huge
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -22
+      maxAngle: -26
+    - type: Gun
+      minAngle: 24
+      maxAngle: 30
+      angleIncrease: 4
+      angleDecay: 16
+      fireRate: 5
+      projectileSpeed: 30 # Standart 25f
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Rifles/ohioordnance1918_gunshot.ogg
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineRifleOhioOrdance
+          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineRifleOhioOrdance
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeRifle30-06spr
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgeRifle30-06spr
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.08
+
+# ASH-12
+- type: entity
+  name: WeaponRifleAsh12
+  parent: BaseItem
+  id: WeaponRifleAsh12
+  description: ASHKA!!!
+  components:
+  - type: Sprite
+    sprite: _Pubg/Weapons/Rifles/ash12.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Item
+    size: Huge
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - Back
+  - type: AmmoCounter
+  - type: Wieldable
+  - type: GunWieldBonus
+    minAngle: -21
+    maxAngle: -29
+  - type: Gun
+    minAngle: 24
+    maxAngle: 30
+    angleIncrease: 4
+    angleDecay: 16
+    fireRate: 6
+    projectileSpeed: 25
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/_Pubg/Weapons/Rifles/ash12_gunshot.ogg
+      params:
+        volume: 5.00
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleASH12
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - MagazineRifleASH12
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeRifle12x55mm
+        priority: 1
+        whitelist:
+          tags:
+          - CartridgeRifle12x55mm
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: Appearance
+  - type: StaticPrice
+    price: 500
+  - type: Telescope
+    divisor: 0.08

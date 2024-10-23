@@ -1,0 +1,164 @@
+# Tier 1
+- type: listing
+  id: ArmorSegment2
+  name: Armor Segment2
+  description: Armor Segment2
+  productEntity: ClothingOuterArmorSegment2
+  cost:
+    SpaceCash: 500
+  categories:
+  - GoidaArmor
+  saleLimit: 1
+
+- type: listing
+  id: ArmorFagor1
+  name: Armor Fagor1
+  description: Armor Fagor1
+  productEntity: ClothingOuterArmorFagor1
+  cost:
+    SpaceCash: 600
+  categories:
+  - GoidaArmor
+  saleLimit: 1
+
+- type: listing
+  id: ClothingOuterArmorTorus
+  name: Armor Torus
+  description: Armor Torus
+  productEntity: ClothingOuterArmorTorus
+  cost:
+    SpaceCash: 800
+  categories:
+  - GoidaArmor
+  saleLimit: 1
+
+# Tier 2
+- type: listing
+  id: ClothingOuterArmorPlitnik
+  name: Armor Plitnik
+  description: Armor Plitnik
+  productEntity: ClothingOuterArmorPlitnik
+  cost:
+    SpaceCash: 1000
+  categories:
+  - GoidaArmor
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT2Shop
+  saleLimit: 1
+
+- type: listing
+  id: ClothingOuterArmorBagarii
+  name: Armor Bagarii
+  description: Armor Bagarii
+  productEntity: ClothingOuterArmorBagarii
+  cost:
+    SpaceCash: 1100
+  categories:
+  - GoidaArmor
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT2Shop
+  saleLimit: 1
+
+- type: listing
+  id: ClothingOuterArmorKorund
+  name: Armor Korund
+  description: Armor Korund
+  productEntity: ClothingOuterArmorKorund
+  cost:
+    SpaceCash: 1300
+  categories:
+  - GoidaArmor
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT2Shop
+  saleLimit: 1
+
+- type: listing
+  id: ClothingOuterArmorRusarmOlive
+  name: Armor Rusarm Olive
+  description: Armor Rusarm Olive
+  productEntity: ClothingOuterArmorRusarmOlive
+  cost:
+    SpaceCash: 1500
+  categories:
+  - GoidaArmor
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT2Shop
+  saleLimit: 1
+
+# Tier 3
+- type: listing
+  id: ClothingOuterArmorBattleAssault
+  name: Armor Battle Assault
+  description: Armor Battle Assault
+  productEntity: ClothingOuterArmorBattleAssault
+  cost:
+    SpaceCash: 2000
+  categories:
+  - GoidaArmor
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT3Shop
+  saleLimit: 1
+
+- type: listing
+  id: ClothingOuterArmorRusarmAssault
+  name: Armor RusArm Assault
+  description: Armor RusArm Assault
+  productEntity: ClothingOuterArmorRusarmAssault
+  cost:
+    SpaceCash: 2500
+  categories:
+  - GoidaArmor
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT3Shop
+  saleLimit: 1
+
+- type: listing
+  id: ClothingOuterArmorSaphire
+  name: Armor Saphire
+  description: Armor Saphire
+  productEntity: ClothingOuterArmorSaphire
+  cost:
+    SpaceCash: 3000
+  categories:
+  - GoidaArmor
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT3Shop
+  saleLimit: 1
+
+# Tier 4
+- type: listing
+  id: ClothingOuterArmorTactick
+  name: Armor Tactick
+  description: Armor Tactick
+  productEntity: ClothingOuterArmorTactick
+  cost:
+    SpaceCash: 4000
+  categories:
+  - GoidaArmor
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT4Shop
+  saleLimit: 1

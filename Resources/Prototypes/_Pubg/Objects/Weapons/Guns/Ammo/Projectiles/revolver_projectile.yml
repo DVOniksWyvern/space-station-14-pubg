@@ -1,0 +1,27 @@
+# Smith
+- type: entity
+  id: BulletRevolverMag500
+  name: bullet (Mag500)
+  parent: BaseBullet
+  noSpawn: true
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 15
+          Blunt: 7.5
+      ignoreResistances: true
+
+# Rex
+- type: entity
+  id: BulletRevolverMag357
+  name: bullet (Mag357)
+  parent: BaseBullet
+  noSpawn: true
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 15
+          Blunt: 5
+      ignoreResistances: true
