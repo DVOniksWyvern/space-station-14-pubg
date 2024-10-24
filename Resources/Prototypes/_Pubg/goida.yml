@@ -1,14 +1,14 @@
-- type: entity
-  id: ActionGoidaScream
-  name: GOIDA!
-  description: GOIDA, BROTHERS AND SISTERS, GOIDA!
-  noSpawn: true
-  components:
-  - type: InstantAction
-    useDelay: 10
-    icon: Interface/Actions/scream.png
-    event: !type:GoidaScreamActionEvent
-    checkCanInteract: false
+#- type: entity
+#  id: ActionGoidaScream
+#  name: GOIDA!
+#  description: GOIDA, BROTHERS AND SISTERS, GOIDA!
+#  noSpawn: true
+#  components:
+#  - type: InstantAction
+#    useDelay: 10
+#    icon: Interface/Actions/scream.png
+#    event: !type:GoidaScreamActionEvent
+#    checkCanInteract: false
 
 - type: gamePreset
   id: Goida
