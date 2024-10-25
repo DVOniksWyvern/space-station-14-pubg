@@ -2,10 +2,9 @@
 - type: stack
   id: PubgStandartMedicine
   name: PubgStandartMedicine
-  icon: { sprite: "/_Pubg/Medicine/medicinepack.rsi", state: icon }
+  icon: { sprite: "_Pubg/Medicine/medicinepack.rsi", state: icon }
   spawn: PubgStandartMedicine
   maxCount: 10
-  itemSize: 1
 
 - type: entity
   name: medical pack
@@ -71,10 +70,9 @@
 - type: stack
   id: PubgStandartMedicineBandage
   name: PubgStandartMedicineBandage
-  icon: { sprite: "/_Pubg/Medicine/medicinepack.rsi", state: icon }
+  icon: { sprite: "_Pubg/Medicine/medicinepack.rsi", state: icon }
   spawn: PubgStandartMedicineBandage
   maxCount: 10
-  itemSize: 1
 
 - type: entity
   name: medical bandage

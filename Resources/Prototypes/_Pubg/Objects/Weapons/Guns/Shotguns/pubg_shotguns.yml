@@ -69,7 +69,6 @@
         - Back
     - type: AmmoCounter
     - type: Wieldable
-      wieldTime: 0
     - type: Gun
       fireRate: 1
       projectileSpeed: 25 # Standart 25f
@@ -118,7 +117,6 @@
         - Back
     - type: AmmoCounter
     - type: Wieldable
-      wieldTime: 0
     - type: Gun
       fireRate: 2
       projectileSpeed: 25 # Standart 25f

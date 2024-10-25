@@ -69,23 +69,6 @@
     stateDoorClosed: cabinet_door
   - type: StorageFill
     contents:
-    # Socks
-    - id: ClothingUnderwearSocksThigh
-      prob: 0.1
-    - id: ClothingUnderwearStockingsBlue
-      prob: 0.1
-    - id: ClothingUnderwearStockingsPink
-      prob: 0.1
-    - id: ClothingUnderwearStockingsCyan
-      prob: 0.1
-    - id: ClothingUnderwearStockingsGreen
-      prob: 0.1
-    - id: ClothingUnderwearStockingsLightPink
-      prob: 0.1
-    - id: ClothingUnderwearStockingsLightPurple
-      prob: 0.1
-    - id: ClothingUnderwearStockingsLightOrange
-      prob: 0.1
     # Gloves
     - id: ClothingHandsGlovesColorBrown
       prob: 0.1
@@ -332,7 +315,6 @@
           path: /Audio/Effects/poster_broken.ogg
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-        offset: 0
 
 # TrashCan
 - type: entity

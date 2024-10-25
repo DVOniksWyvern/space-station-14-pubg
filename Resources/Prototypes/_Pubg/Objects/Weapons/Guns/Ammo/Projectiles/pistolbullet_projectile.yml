@@ -3,7 +3,7 @@
   id: BulletPistol9mm
   name: bullet (9mm)
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
       damage:
@@ -16,7 +16,7 @@
   id: BulletPistol7-65mm
   name: bullet (7.65mm)
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
       damage:
@@ -29,7 +29,7 @@
   id: BulletPistol5-7x28mm
   name: bullet (5.7x28mm)
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
       damage:
@@ -43,7 +43,7 @@
   id: BulletPistol50bmg
   name: bullet (50bmg)
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
       damage:

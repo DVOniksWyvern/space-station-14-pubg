@@ -8,7 +8,6 @@
     SpaceCash: 100
   categories:
   - GoidaMedicine
-  saleLimit: 1
 
 - type: listing
   id: MedicineStandart
@@ -19,7 +18,6 @@
     SpaceCash: 200
   categories:
   - GoidaMedicine
-  saleLimit: 1
 
 # Tier 2
 - type: listing
@@ -36,7 +34,6 @@
     whitelist:
       tags:
       - GoidaT2Shop
-  saleLimit: 1
 
 - type: listing
   id: MedicineSpeedMedipen
@@ -52,7 +49,6 @@
     whitelist:
       tags:
       - GoidaT2Shop
-  saleLimit: 1
 
 - type: listing
   id: PubgObdalbosMedipen
@@ -68,7 +64,6 @@
     whitelist:
       tags:
       - GoidaT2Shop
-  saleLimit: 1
 
 - type: listing
   id: PubgRegeneratorMedipen
@@ -84,7 +79,6 @@
     whitelist:
       tags:
       - GoidaT2Shop
-  saleLimit: 1
 
 # Tier 3
 - type: listing
@@ -101,7 +95,6 @@
     whitelist:
       tags:
       - GoidaT3Shop
-  saleLimit: 1
 
 - type: listing
   id: MedicineSuperSpeedMedipen
@@ -117,4 +110,3 @@
     whitelist:
       tags:
       - GoidaT3Shop
-  saleLimit: 1

@@ -5,24 +5,19 @@
   description: UuuuuEEEEEEEEEEEEEE GOOOOOOOOOOIDAAAAAAAAAAAAA
   components:
   - type: Store
-    buySuccessSound: _Pubg/Sounds/Shop/supergoida.ogg
-    preset: StorePresetGoida
+    buySuccessSound: /Audio/_Pubg/Shop/supergoida.ogg
+    categories:
+    - GoidaWeaponry
+    - GoidaMedicine
+    - GoidaAmmo
+    - GoidaArmor
+    - GoidaHelmet
+    - GoidaMelee
+    - GoidaMisc
+    currencyWhitelist:
+    - SpaceCash
     balance:
       SpaceCash: 0
-
-- type: storePreset
-  id: StorePresetGoida
-  storeName: Goida
-  categories:
-  - GoidaWeaponry
-  - GoidaMedicine
-  - GoidaAmmo
-  - GoidaArmor
-  - GoidaHelmet
-  - GoidaMelee
-  - GoidaMisc
-  currencyWhitelist:
-  - SpaceCash
 
 - type: Tag
   id: GoidaT2Shop

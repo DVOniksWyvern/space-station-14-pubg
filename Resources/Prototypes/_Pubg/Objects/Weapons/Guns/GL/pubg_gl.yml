@@ -25,7 +25,6 @@
     proto: PubgGrenadeCartridge
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-    autoCycle: false
 
 - type: entity
   name: RG-06
@@ -47,8 +46,6 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
   - type: Wieldable
-    wieldTime: 0
-    forceTwoHanded: True
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -57,4 +54,3 @@
     proto: PubgGrenadeCartridge
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-    autoCycle: false

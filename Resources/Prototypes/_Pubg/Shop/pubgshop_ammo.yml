@@ -7,7 +7,6 @@
     SpaceCash: 50
   categories:
   - GoidaAmmo
-  saleLimit: 1
 
 - type: listing
   id: AmmoBox12x70
@@ -18,7 +17,6 @@
     SpaceCash: 150
   categories:
   - GoidaAmmo
-  saleLimit: 1
 
 - type: listing
   id: AmmoBox7-65mm
@@ -29,7 +27,6 @@
     SpaceCash: 100
   categories:
   - GoidaAmmo
-  saleLimit: 1
 
 - type: listing
   id: AmmoBox23x75
@@ -40,7 +37,6 @@
     SpaceCash: 300
   categories:
   - GoidaAmmo
-  saleLimit: 1
 
 - type: listing
   id: AmmoBox7-62x39mm
@@ -51,7 +47,6 @@
     SpaceCash: 400
   categories:
   - GoidaAmmo
-  saleLimit: 1
 
 - type: listing
   id: AmmoBox5-56x45mm
@@ -62,7 +57,6 @@
     SpaceCash: 500
   categories:
   - GoidaAmmo
-  saleLimit: 1
 
 - type: listing
   id: AmmoBox9x39mm
@@ -73,7 +67,6 @@
     SpaceCash: 500
   categories:
   - GoidaAmmo
-  saleLimit: 1
 
 - type: listing
   id: AmmoBox5-7x28mm
@@ -84,7 +77,6 @@
     SpaceCash: 400
   categories:
   - GoidaAmmo
-  saleLimit: 1
 
 - type: listing
   id: AmmoBoxMagnum357
@@ -95,7 +87,6 @@
     SpaceCash: 800
   categories:
   - GoidaAmmo
-  saleLimit: 1
 
 - type: listing
   id: AmmoBoxMagnum500
@@ -106,7 +97,6 @@
     SpaceCash: 1000
   categories:
   - GoidaAmmo
-  saleLimit: 1
 
 - type: listing
   id: AmmoBox7-62x51mm
@@ -117,7 +107,6 @@
     SpaceCash: 500
   categories:
   - GoidaAmmo
-  saleLimit: 1
 
 - type: listing
   id: AmmoBox7-62x54mm
@@ -128,7 +117,6 @@
     SpaceCash: 1000
   categories:
   - GoidaAmmo
-  saleLimit: 1
 
 - type: listing
   id: AmmoBox12-7x99mm
@@ -139,7 +127,6 @@
     SpaceCash: 1000
   categories:
   - GoidaAmmo
-  saleLimit: 1
 
 
 

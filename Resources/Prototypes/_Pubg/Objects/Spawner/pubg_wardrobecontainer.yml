@@ -437,7 +437,7 @@
           orGroup: Medicine
         - id: PubgStandartMedicineBandage
           prob: 0.10
-          OrGroup: Medicine
+          orGroup: Medicine
         - id: null
           prob: 0.60
           orGroup: Medicine

@@ -14,9 +14,7 @@
         - state: base
           map: [ "enum.AmmoVisualLayers.Base" ]
     - type: CartridgeAmmo
-      proto: PelletShotgunSlug23x75
-      count: 5
-      spread: 15
+      proto: PelletShotgunSlug23x75-Spread
     - type: SpentAmmoVisuals
 
 # MP153, Chazer
@@ -35,7 +33,5 @@
         - state: base
           map: [ "enum.AmmoVisualLayers.Base" ]
     - type: CartridgeAmmo
-      proto: PelletShotgunSlug12x70
-      count: 8
-      spread: 25
+      proto: PelletShotgunSlug12x70-Spread
     - type: SpentAmmoVisuals

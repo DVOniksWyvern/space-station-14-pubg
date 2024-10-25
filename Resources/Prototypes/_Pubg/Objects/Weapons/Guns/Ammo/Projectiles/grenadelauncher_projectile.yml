@@ -2,7 +2,7 @@
   id: PubgBulletGrenade
   name: blast grenade
   parent: BaseBulletTrigger
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Pubg/Ammunition/40mm.rsi
@@ -20,7 +20,7 @@
   id: PubgBulletSuperGrenade
   name: super blast grenade
   parent: BaseBulletTrigger
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Pubg/Ammunition/40mm.rsi
@@ -38,7 +38,7 @@
   id: PubgBulletHighExplosiveGrenade
   name: high explosive grenade
   parent: BaseBulletTrigger
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Pubg/Ammunition/40mm.rsi

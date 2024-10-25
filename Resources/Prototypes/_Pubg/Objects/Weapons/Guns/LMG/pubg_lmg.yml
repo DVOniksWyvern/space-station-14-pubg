@@ -20,8 +20,6 @@
         - Back
     - type: AmmoCounter
     - type: Wieldable
-      wieldTime: 0
-      forceTwoHanded: True
     - type: GunWieldBonus
       minAngle: -35
       maxAngle: -50

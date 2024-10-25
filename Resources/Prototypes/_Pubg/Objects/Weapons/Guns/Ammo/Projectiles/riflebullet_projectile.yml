@@ -3,7 +3,7 @@
   id: BulletRifle7-62x39mm
   name: bullet (7.62x39mm)
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
       damage:
@@ -15,7 +15,7 @@
   id: BulletRifle5-56x45mm
   name: bullet (5.56x45mm)
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
       damage:
@@ -28,7 +28,7 @@
   id: BulletRifle7-62x51mm
   name: bullet (7.62x51mm)
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
       damage:
@@ -41,7 +41,7 @@
   id: BulletRifle9x39mm
   name: bullet (9x39mm)
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
       damage:
@@ -54,7 +54,7 @@
   id: BulletRifle30-06spr
   name: bullet (30-06spr)
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
       damage:
@@ -66,7 +66,7 @@
   id: BulletRifle12x55mm
   name: bullet (12x55)
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:

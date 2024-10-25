@@ -39,8 +39,17 @@
   suffix: DEBUG
   components:
   - type: Store
-    buySuccessSound: _Pubg/Sounds/Shop/supergoida.ogg
-    preset: StorePresetGoida
+    buySuccessSound: /Audio/_Pubg/Shop/supergoida.ogg
+    categories:
+    - GoidaWeaponry
+    - GoidaMedicine
+    - GoidaAmmo
+    - GoidaArmor
+    - GoidaHelmet
+    - GoidaMelee
+    - GoidaMisc
+    currencyWhitelist:
+    - SpaceCash
     balance:
       SpaceCash: 1337228
   - type: Tag

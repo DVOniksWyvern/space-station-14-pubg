@@ -1,5 +1,5 @@
 ################################## ShotGuns
-# MP-153 Baikal mp153    
+# MP-153 Baikal mp153
 - type: entity
   parent: ClothingBackpackDuffelPUBGWeapons
   id: ClothingBackpackDuffelPUBGWeaponsMP153
@@ -13,22 +13,22 @@
         - id: WeaponShotgunMP153
           orGroup: Weapon
           # Magazine ? No magazines for Shotgun
-        
+
           # Ammo
         - id: BaseMagazineBoxShotgun12x70
           prob: 0.50
-          onGroup: AmmoBox
+          orGroup: AmmoBox
         - id: null
           prob: 0.50
-          onGroup: AmmoBox
+          orGroup: AmmoBox
         - id: BaseMagazineBoxShotgun12x70
           prob: 0.30
-          onGroup: AmmoBox2
+          orGroup: AmmoBox2
         - id: null
           prob: 0.70
-          onGroup: AmmoBox2
-          
-# MP-153 Baikal mp153    
+          orGroup: AmmoBox2
+
+# MP-153 Baikal mp153
 - type: entity
   parent: ClothingBackpackDuffelPUBGWeapons
   id: ClothingBackpackDuffelPUBGWeaponsChazer
@@ -42,18 +42,17 @@
         - id: WeaponShotgunChazer
           orGroup: Weapon
           # Magazine ? No magazines for Shotgun
-          
+
           # Ammo
         - id: BaseMagazineBoxShotgun12x70
           prob: 0.70
-          onGroup: AmmoBox
+          orGroup: AmmoBox
         - id: null
           prob: 0.30
-          onGroup: AmmoBox
+          orGroup: AmmoBox
         - id: BaseMagazineBoxShotgun12x70
           prob: 0.15
-          onGroup: AmmoBox2
+          orGroup: AmmoBox2
         - id: null
           prob: 0.85
-          onGroup: AmmoBox2
-        
+          orGroup: AmmoBox2

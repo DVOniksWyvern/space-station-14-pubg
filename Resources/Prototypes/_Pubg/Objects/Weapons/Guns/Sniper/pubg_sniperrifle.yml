@@ -22,7 +22,6 @@
         - Back
     - type: AmmoCounter
     - type: Wieldable
-      wieldTime: 0
     - type: GunWieldBonus
       minAngle: -50
       maxAngle: -80
@@ -96,7 +95,6 @@
         - Back
     - type: AmmoCounter
     - type: Wieldable
-      wieldTime: 0
     - type: GunWieldBonus
       minAngle: -50
       maxAngle: -80
@@ -170,7 +168,6 @@
         - Back
     - type: AmmoCounter
     - type: Wieldable
-      wieldTime: 0
     - type: GunWieldBonus
       minAngle: -50
       maxAngle: -80

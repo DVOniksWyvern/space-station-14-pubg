@@ -8,7 +8,6 @@
     SpaceCash: 200
   categories:
   - GoidaMelee
-  saleLimit: 1
 
 - type: listing
   id: CombatKnife
@@ -19,7 +18,6 @@
     SpaceCash: 250
   categories:
   - GoidaMelee
-  saleLimit: 1
 
 - type: listing
   id: Pickaxe
@@ -30,7 +28,6 @@
     SpaceCash: 300
   categories:
   - GoidaMelee
-  saleLimit: 1
 
 - type: listing
   id: BaseBallBat
@@ -41,7 +38,6 @@
     SpaceCash: 300
   categories:
   - GoidaMelee
-  saleLimit: 1
 
 - type: listing
   id: KukriKnife
@@ -52,7 +48,6 @@
     SpaceCash: 350
   categories:
   - GoidaMelee
-  saleLimit: 1
 
 - type: listing
   id: Sledgehammer
@@ -63,7 +58,6 @@
     SpaceCash: 400
   categories:
   - GoidaMelee
-  saleLimit: 1
 
 - type: listing
   id: Machete
@@ -74,7 +68,6 @@
     SpaceCash: 500
   categories:
   - GoidaMelee
-  saleLimit: 1
 
 # Tier 2
 - type: listing
@@ -91,7 +84,6 @@
     whitelist:
       tags:
       - GoidaT2Shop
-  saleLimit: 1
 
 - type: listing
   id: FireAxe
@@ -107,7 +99,6 @@
     whitelist:
       tags:
       - GoidaT2Shop
-  saleLimit: 1
 
 # Tier 3
 - type: listing
@@ -124,4 +115,3 @@
     whitelist:
       tags:
       - GoidaT3Shop
-  saleLimit: 1

@@ -1,6 +1,6 @@
 # SVD
 - type: entity
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   parent: BaseBullet
   id: BulletSniper7-62x54mm
   name: bullet (7.62x54mm)
@@ -16,7 +16,7 @@
 
 # Barrett
 - type: entity
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   parent: BaseBullet
   id: BulletSniper12-7x99mm
   name: bullet (12.7x99mm)
