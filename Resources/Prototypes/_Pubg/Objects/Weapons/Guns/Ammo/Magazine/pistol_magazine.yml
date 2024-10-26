@@ -1,0 +1,135 @@
+# PM
+- type: entity
+  id: MagazinePistol9mm
+  name: pistol magazine (9mm)
+  parent: BaseItem
+  components:
+    - type: Tag
+      tags:
+        - MagazinePistol9mm
+    - type: BallisticAmmoProvider
+      proto: CartridgePistol9mm
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgePistol9mm
+      capacity: 8
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/Magazine/Pistols/pm_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 6
+      zeroVisible: false
+    - type: Appearance
+
+# Grach
+- type: entity
+  id: MagazinePistolGrach9mm
+  name: pistol magazine (9mm)
+  parent: MagazinePistol9mm
+  components:
+    - type: Tag
+      tags:
+        - MagazinePistolGrach9mm
+    - type: BallisticAmmoProvider
+      proto: CartridgePistol9mm
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgePistol9mm
+      capacity: 16
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/Magazine/Pistols/grach_mag.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-1
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 6
+      zeroVisible: false
+    - type: Appearance
+
+# Luger
+- type: entity
+  id: MagazinePistolLuger7-65mm
+  name: pistol magazine (7.65mm)
+  parent: MagazinePistol9mm
+  components:
+    - type: Tag
+      tags:
+        - MagazinePistolLuger7-65mm
+    - type: BallisticAmmoProvider
+      proto: CartridgePistol7-65mm
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgePistol7-65mm
+      capacity: 8
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/Magazine/Pistols/luger_mag.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-1
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 6
+      zeroVisible: false
+    - type: Appearance
+
+# Desert Eagle
+- type: entity
+  id: MagazinePistolDesertEagle50bmg
+  name: pistol magazine (50bmg)
+  parent: MagazinePistol9mm
+  components:
+    - type: Tag
+      tags:
+        - MagazinePistolDesertEagle50bmg
+    - type: BallisticAmmoProvider
+      proto: CartridgePistol50bmg
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgePistol50bmg
+      capacity: 7
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/Magazine/Pistols/deserteagle_mag.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-1
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 6
+      zeroVisible: false
+    - type: Appearance

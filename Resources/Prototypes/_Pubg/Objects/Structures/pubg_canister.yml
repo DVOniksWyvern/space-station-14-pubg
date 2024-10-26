@@ -1,0 +1,178 @@
+# PUBG Fuel Canister
+- type: entity
+  id: PubgFuelCanister
+  parent: StorageTank
+  name: Fuel Canister
+  description: A fuel Barrel.
+  placement:
+    mode: PlaceFree
+  components:
+  - type: StaticPrice
+    price: 750
+  - type: Sprite
+    noRot: false
+    sprite: _Pubg/Structures/pubg_canister.rsi
+    layers:
+    - state: canisterbig
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.30
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
+  - type: Appearance
+  - type: ExaminableSolution
+    solution: tank
+  - type: ReagentTank
+    tankType: Fuel
+  - type: Item
+    size: Large
+    shape:
+    - 0, 0, 2, 3
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 200
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 120 # ~ 5 tile radius
+    intensitySlope: 50
+    canCreateVacuum: false
+
+- type: entity
+  id: PubgFuelCanister1
+  parent: PubgFuelCanister
+  name: Fuel Canister
+  description: A fuel Barrel.
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/pubg_canister.rsi
+    layers:
+    - state: canisterbig1
+
+- type: entity
+  id: PubgFuelCanisterSmall
+  parent: PubgFuelCanister
+  name: Fuel Canister
+  description: A fuel Barrel.
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0, 0, 1, 1
+  - type: Sprite
+    sprite: _Pubg/Structures/pubg_canister.rsi
+    layers:
+    - state: canistersmall
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 60
+    intensitySlope: 30
+    canCreateVacuum: false
+
+- type: entity
+  id: PubgFuelCanisterSmall1
+  parent: PubgFuelCanisterSmall
+  name: Fuel Canister
+  description: A fuel Barrel.
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/pubg_canister.rsi
+    layers:
+    - state: canistersmall1
+
+# PUBG Quantum Canister
+- type: entity
+  id: PubgQuantumCanister
+  parent: StorageTank
+  name: Quantum Canister
+  description: Quantum Canister.
+  placement:
+    mode: PlaceFree
+  components:
+  - type: StaticPrice
+    price: 750
+  - type: Sprite
+    sprite: _Pubg/Structures/pubg_quantumcanister.rsi
+    noRot: false
+    layers:
+    - state: base
+    - state: overlay
+#      shader: overlay
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.30
+        density: 20
+        hard: false
+        mask:
+        - FlyingMobMask
+        layer:
+        - FlyingMobLayer
+  - type: MovementIgnoreGravity
+    gravityState: true
+  - type: Appearance
+  - type: Item
+    size: Large
+    shape:
+    - 0, 0, 2, 3
+  - type: Explosive
+    explosionType: Cryo
+    maxIntensity: 20000
+    totalIntensity: 1500000
+    intensitySlope: 25000
+    canCreateVacuum: false
+  - type: OnUseTimerTrigger
+    delay: 5
+    beepSound:
+      path: /Audio/Effects/Grenades/Supermatter/smbeep.ogg
+      params:
+        volume: -2
+    beepInterval: 0.5
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:ExplodeBehavior
+  - type: TwoStageTrigger
+    triggerDelay: 3
+    components:
+    - type: AmbientSound
+      enabled: true
+      volume: 0
+      range: 20
+      sound:
+        path: /Audio/Effects/Grenades/Supermatter/supermatter_loop.ogg
+    - type: GravityWell
+      maxRange: 20
+      baseRadialAcceleration: 100
+      baseTangentialAcceleration: 8
+      gravPulsePeriod: 0.10
+    - type: SingularityDistortion
+      intensity: 50
+      falloffPower: 1
+    - type: PointLight
+      enabled: true
+      color: "#ffaa44"
+      energy: 15
+      radius: 20
+      softness: 1
+      offset: "0, 0"
+    - type: SoundOnTrigger
+      sound:
+        path: /Audio/Effects/Grenades/Supermatter/supermatter_loop.ogg
+        params:
+          volume: 5
+    - type: ExplodeOnTrigger
+

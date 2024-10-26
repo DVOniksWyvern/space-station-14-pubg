@@ -1,0 +1,53 @@
+- type: entity
+  id: PubgBulletGrenade
+  name: blast grenade
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Pubg/Ammunition/40mm.rsi
+    layers:
+    - state: blast_proj
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 150
+    intensitySlope: 10
+    maxIntensity: 10
+    canCreateVacuum: false
+
+- type: entity
+  id: PubgBulletSuperGrenade
+  name: super blast grenade
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Pubg/Ammunition/40mm.rsi
+    layers:
+    - state: superblast_proj
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 250
+    intensitySlope: 20
+    maxIntensity: 20
+    canCreateVacuum: false
+
+- type: entity
+  id: PubgBulletHighExplosiveGrenade
+  name: high explosive grenade
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Pubg/Ammunition/40mm.rsi
+    layers:
+    - state: highexplosive_proj
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 325
+    intensitySlope: 100
+    maxIntensity: 30
+    canCreateVacuum: false

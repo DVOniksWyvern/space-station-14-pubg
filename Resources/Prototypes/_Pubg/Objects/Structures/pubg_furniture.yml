@@ -1,0 +1,431 @@
+- type: entity
+  name: Furniture
+  id: PubgFurnitureBase
+  abstract: true
+  description: Fuck you
+  placement:
+    mode: PlaceFree
+  components:
+  - type: PlaceableSurface
+  - type: Climbable
+  - type: Clickable
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,6,3
+  - type: StorageFill
+    contents:
+    # Weapons
+    - id: WeaponPistolGrach
+      prob: 0.008
+    - id: WeaponPistolPM9
+      prob: 0.009
+    - id: WeaponPistolLuger
+      prob: 0.007
+    # Magazines
+    - id: MagazinePistol9mm
+      prob: 0.009
+    - id: MagazinePistolGrach9mm
+      prob: 0.008
+    - id: MagazinePistolLuger7-65mm
+      prob: 0.005
+    # Ammo
+    - id: BaseMagazineBoxPistols9mm
+      prob: 0.05
+    - id: BaseMagazineBoxPistols7-65mm
+      prob: 0.03
+    # Medicine
+    - id: PubgStandartMedicineBandage
+      prob: 0.1
+    # Suply things
+    - id: FlashlightLantern
+      prob: 0.05
+    - id: SpaceCash100
+      prob: 0.01
+    # Melee
+    - id: KitchenKnife
+      prob: 0.01
+    # Trash
+    - id: FoodPlateSmallTrash
+      prob: 0.1
+    - id: FoodBowlBigTrash
+      prob: 0.1
+    - id: FoodPacketBoritosTrash
+      prob: 0.1
+    - id: FoodPacketCheesieTrash
+      prob: 0.1
+    - id: FoodPacketChipsTrash
+      prob: 0.1
+    - id: FoodPacketChocolateTrash
+      prob: 0.1
+    - id: FoodPacketChowMeinTrash
+      prob: 0.1
+    - id: FoodPacketCnDsTrash
+      prob: 0.1
+    - id: FoodPacketDanDanTrash
+      prob: 0.1
+    - id: FoodPacketEnergyTrash
+      prob: 0.1
+    - id: FoodPacketPistachioTrash
+      prob: 0.1
+    - id: FoodPacketPopcornTrash
+      prob: 0.1
+    - id: FoodPacketRaisinsTrash
+      prob: 0.1
+    - id: FoodPacketSemkiTrash
+      prob: 0.1
+    - id: FoodPacketSusTrash
+      prob: 0.1
+    - id: FoodPacketSyndiTrash
+      prob: 0.1
+    - id: BrokenBottle
+      prob: 0.1
+  - type: Physics
+    bodyType: Dynamic
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path:
+          "/Audio/Weapons/smash.ogg"
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.30,-0.30,0.30,0.30"
+        density: 100
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+  - type: Sprite
+    sprite: Structures/Furniture/chairs.rsi
+    noRot: true
+  - type: Pullable
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+  - type: StaticPrice
+    price: 10
+
+# Kitchen Furniture
+- type: entity
+  name: Furniture kitchen
+  id: PubgFurnitureBaseKitchen
+  abstract: true
+  parent: PubgFurnitureBase
+  description: Kitchen!
+  components:
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    anchored: true
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,6,3
+  - type: Clickable
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: [ ]
+  - type: Rotatable
+  - type: Sprite
+    state: middle
+
+- type: entity
+  name: Furniture kitchen
+  id: PubgFurnitureKitchen
+  parent: PubgFurnitureBaseKitchen
+  description: Kitchen!
+  suffix: Base
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Furniture/pubg_kitchen.rsi
+    state: k_0
+    noRot: true
+
+- type: entity
+  name: Furniture kitchen
+  id: PubgFurnitureKitchenMiddle
+  parent: PubgFurnitureBaseKitchen
+  description: Kitchen!
+  suffix: Middle
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Furniture/pubg_kitchen.rsi
+    state: km_0
+    noRot: true
+
+- type: entity
+  name: Furniture kitchen
+  id: PubgFurnitureKitchenLeft
+  parent: PubgFurnitureBaseKitchen
+  description: Kitchen!
+  suffix: Left
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Furniture/pubg_kitchen.rsi
+    state: kl_0
+    noRot: true
+
+- type: entity
+  name: Furniture kitchen
+  id: PubgFurnitureKitchenRight
+  parent: PubgFurnitureBaseKitchen
+  description: Kitchen!
+  suffix: Right
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Furniture/pubg_kitchen.rsi
+    state: kr_0
+    noRot: true
+
+- type: entity
+  name: Furniture kitchen
+  id: PubgFurnitureKitchenHalfLeft
+  parent: PubgFurnitureBaseKitchen
+  description: Kitchen!
+  suffix: Half left
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Furniture/pubg_kitchen.rsi
+    state: khl_0
+    noRot: true
+
+- type: entity
+  name: Furniture kitchen
+  id: PubgFurnitureKitchenHalfRight
+  parent: PubgFurnitureBaseKitchen
+  description: Kitchen!
+  suffix: Half right
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Furniture/pubg_kitchen.rsi
+    state: khr_0
+    noRot: true
+
+# Furniture corner
+
+- type: entity
+  name: Furniture corner
+  id: PubgFurnitureCorner
+  parent: PubgFurnitureBase
+  description: Corner!
+  suffix: Corner
+  components:
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Pubg/Structures/Furniture/pubg_kitchen.rsi
+    state: cc_0
+    noRot: true
+
+# Dresser Furniture
+
+- type: entity
+  name: Furniture dresser
+  id: PubgFurnitureBaseDresser
+  abstract: true
+  parent: PubgFurnitureBase
+  description: Dresser!
+  components:
+  - type: Physics
+    bodyType: Static
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,6,3
+  - type: StorageFill
+    contents:
+    # Gloves
+    - id: ClothingHandsGlovesColorBrown
+      prob: 0.1
+    - id: ClothingHandsGlovesColorBlue
+      prob: 0.1
+    - id: ClothingHandsGlovesColorRed
+      prob: 0.1
+    - id: ClothingHandsGlovesColorPurple
+      prob: 0.1
+    - id: ClothingHandsGlovesColorGreen
+      prob: 0.1
+    - id: ClothingHandsGlovesColorOrange
+      prob: 0.1
+    - id: ClothingHandsGlovesColorGray
+      prob: 0.1
+    - id: ClothingHandsGlovesColorBlack
+      prob: 0.1
+    - id: ClothingHandsGlovesColorWhite
+      prob: 0.1
+    - id: ClothingHandsTacticalMaidGloves
+      prob: 0.1
+    # JumpSuit
+    - id: ClothingUniformJumpsuitColorOrange
+      prob: 0.1
+    - id: ClothingUniformJumpskirtColorOrange
+      prob: 0.1
+    - id: ClothingUniformJumpsuitOperative
+      prob: 0.1
+    - id: ClothingUniformJumpskirtTacticalMaid
+      prob: 0.1
+    - id: ClothingUniformJumpskirtOperative
+      prob: 0.1
+    - id: ClothingUniformJumpsuitSyndieFormal
+      prob: 0.1
+    - id: ClothingUniformJumpskirtSyndieFormalDress
+      prob: 0.1
+    - id: ClothingUniformJumpskirtLawyerBlack
+      prob: 0.1
+    - id: ClothingUniformJumpsuitLawyerBlack
+      prob: 0.1
+    # Outer
+    - id: ClothingOuterCoatDetective
+      prob: 0.1
+    - id: ClothingOuterCoatSyndieCap
+      prob: 0.1
+    - id: ClothingOuterWinterSyndie
+      prob: 0.1
+    - id: ClothingOuterWinterCoat
+      prob: 0.1
+    - id: ClothingOuterCoatTrench
+      prob: 0.1
+    - id: ClothingOuterCoatBomber
+      prob: 0.1
+    # Hats
+    - id: ClothingHeadBandBlack
+      prob: 0.1
+    - id: ClothingHeadBandRed
+      prob: 0.1
+    - id: ClothingHeadBandGreen
+      prob: 0.1
+    - id: ClothingHeadBandBlue
+      prob: 0.1
+    - id: ClothingHeadBandSkull
+      prob: 0.1
+    - id: ClothingHeadHatSantahat
+      prob: 0.1
+    - id: ClothingHeadHatTacticalMaidHeadband
+      prob: 0.1
+    - id: ClothingHeadHatOutlawHat
+      prob: 0.1
+    - id: ClothingHeadHatSyndie
+      prob: 0.1
+    - id: ClothingHeadHatSecsoft
+      prob: 0.1
+    - id: ClothingHeadHatFedoraBrown
+      prob: 0.1
+    - id: ClothingHeadHatCowboyBlack
+      prob: 0.1
+    - id: ClothingHeadHatSyndieMAA
+      prob: 0.1
+    # Boots
+    - id: ClothingShoesColorOrange
+      prob: 0.1
+    - id: ClothingShoesColorYellow
+      prob: 0.1
+    - id: ClothingShoesColorBlue
+      prob: 0.1
+    - id: ClothingShoesColorWhite
+      prob: 0.1
+    - id: ClothingShoesColorBrown
+      prob: 0.1
+    - id: ClothingShoesColorPurple
+      prob: 0.1
+    - id: ClothingShoesColorGreen
+      prob: 0.1
+    - id: ClothingShoesColorRed
+      prob: 0.1
+    - id: ClothingShoesBootsCombat
+      prob: 0.1
+    - id: ClothingShoesBootsJack
+      prob: 0.1
+    - id: ClothingShoesBootsCowboyWhite
+      prob: 0.1
+    - id: ClothingShoesBootsCowboyBlack
+      prob: 0.1
+  - type: Clickable
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: [ ]
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    state: middle
+
+- type: entity
+  name: Furniture dresser
+  id: PubgFurnitureDresser
+  parent: PubgFurnitureBaseDresser
+  description: Dresser!
+  suffix: Base
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Furniture/pubg_dresser.rsi
+    state: d_0
+    noRot: true
+
+- type: entity
+  name: Furniture dresser
+  id: PubgFurnitureDresserLeft
+  parent: PubgFurnitureBaseDresser
+  description: Dresser!
+  suffix: Half left
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Furniture/pubg_dresser.rsi
+    state: dl_0
+    noRot: true
+
+- type: entity
+  name: Furniture dresser
+  id: PubgFurnitureDresserRight
+  parent: PubgFurnitureBaseDresser
+  description: Dresser!
+  suffix: Half right
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Furniture/pubg_dresser.rsi
+    state: dr_0
+    noRot: true
+
+- type: entity
+  name: Furniture dresser
+  id: PubgFurnitureDresserMiddle
+  parent: PubgFurnitureBaseDresser
+  description: Dresser!
+  suffix: Half middle
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Furniture/pubg_dresser.rsi
+    state: dm_0
+    noRot: true

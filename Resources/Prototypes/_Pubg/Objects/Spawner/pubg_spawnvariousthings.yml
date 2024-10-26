@@ -1,0 +1,126 @@
+# 1-tier Trash
+- type: entity
+  name: Pubg Trash Spawner
+  id: PubgRandomSpawnerTrash
+  parent: MarkerBase
+  suffix: 1-tier 75%(Only Trash)
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Consumable/Food/snacks.rsi
+          state: pistachio-trash
+    - type: RandomSpawner
+      rarePrototypes:
+        - PuddleVomit
+        - FoodPlateSmallTrash
+        - FoodBowlBigTrash
+      rareChance: 0.03
+      prototypes:
+        # - TrashCandy
+        - FoodPacketBoritosTrash
+        - FoodPacketCheesieTrash
+        - FoodPacketChipsTrash
+        - FoodPacketChocolateTrash
+        - FoodPacketChowMeinTrash
+        - FoodPacketCnDsTrash
+        - FoodPacketDanDanTrash
+        - FoodPacketEnergyTrash
+        - FoodPacketPistachioTrash
+        #        - TrashPlasticBag
+        - FoodPacketPopcornTrash
+        - FoodPacketRaisinsTrash
+        - FoodPacketSemkiTrash
+        - FoodPacketSusTrash
+        - FoodPacketSyndiTrash
+        - BrokenBottle
+        - SpaceCash100
+      chance: 0.75
+      offset: 0.2
+  placement:
+    mode: AlignTileAny
+
+# 2-tier Ammo Melee Equip Materials
+- type: entity
+  name: Pubg Trash spawner 2
+  parent: MarkerBase
+  id: PubgRandomSpawnerCombatAndMaterials
+  suffix: 2-tier 80%(Weapons, equip, ammo, melee)
+  placement:
+    mode: AlignTileAny
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Materials/Sheets/metal.rsi
+          state: steel_2
+    - type: RandomSpawner
+      rarePrototypes:
+        - CombatKnife
+        - SurvivalKnife
+        - KukriKnife
+        - BaseBallBat
+        - Sledgehammer
+        - FlashlightSeclite
+        - WeaponSubRifleMerkel
+        - WeaponPistolPM9
+        - ClothingOuterArmorFagor1
+        - ClothingOuterArmorSegment2
+        - ClothingOuterArmorTorus
+      rareChance: 0.05
+      prototypes:
+        #
+        - SheetGlass10
+        - SheetSteel10
+        - PartRodMetal10
+        - MaterialWoodPlank10
+        - ShardGlass
+        - ShardGlassReinforced
+        - FlashlightLantern
+        - BaseMagazineBoxPistols9mm
+        - BaseMagazineBoxShotgun12x70
+        - SmokeGrenade
+        - SpaceCash500
+      chance: 0.80
+      offset: 0.2
+
+# 3-tier Ammo Melee Weapons Equip
+- type: entity
+  name: Pubg Trash spawner 3
+  parent: MarkerBase
+  id: PubgRandomSpawnerRareCombatAndMaterials
+  suffix: 3-tier 20%(Ammo, melee, weapons, equip)
+  placement:
+    mode: AlignTileAny
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Weapons/Guns/Pistols/N1984.rsi
+          state: icon
+    - type: RandomSpawner
+      rarePrototypes:
+        - WeaponShotgunMP153
+        - WeaponShotgunChazer
+        - WeaponSubRifleSKS
+        - WeaponSmgCPW
+        - FireAxe
+        - Claymore
+        - Stunbaton
+        - ClothingOuterArmorBagarii
+        - ClothingOuterArmorKorund
+        - ClothingOuterArmorPlitnik
+        - ClothingOuterArmorRusarmOlive
+        - SpaceCash10000
+      rareChance: 0.10
+      prototypes:
+        #
+        - BaseMagazineBoxRifle7-62x39mm
+        - BaseMagazineBoxSMG5-7x28mm
+        - BaseMagazineBoxPistols9mm
+        - BaseMagazineBoxShotgun12x70
+        - SmokeGrenade
+        - GrenadeFlashBang
+        - SpaceCash1000
+      chance: 0.20
+      offset: 0.2

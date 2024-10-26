@@ -1,0 +1,34 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Niki89",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "lightgold3"
+        },
+        {
+            "name": "lightgold3v2"
+        },
+        {
+            "name": "lightgold3v3"
+        },
+        {
+            "name": "lightsteel3"
+        },
+        {
+            "name": "fire-small",
+            "delays": [
+                [
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15
+                ]
+            ]
+        }
+    ]
+}

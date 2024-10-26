@@ -1,0 +1,200 @@
+# SKS
+- type: entity
+  name: WeaponSubRifleSKS
+  parent: BaseItem
+  id: WeaponSubRifleSKS
+  description: SKS Shooooooot!.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/SR/sks.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-0
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: Item
+      size: Huge
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -22
+      maxAngle: -28
+    - type: Gun
+      minAngle: 24
+      maxAngle: 30
+      angleIncrease: 4
+      angleDecay: 16
+      fireRate: 3
+      projectileSpeed: 35 # Standart 25f
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/SR/sks_gunshot.ogg
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: MagazineAmmoProvider
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineRifleSKS
+          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineRifleSKS
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeRifle7-62x39mm
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgeRifle7-62x39mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.055
+
+# Garand
+- type: entity
+  name: WeaponSubRifleGarand
+  parent: BaseItem
+  id: WeaponSubRifleGarand
+  description: Garand Shooooooot!.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/SR/garand.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+    - type: Item
+      size: Huge
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -23
+      maxAngle: -29
+    - type: Gun
+      minAngle: 24
+      maxAngle: 30
+      angleIncrease: 4
+      angleDecay: 16
+      fireRate: 3
+      projectileSpeed: 35
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/SR/garand_gunshot.ogg
+    - type: MagazineAmmoProvider
+      autoEject: true
+      soundAutoEject:
+        path: /Audio/_Pubg/Weapons/SR/garand_clip.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineRifleGarand
+          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineRifleGarand
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeRifle7-62x51mm
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgeRifle7-62x51mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.055
+
+# Merkel Sr1
+- type: entity
+  name: WeaponSubRifleMerkel
+  parent: BaseItem
+  id: WeaponSubRifleMerkel
+  description: Merkel Shooooooot!.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/SR/merkelsr1.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+    - type: Item
+      size: Huge
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -24
+      maxAngle: -30
+    - type: Gun
+      minAngle: 24
+      maxAngle: 30
+      angleIncrease: 4
+      angleDecay: 16
+      fireRate: 1
+      projectileSpeed: 45
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/SR/merkel_gunshot.ogg
+    - type: MagazineAmmoProvider
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineRifleMerkel
+          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineRifleMerkel
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeRifle30-06spr
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgeRifle30-06spr
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.055

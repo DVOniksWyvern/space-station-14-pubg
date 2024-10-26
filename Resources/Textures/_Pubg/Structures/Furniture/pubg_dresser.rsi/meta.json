@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Gersoon",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+      {
+          "name": "d_0",
+          "directions": 4
+      },
+      {
+          "name": "dl_0",
+          "directions": 4
+      },
+      {
+          "name": "dm_0",
+          "directions": 4
+      },
+      {
+          "name": "dr_0",
+          "directions": 4
+      }
+  ]
+}

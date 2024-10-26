@@ -1,0 +1,59 @@
+# PM, Grach, MAC10, Vityaz
+- type: entity
+  id: CartridgePistol9mm
+  name: cartridge (9mm)
+  parent: BaseCartridge
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - CartridgePistol9mm
+    - type: CartridgeAmmo
+      proto: BulletPistol9mm
+    - type: Sprite
+      sprite: _Pubg/Ammunition/9mm.rsi
+      layers:
+        - state: base
+          map: ["enum.AmmoVisualLayers.Base"]
+    - type: Appearance
+    - type: SpentAmmoVisuals
+
+# Luger
+- type: entity
+  id: CartridgePistol7-65mm
+  name: cartridge (7.65mmm)
+  parent: BaseCartridge
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - CartridgePistol7-65mm
+    - type: CartridgeAmmo
+      proto: BulletPistol7-65mm
+    - type: Sprite
+      sprite: _Pubg/Ammunition/7.65mm.rsi
+      layers:
+        - state: base
+          map: ["enum.AmmoVisualLayers.Base"]
+    - type: Appearance
+    - type: SpentAmmoVisuals
+
+# Desert Eagle
+- type: entity
+  id: CartridgePistol50bmg
+  name: cartridge (50bmg)
+  parent: BaseCartridge
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - CartridgePistol50bmg
+    - type: CartridgeAmmo
+      proto: BulletPistol50bmg
+    - type: Sprite
+      sprite: _Pubg/Ammunition/50bmg.rsi
+      layers:
+        - state: base
+          map: ["enum.AmmoVisualLayers.Base"]
+    - type: Appearance
+    - type: SpentAmmoVisuals

@@ -1,0 +1,59 @@
+- type: entity
+  parent: BaseGoidaShop
+  id: GoidaShopT2
+  name: GOIDA SHOPPER T2
+  description: UuuuuEEEEEEEEEEEEEE GOOOOOOOOOOIDAAAAAAAAAAAAA
+  components:
+  - type: Tag
+    tags:
+    - GoidaT2Shop
+
+- type: entity
+  parent: BaseGoidaShop
+  id: GoidaShopT3
+  name: GOIDA SHOPPER T3
+  description: UuuuuEEEEEEEEEEEEEE GOOOOOOOOOOIDAAAAAAAAAAAAA
+  components:
+  - type: Tag
+    tags:
+    - GoidaT2Shop
+    - GoidaT3Shop
+
+- type: entity
+  parent: BaseGoidaShop
+  id: GoidaShopT4
+  name: GOIDA SHOPPER T4
+  description: UuuuuEEEEEEEEEEEEEE GOOOOOOOOOOIDAAAAAAAAAAAAA
+  components:
+  - type: Tag
+    tags:
+    - GoidaT2Shop
+    - GoidaT3Shop
+    - GoidaT4Shop
+
+- type: entity
+  parent: BaseGoidaShop
+  id: BaseGoidaShopDebug
+  name: DEBUG GOIDA SHOP
+  description: UuuuuEEEEEEEEEEEEEE GOOOOOOOOOOIDAAAAAAAAAAAAA
+  suffix: DEBUG
+  components:
+  - type: Store
+    buySuccessSound: /Audio/_Pubg/Shop/supergoida.ogg
+    categories:
+    - GoidaWeaponry
+    - GoidaMedicine
+    - GoidaAmmo
+    - GoidaArmor
+    - GoidaHelmet
+    - GoidaMelee
+    - GoidaMisc
+    currencyWhitelist:
+    - SpaceCash
+    balance:
+      SpaceCash: 1337228
+  - type: Tag
+    tags:
+    - GoidaT2Shop
+    - GoidaT3Shop
+    - GoidaT4Shop

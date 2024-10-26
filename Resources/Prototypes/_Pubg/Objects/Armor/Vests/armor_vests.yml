@@ -1,0 +1,310 @@
+# Tier 1 - Fagor 1
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingOuterArmorFagor1
+  name: Fagor 1
+  description: 1st tier vest.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Vests/tier1/Fagor1/vest_fagor1.rsi
+    - type: Clothing
+      sprite: _Pubg/Armor/Vests/tier1/Fagor1/vest_fagor1.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.90
+          Slash: 0.70
+          Piercing: 0.85
+          Heat: 0.80
+    - type: ClothingSpeedModifier
+      walkModifier: 0.95
+      sprintModifier: 0.95
+    - type: HeldSpeedModifier
+    - type: ExplosionResistance
+      damageCoefficient: 0.90
+
+# Tier 1 - Segment 2
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingOuterArmorSegment2
+  name: Segment 2
+  description: 1st tier vest.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Vests/tier1/Segment2/vest_segment2.rsi
+    - type: Clothing
+      sprite: _Pubg/Armor/Vests/tier1/Segment2/vest_segment2.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.90
+          Slash: 0.80
+          Piercing: 0.80
+          Heat: 0.80
+    - type: ExplosionResistance
+      damageCoefficient: 0.90
+
+# Tier 1 - Torus
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingOuterArmorTorus
+  name: Torus
+  description: 1st tier vest.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Vests/tier1/Torus/vest_torus.rsi
+    - type: Clothing
+      sprite: _Pubg/Armor/Vests/tier1/Torus/vest_torus.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.80
+          Piercing: 0.75
+          Heat: 0.80
+    - type: ClothingSpeedModifier
+      walkModifier: 0.95
+      sprintModifier: 0.95
+    - type: HeldSpeedModifier
+    - type: ExplosionResistance
+      damageCoefficient: 0.90
+
+# Tier 2 - Bagarii
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingOuterArmorBagarii
+  name: Bagarii
+  description: 2nd tier vest.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Vests/tier2/Bagarii/vest_bagarii.rsi
+    - type: Clothing
+      sprite: _Pubg/Armor/Vests/tier2/Bagarii/vest_bagarii.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.75
+          Slash: 0.65
+          Piercing: 0.65
+          Heat: 0.80
+    - type: ClothingSpeedModifier
+      walkModifier: 0.85
+      sprintModifier: 0.85
+    - type: HeldSpeedModifier
+    - type: ExplosionResistance
+      damageCoefficient: 0.80
+
+# Tier 2 - Korund
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingOuterArmorKorund
+  name: Korund
+  description: 2nd tier vest.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Vests/tier2/Korund/vest_korund.rsi
+    - type: Clothing
+      sprite: _Pubg/Armor/Vests/tier2/Korund/vest_korund.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.80
+          Slash: 0.70
+          Piercing: 0.70
+          Heat: 0.80
+    - type: ClothingSpeedModifier
+      walkModifier: 0.90
+      sprintModifier: 0.90
+    - type: HeldSpeedModifier
+    - type: ExplosionResistance
+      damageCoefficient: 0.75
+
+# Tier 2 - Plitnik
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingOuterArmorPlitnik
+  name: Plitnik
+  description: 2nd tier vest with armor plate slot.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Vests/tier2/Plitnik/vest_plitnik.rsi
+    - type: Clothing
+      sprite: _Pubg/Armor/Vests/tier2/Plitnik/vest_plitnik.rsi
+    - type: Storage
+      grid:
+        - 0,0,1,1
+      maxItemSize: Huge
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.90
+          Slash: 0.80
+          Piercing: 0.75
+          Heat: 0.80
+    - type: ClothingSpeedModifier
+      walkModifier: 0.90
+      sprintModifier: 0.90
+    - type: HeldSpeedModifier
+    - type: ExplosionResistance
+      damageCoefficient: 0.80
+
+# Tier 2 - RusarmOlive
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingOuterArmorRusarmOlive
+  name: RusarmOlive
+  description: 2nd tier vest with armor plate slot.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Vests/tier2/RusarmOlive/vest_rusarmolive.rsi
+    - type: Clothing
+      sprite: _Pubg/Armor/Vests/tier2/RusarmOlive/vest_rusarmolive.rsi
+    - type: Storage
+      grid:
+        - 0,0,1,1
+      maxItemSize: Huge
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.75
+          Slash: 0.60
+          Piercing: 0.60
+          Heat: 0.80
+    - type: ClothingSpeedModifier
+      walkModifier: 0.80
+      sprintModifier: 0.80
+    - type: HeldSpeedModifier
+    - type: ExplosionResistance
+      damageCoefficient: 0.65
+
+# Tier 3 - BattleAssault
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingOuterArmorBattleAssault
+  name: BattleAssault
+  description: 3rd tier vest with armor plate slot.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Vests/tier3/BattleAssault/vest_battleassault.rsi
+    - type: Clothing
+      sprite: _Pubg/Armor/Vests/tier3/BattleAssault/vest_battleassault.rsi
+    - type: Storage
+      grid:
+        - 0,0,1,1
+      maxItemSize: Huge
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.70
+          Slash: 0.50
+          Piercing: 0.50
+          Heat: 0.80
+    - type: ClothingSpeedModifier
+      walkModifier: 0.70
+      sprintModifier: 0.70
+    - type: HeldSpeedModifier
+    - type: ExplosionResistance
+      damageCoefficient: 0.60
+
+# Tier 3 - RusarmAssault
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingOuterArmorRusarmAssault
+  name: RusarmAssault
+  description: 3rd tier vest with armor plate slot.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Vests/tier3/RusarmAssault/vest_rusarmassault.rsi
+    - type: Clothing
+      sprite: _Pubg/Armor/Vests/tier3/RusarmAssault/vest_rusarmassault.rsi
+    - type: Storage
+      grid:
+        - 0,0,1,1
+      maxItemSize: Huge
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.65
+          Slash: 0.55
+          Piercing: 0.55
+          Heat: 0.80
+    - type: ClothingSpeedModifier
+      walkModifier: 0.70
+      sprintModifier: 0.70
+    - type: HeldSpeedModifier
+    - type: ExplosionResistance
+      damageCoefficient: 0.60
+
+# Tier 3 - Saphire
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingOuterArmorSaphire
+  name: Saphire
+  description: 3rd tier vest.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Vests/tier3/Saphire/vest_saphire.rsi
+    - type: Clothing
+      sprite: _Pubg/Armor/Vests/tier3/Saphire/vest_saphire.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.60
+          Slash: 0.50
+          Piercing: 0.50
+          Heat: 0.80
+    - type: ClothingSpeedModifier
+      walkModifier: 0.75
+      sprintModifier: 0.75
+    - type: HeldSpeedModifier
+    - type: ExplosionResistance
+      damageCoefficient: 0.60
+
+# Tier 3 - Tactick
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingOuterArmorTactick
+  name: Tactick
+  description: 3rd tier vest with armor plate slot.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Armor/Vests/tier3/Tactick/vest_tactick.rsi
+    - type: Clothing
+      sprite: _Pubg/Armor/Vests/tier3/Tactick/vest_tactick.rsi
+    - type: Storage
+      grid:
+        - 0,0,1,1
+      maxItemSize: Huge
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.40
+          Slash: 0.40
+          Piercing: 0.40
+          Heat: 0.40
+    - type: ClothingSpeedModifier
+      walkModifier: 0.65
+      sprintModifier: 0.65
+    - type: HeldSpeedModifier
+    - type: ExplosionResistance
+      damageCoefficient: 0.20

@@ -1,0 +1,95 @@
+##Pubg Player - Не пьёт, не жрёт и не срёт естественно
+##Имеет на 100 здоровья больше положенного
+#- type: entity
+#  parent: BaseMobSpeciesOrganic
+#  id: PubgMobHuman
+#  name: Pubg Urist McHands
+#  abstract: true
+#  components:
+#    - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
+#      sprite: Mobs/Species/Human/parts.rsi
+#      state: full
+#    - type: MobThresholds
+#      thresholds:
+#        0: Alive
+#        200: Critical
+#        250: Dead
+#    - type: SlowOnDamage
+#      speedModifierThresholds:
+#        100: 0.9
+#        150: 0.7
+#    - type: MovementSpeedModifier
+#      baseWalkSpeed: 3.5
+#      baseSprintSpeed: 5
+#    - type: StandingState
+#      canLieDown: false
+#    - type: Butcherable
+#      butcheringType: Spike
+#      spawned:
+#        - id: FoodMeatHuman
+#          amount: 5
+#
+##Spawn Marker
+#- type: entity
+#  id: SpawnPubgPlayer
+#  parent: SpawnPointJobBase
+#  name: PubgPlayer
+#  components:
+#  - type: SpawnPoint
+#    job_id: PubgPlayer
+#  - type: Sprite
+#    layers:
+#    - state: green
+#    - state: cargo_tech
+#
+## Джобка
+#- type: job
+#  id: PubgPlayer
+#  name: PubgPlayer
+#  description: PubgPlayer
+#  playTimeTracker: PubgPlayer
+#  startingGear: PubgMobPlayerGear
+#  icon: "JobIconZookeeper"
+#  supervisors: job-supervisors-hop
+#  access:
+#  - Service
+#  - Maintenance
+#
+## Стартовое снаряжение
+#- type: startingGear
+#  id: PubgMobPlayerGear
+#  parent: PubgMobHuman
+#  equipment:
+#    ears: ClothingHeadsetService
+#    gloves: ClothingHandsGlovesFingerless
+#    shoes: ClothingShoesColorBlack
+#    jumpsuit: ClothingUniformJumpsuitOperative
+##    pocket1: ####
+##    pocket2: ####
+#
+#- type: entity
+#  parent: PubgMobHuman
+#  id: PubgMobPlayer
+#  name: Pubg Player
+#  components:
+#  - type: Loadout
+#    prototypes:
+#    - PubgMobPlayerGear
+#  - type: Body
+#    prototype: PubgHuman
+#    requiredLegs: 2
+##  - type: EnergyMover
+#
+## Само ебучее создание
+#- type: species
+#  id: DeathPlayer
+#  name: DeathPlayer
+#  roundStart: true
+#  prototype: PubgMobPlayer
+#  bodyTypes:
+#  - HumanNormal
+#  - HumanSlim
+#  sprites: MobHumanSprites
+#  markingLimits: MobHumanMarkingLimits
+#  dollPrototype: MobHumanDummy
+#  skinColoration: HumanToned

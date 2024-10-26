@@ -1,0 +1,112 @@
+# Tier 1
+- type: listing
+  id: MedicineBandage
+  name: Bandage
+  description: Bandage 5 in pocket
+  productEntity: PubgStandartMedicineBandage
+  cost:
+    SpaceCash: 100
+  categories:
+  - GoidaMedicine
+
+- type: listing
+  id: MedicineStandart
+  name: Standart
+  description: Standart pack 2 in pocket
+  productEntity: PubgStandartMedicine2
+  cost:
+    SpaceCash: 200
+  categories:
+  - GoidaMedicine
+
+# Tier 2
+- type: listing
+  id: MedicineBruteMedipen
+  name: Brute Medipen
+  description: Brute Medipen
+  productEntity: PubgBruteMedipen
+  cost:
+    SpaceCash: 750
+  categories:
+  - GoidaMedicine
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT2Shop
+
+- type: listing
+  id: MedicineSpeedMedipen
+  name: Speed Medipen
+  description: Speed Medipen
+  productEntity: PubgSpeedMedipen
+  cost:
+    SpaceCash: 900
+  categories:
+  - GoidaMedicine
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT2Shop
+
+- type: listing
+  id: PubgObdalbosMedipen
+  name: Obdalbos Medipen
+  description: Obdalbos Medipen
+  productEntity: PubgObdalbosMedipen
+  cost:
+    SpaceCash: 1228
+  categories:
+  - GoidaMedicine
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT2Shop
+
+- type: listing
+  id: PubgRegeneratorMedipen
+  name: Regenerator Medipen
+  description: Regenerator Medipen
+  productEntity: PubgRegeneratorMedipen
+  cost:
+    SpaceCash: 1250
+  categories:
+  - GoidaMedicine
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT2Shop
+
+# Tier 3
+- type: listing
+  id: MedicineSuperBruteMedipen
+  name: Super Brute Medipen
+  description: Super Brute Medipen
+  productEntity: PubgSuperBruteMedipen
+  cost:
+    SpaceCash: 1000
+  categories:
+  - GoidaMedicine
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT3Shop
+
+- type: listing
+  id: MedicineSuperSpeedMedipen
+  name: Super Speed Medipen
+  description: Super Speed Medipen
+  productEntity: PubgSuperSpeedMedipen
+  cost:
+    SpaceCash: 1500
+  categories:
+  - GoidaMedicine
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT3Shop

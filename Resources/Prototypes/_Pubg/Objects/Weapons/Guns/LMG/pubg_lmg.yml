@@ -1,0 +1,70 @@
+# RPD
+- type: entity
+  name: WeaponLmgRPD
+  parent: BaseItem
+  id: WeaponLmgRPD
+  description: RPD TU TU TUT TUTTUTUTU.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/LMG/rpd.rsi
+      layers:
+        - state: base
+          map: [ "enum.GunVisualLayers.Base" ]
+        - state: mag-0
+          map: [ "enum.GunVisualLayers.Mag" ]
+    - type: Item
+      size: Ginormous
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+    - type: AmmoCounter
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -35
+      maxAngle: -50
+    - type: Gun
+      minAngle: 40
+      maxAngle: 60
+      angleIncrease: 2
+      angleDecay: 16
+      fireRate: 12
+      projectileSpeed: 30 # Standart 25f
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/LMG/rpd_gunshot.ogg
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineLmgRPD
+          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineLmgRPD
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeRifle7-62x39mm
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgeRifle7-62x39mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.08

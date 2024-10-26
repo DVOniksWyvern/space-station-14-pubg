@@ -1,0 +1,56 @@
+# Low tier crate
+- type: entity
+  id: PubgRandomCrateLowSpawner
+  name: Low tier crate spawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Pubg/Structures/Crates/crate_wood.rsi
+      state: locked_1
+  - type: RandomSpawner
+    prototypes:
+    - PubgWardrobeTier1
+    - PubgWardrobeTier1_1
+    - PubgWardrobeTier1_2
+    - PubgWardrobeTier1_3
+    - PubgWardrobeTier1_4
+
+# Middle tier crate
+- type: entity
+  id: PubgRandomCrateMiddleSpawner
+  name: Middle tier crate spawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Pubg/Structures/Crates/crate_steel.rsi
+      state: locked_1
+  - type: RandomSpawner
+    prototypes:
+    - PubgWardrobeTier2
+    - PubgWardrobeTier2_1
+    - PubgWardrobeTier2_2
+    - PubgWardrobeTier2_3
+    - PubgWardrobeTier2_4
+    - PubgWardrobeTier2_5
+
+# High tier crate
+- type: entity
+  id: PubgRandomCrateHighSpawner
+  name: High tier crate spawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Pubg/Structures/Crates/crate_safe.rsi
+      state: locked_1
+  - type: RandomSpawner
+    prototypes:
+    - PubgWardrobeTier3
+    - PubgWardrobeTier3_1
+    - PubgWardrobeTier3_2
+    - PubgWardrobeTier3_3

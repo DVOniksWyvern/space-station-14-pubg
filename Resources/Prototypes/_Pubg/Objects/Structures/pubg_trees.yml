@@ -1,0 +1,45 @@
+# Pubg Snow tree
+- type: entity
+  parent: BaseTreeLarge
+  id: PubgSnowBigTree
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Trees/pubg_snowtree.rsi
+    offset: 0,1.0
+    state: t_1
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.20,-0.20,0.20,0.20"
+        density: 2000
+        layer:
+        - WallLayer
+
+- type: entity
+  parent: PubgSnowBigTree
+  id: PubgSnowBigTree2
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Trees/pubg_snowtree.rsi
+    offset: -0.1,1.0
+    state: t_2
+
+- type: entity
+  parent: PubgSnowBigTree
+  id: PubgSnowBigTree3
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Trees/pubg_snowtree.rsi
+    offset: -0.05,1.0
+    state: t_3
+
+- type: entity
+  parent: PubgSnowBigTree
+  id: PubgSnowBigTree4
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/Trees/pubg_snowtree.rsi
+    offset: 0.1,1.1
+    state: t_4

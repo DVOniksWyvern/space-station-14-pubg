@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Niki89",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "radbarrel"
+        },
+        {
+            "name": "radbarrel2"
+        },
+        {
+            "name": "radbarrelactive"
+        },
+        {
+            "name": "radbarrelempty"
+        },
+        {
+            "name": "radbarrelmini"
+        }
+    ]
+}

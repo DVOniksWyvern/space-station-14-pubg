@@ -1,0 +1,279 @@
+# PM9
+- type: entity
+  name: PistolPM9
+  parent: BaseItem
+  id: WeaponPistolPM9
+  description: This is PM9.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Pistols/pm.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,1,0
+        - 0,1,0,1
+    - type: Tag
+      tags:
+        - Sidearm
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Belt
+    - type: Gun
+      fireRate: 3
+      projectileSpeed: 25
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Pistols/pm_gunshot.ogg
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+      soundRack:
+        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazinePistol9mm
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazinePistol9mm
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgePistol9mm
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgePistol9mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.15
+
+# Grach
+- type: entity
+  name: PistolGrach
+  parent: BaseItem
+  id: WeaponPistolGrach
+  description: This is Grach.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Pistols/grach.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,1,0
+        - 0,1,0,1
+    - type: Tag
+      tags:
+        - Sidearm
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Belt
+    - type: Gun
+      fireRate: 5
+      projectileSpeed: 25
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Pistols/grach_gunshot.ogg
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+      soundRack:
+        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazinePistolGrach9mm
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazinePistolGrach9mm
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgePistol9mm
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgePistol9mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.15
+
+# Luger
+- type: entity
+  name: PistolLuger
+  parent: BaseItem
+  id: WeaponPistolLuger
+  description: This is Luger.
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Pistols/luger.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,1,0
+        - 0,1,0,1
+    - type: Tag
+      tags:
+        - Sidearm
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Belt
+    - type: Gun
+      fireRate: 4
+      projectileSpeed: 30 # Standart 25f
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Pistols/luger_gunshot.ogg
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+      soundRack:
+        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazinePistolLuger7-65mm
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazinePistolLuger7-65mm
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgePistol7-65mm
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgePistol7-65mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.15
+
+# Desert Eagle
+- type: entity
+  name: Desert Eagle
+  parent: BaseItem
+  id: WeaponPistolDesertEagle
+  description: This is Desert Eagle, gold!
+  components:
+    - type: Sprite
+      sprite: _Pubg/Weapons/Pistols/deserteagle.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,1,0
+        - 0,1,0,1
+    - type: Tag
+      tags:
+        - Sidearm
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Belt
+    - type: Gun
+      fireRate: 3
+      projectileSpeed: 30
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Pubg/Weapons/Pistols/deserteagle_gunshot.ogg
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+      soundRack:
+        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazinePistolDesertEagle50bmg
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazinePistolDesertEagle50bmg
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgePistol50bmg
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgePistol50bmg
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: Appearance
+    - type: StaticPrice
+      price: 500
+    - type: Telescope
+      divisor: 0.15

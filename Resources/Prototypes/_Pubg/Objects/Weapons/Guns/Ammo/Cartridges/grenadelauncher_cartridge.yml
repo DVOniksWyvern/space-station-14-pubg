@@ -1,0 +1,56 @@
+- type: entity
+  id: PubgGrenadeCartridge
+  name: blast grenade
+  parent: BaseGrenade
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeGL-40mm
+  - type: CartridgeAmmo
+    proto: PubgBulletGrenade
+  - type: Sprite
+    sprite: _Pubg/Ammunition/40mm.rsi
+    layers:
+    - state: blast
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: PubgSuperGrenadeCartridge
+  name: super blast grenade
+  parent: BaseGrenade
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeGL-40mm
+  - type: CartridgeAmmo
+    proto: PubgBulletSuperGrenade
+  - type: Sprite
+    sprite: _Pubg/Ammunition/40mm.rsi
+    layers:
+    - state: superblast
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: PubgHighExplosiveCartridge
+  name: high explosive grenade
+  parent: BaseGrenade
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeGL-40mm
+  - type: CartridgeAmmo
+    proto: PubgBulletHighExplosiveGrenade
+  - type: Sprite
+    sprite: _Pubg/Ammunition/40mm.rsi
+    layers:
+    - state: highexplosive
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals

@@ -1,0 +1,51 @@
+# KS23
+- type: entity
+  id: PelletShotgunSlug23x75
+  name: pellet (23x75)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+      state: slug
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 10
+          Blunt: 5
+
+- type: entity
+  id: PelletShotgunSlug23x75-Spread
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgunSlug23x75
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgunSlug23x75
+    count: 5
+    spread: 15
+
+# MP153, Chazer
+- type: entity
+  id: PelletShotgunSlug12x70
+  name: pellet (12x70)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+      state: slug
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 7.5
+          Blunt: 2.5
+
+- type: entity
+  id: PelletShotgunSlug12x70-Spread
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgunSlug12x70
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgunSlug12x70
+    count: 8
+    spread: 25

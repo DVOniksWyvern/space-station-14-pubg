@@ -1,0 +1,64 @@
+- type: entity
+  parent: BaseUplinkRadio
+  id: BaseGoidaShop
+  name: GOIDA SHOPPER
+  description: UuuuuEEEEEEEEEEEEEE GOOOOOOOOOOIDAAAAAAAAAAAAA
+  components:
+  - type: Store
+    buySuccessSound: /Audio/_Pubg/Shop/supergoida.ogg
+    categories:
+    - GoidaWeaponry
+    - GoidaMedicine
+    - GoidaAmmo
+    - GoidaArmor
+    - GoidaHelmet
+    - GoidaMelee
+    - GoidaMisc
+    currencyWhitelist:
+    - SpaceCash
+    balance:
+      SpaceCash: 0
+
+- type: Tag
+  id: GoidaT2Shop
+
+- type: Tag
+  id: GoidaT3Shop
+
+- type: Tag
+  id: GoidaT4Shop
+
+- type: storeCategory
+  id: GoidaWeaponry
+  name: WEAPONS
+  priority: 1
+
+- type: storeCategory
+  id: GoidaMedicine
+  name: MEDICINE
+  priority: 2
+
+- type: storeCategory
+  id: GoidaAmmo
+  name: AMMO
+  priority: 3
+
+- type: storeCategory
+  id: GoidaArmor
+  name: ARMOR
+  priority: 4
+
+- type: storeCategory
+  id: GoidaHelmet
+  name: HELMETS
+  priority: 5
+
+- type: storeCategory
+  id: GoidaMelee
+  name: MELEE
+  priority: 6
+
+- type: storeCategory
+  id: GoidaMisc
+  name: MISC
+  priority: 7

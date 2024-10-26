@@ -1,0 +1,31 @@
+# SVD
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletSniper7-62x54mm
+  name: bullet (7.62x54mm)
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 20
+          Blunt: 5
+          Structural: 20
+    - type: StaminaDamageOnCollide
+      damage: 20
+
+# Barrett
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletSniper12-7x99mm
+  name: bullet (12.7x99mm)
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 30
+          Blunt: 10
+          Structural: 50
+    - type: StaminaDamageOnCollide
+      damage: 40

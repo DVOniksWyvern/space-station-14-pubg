@@ -1,0 +1,117 @@
+# Tier 1
+- type: listing
+  id: ButchCleaver
+  name: ButchCleaver
+  description: ButchCleaver
+  productEntity: ButchCleaver
+  cost:
+    SpaceCash: 200
+  categories:
+  - GoidaMelee
+
+- type: listing
+  id: CombatKnife
+  name: CombatKnife
+  description: CombatKnife
+  productEntity: CombatKnife
+  cost:
+    SpaceCash: 250
+  categories:
+  - GoidaMelee
+
+- type: listing
+  id: Pickaxe
+  name: Pickaxe
+  description: Pickaxe
+  productEntity: Pickaxe
+  cost:
+    SpaceCash: 300
+  categories:
+  - GoidaMelee
+
+- type: listing
+  id: BaseBallBat
+  name: BaseBallBat
+  description: BaseBallBat
+  productEntity: BaseBallBat
+  cost:
+    SpaceCash: 300
+  categories:
+  - GoidaMelee
+
+- type: listing
+  id: KukriKnife
+  name: KukriKnife
+  description: KukriKnife
+  productEntity: KukriKnife
+  cost:
+    SpaceCash: 350
+  categories:
+  - GoidaMelee
+
+- type: listing
+  id: Sledgehammer
+  name: Sledgehammer
+  description: Sledgehammer
+  productEntity: Sledgehammer
+  cost:
+    SpaceCash: 400
+  categories:
+  - GoidaMelee
+
+- type: listing
+  id: Machete
+  name: Machete
+  description: Machete
+  productEntity: Machete
+  cost:
+    SpaceCash: 500
+  categories:
+  - GoidaMelee
+
+# Tier 2
+- type: listing
+  id: Claymore
+  name: Claymore
+  description: Claymore
+  productEntity: Claymore
+  cost:
+    SpaceCash: 800
+  categories:
+  - GoidaMelee
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT2Shop
+
+- type: listing
+  id: FireAxe
+  name: FireAxe
+  description: FireAxe
+  productEntity: FireAxe
+  cost:
+    SpaceCash: 1000
+  categories:
+  - GoidaMelee
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT2Shop
+
+# Tier 3
+- type: listing
+  id: FireAxeFlaming
+  name: FireAxeFlaming
+  description: FireAxeFlaming
+  productEntity: FireAxeFlaming
+  cost:
+    SpaceCash: 1500
+  categories:
+  - GoidaMelee
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT3Shop

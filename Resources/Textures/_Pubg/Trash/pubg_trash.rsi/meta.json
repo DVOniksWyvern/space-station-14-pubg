@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Warete and omsoyk",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+      {
+          "name": "akb"
+      },
+      {
+          "name": "board"
+      },
+      {
+          "name": "dvd"
+      },
+      {
+          "name": "filtr"
+      },
+      {
+          "name": "motherboard"
+      },
+      {
+          "name": "snus"
+      },
+      {
+          "name": "wd40small"
+      },
+      {
+          "name": "newspaper"
+      },
+      {
+          "name": "newspapers"
+      },
+      {
+          "name": "package"
+      }
+  ]
+}

@@ -1,0 +1,132 @@
+- type: listing
+  id: AmmoBox9mm
+  name: Box 9mm
+  description: Box 9mm ammo
+  productEntity: BaseMagazineBoxPistols9mm
+  cost:
+    SpaceCash: 50
+  categories:
+  - GoidaAmmo
+
+- type: listing
+  id: AmmoBox12x70
+  name: Box 12x70
+  description: Box 12x70 ammo
+  productEntity: BaseMagazineBoxShotgun12x70
+  cost:
+    SpaceCash: 150
+  categories:
+  - GoidaAmmo
+
+- type: listing
+  id: AmmoBox7-65mm
+  name: Box 7-65mm
+  description: Box 7-65mm ammo
+  productEntity: BaseMagazineBoxPistols7-65mm
+  cost:
+    SpaceCash: 100
+  categories:
+  - GoidaAmmo
+
+- type: listing
+  id: AmmoBox23x75
+  name: Box 23x75
+  description: Box 23x75 ammo
+  productEntity: BaseMagazineBoxShotgun23x75
+  cost:
+    SpaceCash: 300
+  categories:
+  - GoidaAmmo
+
+- type: listing
+  id: AmmoBox7-62x39mm
+  name: Box 7-62x39mm
+  description: Box 7-62x39mm ammo
+  productEntity: BaseMagazineBoxRifle7-62x39mm
+  cost:
+    SpaceCash: 400
+  categories:
+  - GoidaAmmo
+
+- type: listing
+  id: AmmoBox5-56x45mm
+  name: Box 5-56x45mm
+  description: Box 5-56x45mm ammo
+  productEntity: BaseMagazineBoxRifle5-56x45mm
+  cost:
+    SpaceCash: 500
+  categories:
+  - GoidaAmmo
+
+- type: listing
+  id: AmmoBox9x39mm
+  name: Box 9x39mm
+  description: Box 9x39mm ammo
+  productEntity: BaseMagazineBoxRifle9x39mm
+  cost:
+    SpaceCash: 500
+  categories:
+  - GoidaAmmo
+
+- type: listing
+  id: AmmoBox5-7x28mm
+  name: Box 5-7x28mm
+  description: Box 5-7x28mm ammo
+  productEntity: BaseMagazineBoxSMG5-7x28mm
+  cost:
+    SpaceCash: 400
+  categories:
+  - GoidaAmmo
+
+- type: listing
+  id: AmmoBoxMagnum357
+  name: Box Magnum357
+  description: Box Magnum357 ammo
+  productEntity: BaseMagazineBoxRevolverMagnum357
+  cost:
+    SpaceCash: 800
+  categories:
+  - GoidaAmmo
+
+- type: listing
+  id: AmmoBoxMagnum500
+  name: Box Magnum500
+  description: Box Magnum500 ammo
+  productEntity: BaseMagazineBoxRevolverMagnum500
+  cost:
+    SpaceCash: 1000
+  categories:
+  - GoidaAmmo
+
+- type: listing
+  id: AmmoBox7-62x51mm
+  name: Box 7-62x51mm
+  description: Box 7-62x51mm ammo
+  productEntity: BaseMagazineBoxRifle7-62x51mm
+  cost:
+    SpaceCash: 500
+  categories:
+  - GoidaAmmo
+
+- type: listing
+  id: AmmoBox7-62x54mm
+  name: Box 7-62x54mm
+  description: Box 7-62x54mm ammo
+  productEntity: BaseMagazineBoxSniperRifle7-62x54mm
+  cost:
+    SpaceCash: 1000
+  categories:
+  - GoidaAmmo
+
+- type: listing
+  id: AmmoBox12-7x99mm
+  name: Box 12-7x99mm
+  description: Box 12-7x99mm ammo
+  productEntity: BaseMagazineBoxSniperRifle12-7x99mm
+  cost:
+    SpaceCash: 1000
+  categories:
+  - GoidaAmmo
+
+
+

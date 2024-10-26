@@ -1,0 +1,144 @@
+# Barricades Random Barricade
+- type: entity
+  parent: MarkerBase
+  id: PubgRandomSpawnerBarricade
+  suffix: Wood Barricade Random 50%
+  placement:
+    mode: AlignTileAny
+  components:
+    - type: Sprite
+      sprite: _Pubg/SpawnMarkers/environment.rsi
+      layers:
+        - state: barricade_full
+    - type: RandomSpawner
+      prototypes:
+        #
+        - Barricade
+      chance: 0.50
+
+# Barricades Random Barricade-doors
+- type: entity
+  parent: MarkerBase
+  id: PubgRandomSpawnerBarricadeDoors
+  suffix: Wood Barricade Random 20%
+  placement:
+    mode: AlignTileAny
+  components:
+    - type: Sprite
+      sprite: _Pubg/SpawnMarkers/environment.rsi
+      layers:
+        - state: barricade
+    - type: RandomSpawner
+      prototypes:
+        #
+        - BarricadeBlock
+      chance: 0.20
+
+# Girder Random
+- type: entity
+  parent: MarkerBase
+  id: PubgRandomSpawnerGirder
+  suffix: Girder Random 50%
+  placement:
+    mode: AlignTileAny
+  components:
+    - type: Sprite
+      sprite: _Pubg/SpawnMarkers/environment.rsi
+      layers:
+        - state: wall_girder
+    - type: RandomSpawner
+      prototypes:
+        #
+        - Girder
+      chance: 0.50
+
+# Grille Random
+- type: entity
+  parent: MarkerBase
+  id: PubgRandomSpawnerGrill
+  suffix: Grill Random 95% - 5% Broken
+  placement:
+    mode: AlignTileAny
+  components:
+    - type: Sprite
+      sprite: _Pubg/SpawnMarkers/environment.rsi
+      layers:
+        - state: grille
+    - type: RandomSpawner
+      rarePrototypes:
+        - GrilleBroken
+      rareChance: 0.05
+      prototypes:
+        #
+        - Grille
+      chance: 0.99
+
+# Flora: Trees snow
+- type: entity
+  id: PubgRandomSpawnerTreeSnow
+  name: Random snow tree (Derevce)
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: _Pubg/SpawnMarkers/flora.rsi
+          state: treestump
+    - type: RandomSpawner
+      rarePrototypes:
+        - FloraTreeStumpConifer
+        - FloraTreeStump
+      rareChance: 0.01
+      prototypes:
+        - FloraTreeSnow01
+        - FloraTreeSnow02
+        - FloraTreeSnow03
+        - FloraTreeSnow04
+        - FloraTreeSnow05
+        - FloraTreeSnow06
+        - PubgSnowBigTree
+        - PubgSnowBigTree2
+        - PubgSnowBigTree3
+        - PubgSnowBigTree4
+      offset: 0.2
+      chance: 0.10
+# Flora Tree - ёлька
+- type: entity
+  id: PubgRandomSpawnerTreeSnowConifer
+  name: Random snow tree (Yolka)
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: _Pubg/SpawnMarkers/flora.rsi
+          state: treestumpconifer
+    - type: RandomSpawner
+      rarePrototypes:
+        - FloraTreeStumpConifer
+        - FloraTreeStump
+      rareChance: 0.01
+      prototypes:
+        - FloraTreeConifer03
+        - FloraTreeConifer02
+        - FloraTreeConifer01
+      offset: 0.2
+      chance: 0.10
+
+# Rock Solid
+- type: entity
+  id: PubgRandomSpawnerRockSolid01
+  name: Random rock solid
+  parent: MarkerBase
+  suffix: 100%
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Objects/Decoration/Flora/flora_rockssolid.rsi
+      state: rocksolid01
+  - type: RandomSpawner
+    prototypes:
+    - FloraRockSolid01
+    - FloraRockSolid02
+    - FloraRockSolid03

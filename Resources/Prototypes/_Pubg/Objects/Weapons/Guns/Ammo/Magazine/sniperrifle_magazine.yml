@@ -1,0 +1,94 @@
+# SVD
+- type: entity
+  id: MagazineSniperRifleSVD
+  name: "magazine SVD (7.62x54mm)"
+  parent: BaseItem
+  components:
+    - type: Tag
+      tags:
+        - MagazineSniperRifleSVD
+    - type: Item
+      size: Small
+    - type: BallisticAmmoProvider
+      proto: CartridgeSniper7-62x54mm
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeSniper7-62x54mm
+      capacity: 10
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/Magazine/Sniper/svd_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance
+
+# SV-98
+- type: entity
+  id: MagazineSniperRifleSV-98
+  name: "magazine SV-98 (7.62x54mm)"
+  parent: BaseItem
+  components:
+    - type: Tag
+      tags:
+        - MagazineSniperRifleSV-98
+    - type: Item
+      size: Small
+    - type: BallisticAmmoProvider
+      proto: CartridgeSniper7-62x54mm
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeSniper7-62x54mm
+      capacity: 10
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/Magazine/Sniper/sv98_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+
+# Barrett
+- type: entity
+  id: MagazineSniperRifleBarrett
+  name: "magazine Barrett (12.7x99mm)"
+  parent: BaseItem
+  components:
+    - type: Tag
+      tags:
+        - MagazineSniperRifleBarrett
+    - type: Item
+      size: Small
+    - type: BallisticAmmoProvider
+      proto: CartridgeSniper12-7x99mm
+      mayTransfer: true
+      whitelist:
+        tags:
+          - CartridgeSniper12-7x99mm
+      capacity: 10
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: _Pubg/Magazine/Sniper/barrett_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance

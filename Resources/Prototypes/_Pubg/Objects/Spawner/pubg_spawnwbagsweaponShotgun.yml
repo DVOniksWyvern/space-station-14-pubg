@@ -1,0 +1,58 @@
+################################## ShotGuns
+# MP-153 Baikal mp153
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsMP153
+  suffix: MP153
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+          # Weapon
+        - id: WeaponShotgunMP153
+          orGroup: Weapon
+          # Magazine ? No magazines for Shotgun
+
+          # Ammo
+        - id: BaseMagazineBoxShotgun12x70
+          prob: 0.50
+          orGroup: AmmoBox
+        - id: null
+          prob: 0.50
+          orGroup: AmmoBox
+        - id: BaseMagazineBoxShotgun12x70
+          prob: 0.30
+          orGroup: AmmoBox2
+        - id: null
+          prob: 0.70
+          orGroup: AmmoBox2
+
+# MP-153 Baikal mp153
+- type: entity
+  parent: ClothingBackpackDuffelPUBGWeapons
+  id: ClothingBackpackDuffelPUBGWeaponsChazer
+  suffix: Chazer
+  name: There you got something
+  description: A large duffel bag for holding various weapons and magazines.
+  components:
+    - type: StorageFill
+      contents:
+        # Weapon
+        - id: WeaponShotgunChazer
+          orGroup: Weapon
+          # Magazine ? No magazines for Shotgun
+
+          # Ammo
+        - id: BaseMagazineBoxShotgun12x70
+          prob: 0.70
+          orGroup: AmmoBox
+        - id: null
+          prob: 0.30
+          orGroup: AmmoBox
+        - id: BaseMagazineBoxShotgun12x70
+          prob: 0.15
+          orGroup: AmmoBox2
+        - id: null
+          prob: 0.85
+          orGroup: AmmoBox2

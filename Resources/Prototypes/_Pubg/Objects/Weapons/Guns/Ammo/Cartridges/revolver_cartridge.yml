@@ -1,0 +1,39 @@
+# Smith
+- type: entity
+  id: CartridgeRevolverMagnum500
+  name: cartridge (Mag500mm)
+  parent: BaseCartridge
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - CartridgeRevolverMagnum500
+    - type: CartridgeAmmo
+      proto: BulletRevolverMag500
+    - type: Sprite
+      sprite: _Pubg/Ammunition/500mm.rsi
+      layers:
+        - state: base
+          map: ["enum.AmmoVisualLayers.Base"]
+    - type: Appearance
+    - type: SpentAmmoVisuals
+
+# Rex
+- type: entity
+  id: CartridgeRevolverMagnum357
+  name: cartridge (Mag357mm)
+  parent: BaseCartridge
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - CartridgeRevolverMagnum357
+    - type: CartridgeAmmo
+      proto: BulletRevolverMag357
+    - type: Sprite
+      sprite: _Pubg/Ammunition/357mm.rsi
+      layers:
+        - state: base
+          map: ["enum.AmmoVisualLayers.Base"]
+    - type: Appearance
+    - type: SpentAmmoVisuals

@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Warete",
+    "states": [
+        {
+            "name": "blast"
+        },
+        {
+            "name": "blast_proj"
+        },
+        {
+            "name": "superblast"
+        },
+        {
+            "name": "superblast_proj"
+        },
+        {
+            "name": "highexplosive"
+        },
+        {
+            "name": "highexplosive_proj"
+        },
+        {
+            "name": "base"
+        },
+        {
+            "name": "base-spent"
+        }
+    ]
+}

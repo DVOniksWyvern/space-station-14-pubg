@@ -1,0 +1,37 @@
+# KS23
+- type: entity
+  id: ShellShotgun23x75
+  name: shell (23x75)
+  parent: BaseShellShotgun
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - ShellShotgun23x75
+    - type: Sprite
+      sprite: _Pubg/Ammunition/23x75.rsi
+      layers:
+        - state: base
+          map: [ "enum.AmmoVisualLayers.Base" ]
+    - type: CartridgeAmmo
+      proto: PelletShotgunSlug23x75-Spread
+    - type: SpentAmmoVisuals
+
+# MP153, Chazer
+- type: entity
+  id: ShellShotgun12x70
+  name: shell (12x70)
+  parent: BaseShellShotgun
+  components:
+    - type: Tag
+      tags:
+        - Cartridge
+        - ShellShotgun12x70
+    - type: Sprite
+      sprite: _Pubg/Ammunition/12x70.rsi
+      layers:
+        - state: base
+          map: [ "enum.AmmoVisualLayers.Base" ]
+    - type: CartridgeAmmo
+      proto: PelletShotgunSlug12x70-Spread
+    - type: SpentAmmoVisuals

@@ -1,0 +1,138 @@
+# Tier 1
+- type: listing
+  id: HelmetGuard1
+  name: Guard1
+  description: Guard1
+  productEntity: PubgClothingMaskHelmetGuard1
+  cost:
+    SpaceCash: 250
+  categories:
+  - GoidaHelmet
+
+- type: listing
+  id: HelmetZsh1
+  name: Zsh1
+  description: Zsh1
+  productEntity: PubgClothingMaskHelmetZsh1
+  cost:
+    SpaceCash: 300
+  categories:
+  - GoidaHelmet
+
+- type: listing
+  id: HelmetCappa1
+  name: Cappa1
+  description: Cappa1
+  productEntity: PubgClothingMaskHelmetCappa1
+  cost:
+    SpaceCash: 400
+  categories:
+  - GoidaHelmet
+
+# Tier 2
+- type: listing
+  id: HelmetZhmb2
+  name: Zhmb2
+  description: Zhmb2
+  productEntity: PubgClothingMaskHelmetZhmb2
+  cost:
+    SpaceCash: 600
+  categories:
+  - GoidaHelmet
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT2Shop
+
+- type: listing
+  id: HelmetAlpha2
+  name: Alpha2
+  description: Alpha2
+  productEntity: PubgClothingMaskHelmetAlpha2
+  cost:
+    SpaceCash: 600
+  categories:
+  - GoidaHelmet
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT2Shop
+
+- type: listing
+  id: HelmetHelmetTor2
+  name: Tor2
+  description: Tor2
+  productEntity: PubgClothingMaskHelmetTor2
+  cost:
+    SpaceCash: 800
+  categories:
+  - GoidaHelmet
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT2Shop
+
+# Tier 3
+- type: listing
+  id: HelmetBerkut3
+  name: Berkut3
+  description: Berkut3
+  productEntity: PubgClothingMaskHelmetBerkut3
+  cost:
+    SpaceCash: 850
+  categories:
+  - GoidaHelmet
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT3Shop
+
+- type: listing
+  id: HelmetSparta3
+  name: Sparta3
+  description: Sparta3
+  productEntity: PubgClothingMaskHelmetSparta3
+  cost:
+    SpaceCash: 1000
+  categories:
+  - GoidaHelmet
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT3Shop
+
+- type: listing
+  id: HelmetSphere3
+  name: Sphere3
+  description: Sphere3
+  productEntity: PubgClothingMaskHelmetSphere3
+  cost:
+    SpaceCash: 1200
+  categories:
+  - GoidaHelmet
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT3Shop
+
+# Tier 4
+- type: listing
+  id: HelmetAltyn
+  name: Altyn
+  description: Altyn
+  productEntity: PubgClothingMaskHelmetAltyn
+  cost:
+    SpaceCash: 2000
+  categories:
+  - GoidaHelmet
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - GoidaT4Shop

@@ -1,0 +1,67 @@
+# PUBG StreetLights Base
+- type: entity
+  id: PubgStreetLights
+  description: Lights.
+  abstract: true
+  components:
+  - type: PointLight
+    color: "#ffd1a3ff"
+    radius: 5
+    softness: 1
+  - type: SpriteFade
+  - type: Clickable
+  - type: Sprite
+    noRot: true
+    sprite: _Pubg/Structures/StreetLights/pubg_lightstreet.rsi
+    drawdepth: Overdoors
+    offset: 0,0.9
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.20,-0.20,0.15,0.15"
+        density: 1000
+        layer:
+        - WallLayer
+
+
+# 1 lamp
+- type: entity
+  id: PubgStreetLights1Light1
+  parent: PubgStreetLights
+  description: Lights.
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/StreetLights/pubg_lightstreet.rsi
+    state: streetlight
+
+- type: entity
+  id: PubgStreetLights1Light2
+  parent: PubgStreetLights
+  description: Lights.
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/StreetLights/pubg_lightstreet.rsi
+    state: streetlight1
+
+# 2 lamp
+- type: entity
+  id: PubgStreetLights2Light1
+  parent: PubgStreetLights
+  description: Lights.
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/StreetLights/pubg_lightstreet2.rsi
+    state: streetlight
+
+- type: entity
+  id: PubgStreetLights2Light2
+  parent: PubgStreetLights
+  description: Lights.
+  components:
+  - type: Sprite
+    sprite: _Pubg/Structures/StreetLights/pubg_lightstreet2.rsi
+    state: streetlight2
