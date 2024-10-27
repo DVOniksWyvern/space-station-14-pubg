@@ -6,6 +6,7 @@
   order:
     - alertType: ChangelingBiomass
     - category: Health
+    - alertType: Energy
     - category: Stamina
     - alertType: ChangelingChemicals
     - category: ShadowkinPower
@@ -495,3 +496,35 @@
     state: critical
   name: Debug6
   description: Debug
+
+# Pubg
+
+- type: alert
+  id: Energy
+  icons:
+  - sprite: /Textures/_Pubg/Interface/Alerts/energy.rsi
+    state: energy0
+  - sprite: /Textures/_Pubg/Interface/Alerts/energy.rsi
+    state: energy1
+  - sprite: /Textures/_Pubg/Interface/Alerts/energy.rsi
+    state: energy2
+  - sprite: /Textures/_Pubg/Interface/Alerts/energy.rsi
+    state: energy3
+  - sprite: /Textures/_Pubg/Interface/Alerts/energy.rsi
+    state: energy4
+  - sprite: /Textures/_Pubg/Interface/Alerts/energy.rsi
+    state: energy5
+  - sprite: /Textures/_Pubg/Interface/Alerts/energy.rsi
+    state: energy6
+  - sprite: /Textures/_Pubg/Interface/Alerts/energy.rsi
+    state: energy7
+  - sprite: /Textures/_Pubg/Interface/Alerts/energy.rsi
+    state: energy8
+  - sprite: /Textures/_Pubg/Interface/Alerts/energy.rsi
+    state: energy9
+  - sprite: /Textures/_Pubg/Interface/Alerts/energy.rsi
+    state: energy10
+  name: alerts-energy-name
+  description: alerts-energy-desc
+  minSeverity: 0
+  maxSeverity: 10

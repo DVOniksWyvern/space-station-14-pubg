@@ -308,6 +308,7 @@
     - TauCetiBasic
     understands:
     - TauCetiBasic
+  - type: EnergyMover #Pubg
 
 - type: entity
   save: false
