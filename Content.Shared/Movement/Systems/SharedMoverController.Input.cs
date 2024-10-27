@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Shared._Pubg.Components;
 using Content.Shared.CCVar;
 using Content.Shared.Follower.Components;
 using Content.Shared.Input;
@@ -352,6 +353,11 @@ namespace Content.Shared.Movement.Systems
             }
 
             if (moverComp == null) return;
+
+            if (TryComp(uid, out EnergyMoverComponent? stamina) && stamina.CurrentEnergy == 0)
+            {
+                return;
+            }
 
             SetSprinting((uid, moverComp), subTick, walking);
         }
