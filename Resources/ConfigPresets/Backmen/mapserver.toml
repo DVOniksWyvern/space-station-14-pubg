@@ -1,0 +1,47 @@
+# Welcome to the example configuration file!
+# Remember that if this is in bin/Content.Server or such, it may be overwritten on build.
+# Consider copying it and using the --config-file and --data-dir options.
+
+[events]
+enabled = false
+
+[tts]
+api_url="http://192.162.246.212:5000/tts"
+api_token="test"
+enabled=true
+max_cache=25000
+
+[sponsor]
+api_url = "https://backmen.ru/ss14/discord"
+
+[adminlogs]
+enabled = false
+
+[log]
+path = "logs"
+format = "log_%(date)s-%(time)s.txt"
+level = 1
+enabled = false
+
+[net]
+tickrate = 10
+port = 1212
+bindto = "::,0.0.0.0"
+max_connections = 256
+upnp = false
+
+[status]
+enabled = true
+
+[game]
+hostname = "backmen.ru mapserver"
+
+[console]
+loginlocal = false
+login_host_user = "Rxup"
+
+[hub]
+advertise = false
+
+[auth]
+mode = 1
