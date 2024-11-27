@@ -42,6 +42,9 @@
     - 0,0,1,3
     - 3,0,6,7
     - 8,0,9,3
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.90
 
 - type: entity
   parent: ClothingBackpack
@@ -71,3 +74,6 @@
     - 0,0,1,7
     - 3,0,7,7
     - 9,0,10,7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.85
