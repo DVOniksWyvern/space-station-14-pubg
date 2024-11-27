@@ -1,0 +1,79 @@
+# Small assault, roadbag
+- type: entity
+  parent: ClothingBackpack
+  id: PubgClothingBackpackAssault
+  name: backpack assault
+  description: Like in jungle forest.
+  components:
+  - type: Sprite
+    sprite: _Pubg/Backpacks/small/assaultsmall.rsi
+    state: icon
+  - type: Storage
+    grid:
+    - 0,0,1,1
+    - 3,0,6,5
+    - 8,0,9,1
+
+- type: entity
+  parent: ClothingBackpack
+  id: PubgClothingBackpackRoadBag
+  name: backpack roadbag
+  description: Walking on the streets...
+  components:
+  - type: Sprite
+    sprite: _Pubg/Backpacks/small/roadbagsmall.rsi
+    state: icon
+  - type: Storage
+    grid:
+    - 0,0,3,5
+
+# Medium assemblybag, tigerbag
+- type: entity
+  parent: ClothingBackpack
+  id: PubgClothingBackpackAssemblyBag
+  name: backpack assemblybag
+  description: Good solution.
+  components:
+  - type: Sprite
+    sprite: _Pubg/Backpacks/medium/assemblybag.rsi
+    state: icon
+  - type: Storage
+    grid:
+    - 0,0,1,3
+    - 3,0,6,7
+    - 8,0,9,3
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.90
+
+- type: entity
+  parent: ClothingBackpack
+  id: PubgClothingBackpackTigerBag
+  name: backpack tigerbag
+  description: Real sands.
+  components:
+  - type: Sprite
+    sprite: _Pubg/Backpacks/medium/tigerbag.rsi
+    state: icon
+  - type: Storage
+    grid:
+    - 0,0,4,7
+
+# Large tactickal
+- type: entity
+  parent: ClothingBackpack
+  id: PubgClothingBackpackTactickal
+  name: backpack tactickal
+  description: LARGE SOLUTION.
+  components:
+  - type: Sprite
+    sprite: _Pubg/Backpacks/large/tactickalbig.rsi
+    state: icon
+  - type: Storage
+    grid:
+    - 0,0,1,7
+    - 3,0,7,7
+    - 9,0,10,7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.85

@@ -195,6 +195,38 @@ ent-PubgClothingMaskHelmetSphere3 = Шлем Сфера
 ent-PubgClothingMaskHelmetAltyn = Шлем Алтын
 .desc = За такой и убить не жалко. Лучше уже не найти
 
+### PUBG Backpacks
+# Small
+ent-PubgClothingBackpackAssault = Штурмовой рюкзак
+.desc = Мобильный штурмсовой рюкзак, без дополнительных подсумков, не столь вместительный
+ent-PubgClothingBackpackRoadBag = Придорожный рюкзак
+.desc = Почти самый обычный рюкзак, предназначенный для недолгосрочных путешествий
+
+# Medium
+ent-PubgClothingBackpackAssemblyBag = Сборный рюкзак
+.desc = Обычный рюкзак с дополнительными подсумками, не самый удобный из своего семейства
+ent-PubgClothingBackpackTigerBag = Рюкзак "Tiger"
+.desc = Полностью раскрываемый рюкзак, разработанный с учётом сохранения мобильности пользователя
+
+# Large
+ent-PubgClothingBackpackTactickal = Военный экспедиционный рюкзак
+.desc = Большой вместительный рюкзак, разработанный для долгих перебросок с места на место. Пользуется популярностью не только у военных, но и у туристов
+
+### PUBG Chest Rigs
+# Small
+ent-PubgClothingBeltStorageArs = Разгрузочная система АРС
+.desc = Простая и дешёвая разгрузочная система, когда мобильность решает всё
+ent-PubgClothingBeltStorageStrixtac = Разгрузочная система Стрикс
+.desc = Разгрузочная система с подсумком, под кое-что "большее"
+ent-PubgClothingBeltStorageTv101 = Разгрузочная система ТВ101
+.desc = Разгрузочная система с навесной защитой в паховой зоне. Обычно идёт в дополнение к другим комплектам брони
+
+# Medium
+ent-PubgClothingBeltStorageOliva = Разгрузочная система Олива
+.desc = Разгрузочная система с дополнительным бронированием груди
+ent-PubgClothingBeltStoragePhoenixMk2 = Разгрузочная система Феникс
+.desc = Разгрузочная система с множеством подсумков, не снижает мобильность пользователя и отлично подходит к любому комплекту брони
+
 ### PUBG Random bags with weapons
 ent-PubgBoxWeaponPM9 = Сумка с чем-то
 .desc = Что здесь есть?
