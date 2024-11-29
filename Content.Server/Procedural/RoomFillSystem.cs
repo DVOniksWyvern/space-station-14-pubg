@@ -37,7 +37,8 @@ public sealed class RoomFillSystem : EntitySystem
                     random,
                     null,
                     clearExisting: component.ClearExisting,
-                    rotation: component.Rotation);
+                    rotation: component.Rotation,
+                    roomRot: component.RoomRotation);
             }
             else
             {

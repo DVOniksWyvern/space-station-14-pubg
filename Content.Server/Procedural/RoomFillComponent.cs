@@ -18,6 +18,13 @@ public sealed partial class RoomFillComponent : Component
     public bool Rotation = true;
 
     /// <summary>
+    /// Should we set Rotation Angle
+    /// Rotation bool will be ignored with this
+    /// </summary>
+    [DataField]
+    public Angle RoomRotation = 0;
+
+    /// <summary>
     /// Size of the room to fill.
     /// </summary>
     [DataField(required: true)]
@@ -28,7 +35,7 @@ public sealed partial class RoomFillComponent : Component
     /// </summary>
     [DataField]
     public EntityWhitelist? RoomWhitelist;
-    
+
     /// <summary>
     /// Should any existing entities / decals be bulldozed first.
     /// </summary>
