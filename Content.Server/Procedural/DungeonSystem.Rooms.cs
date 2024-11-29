@@ -65,13 +65,14 @@ public sealed partial class DungeonSystem
         DungeonRoomPrototype room,
         Random random,
         HashSet<Vector2i>? reservedTiles,
+        Angle roomRot,
         bool clearExisting = false,
         bool rotation = false)
     {
         var originTransform = Matrix3Helpers.CreateTranslation(origin.X, origin.Y);
-        var roomRotation = Angle.Zero;
+        var roomRotation = roomRot;
 
-        if (rotation)
+        if (rotation && roomRot == Angle.Zero) // Pubg Redacted
         {
             roomRotation = GetRoomRotation(room, random);
         }
