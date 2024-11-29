@@ -16,8 +16,8 @@
     - state: red
     - sprite: _Pubg/SpawnMarkers/genmarks.rsi
       state: gen5x5
-    - sprite: _Pubg/SpawnMarkers/mark_line5x5.rsi
-      state: mark5x5
+    - sprite: _Pubg/SpawnMarkers/Marklines/green/mark_line5x5.rsi
+      state: 5x5
       offset: 2, 2
 
 - type: entity
@@ -38,6 +38,6 @@
     - state: red
     - sprite: _Pubg/SpawnMarkers/genmarks.rsi
       state: gen5x5
-    - sprite: _Pubg/SpawnMarkers/mark_line5x5.rsi
-      state: mark5x5
+    - sprite: _Pubg/SpawnMarkers/Marklines/green/mark_line5x5.rsi
+      state: 5x5
       offset: 2, 2
