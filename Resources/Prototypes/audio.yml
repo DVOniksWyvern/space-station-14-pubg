@@ -111,19 +111,17 @@
 - type: soundCollection
   id: AmbienceGeneral
   files:
-    - /Audio/Ambience/ambigen1.ogg
-    - /Audio/Ambience/ambigen3.ogg
-    - /Audio/Ambience/ambigen4.ogg
-    - /Audio/Ambience/ambigen5.ogg
-    - /Audio/Ambience/ambigen6.ogg
-    - /Audio/Ambience/ambigen7.ogg
-    - /Audio/Ambience/ambigen8.ogg
-    - /Audio/Ambience/ambigen9.ogg
-    - /Audio/Ambience/ambigen10.ogg
-    - /Audio/Ambience/ambigen11.ogg
-    - /Audio/Ambience/ambigen12.ogg
-    - /Audio/Ambience/ambigen14.ogg
-    - /Audio/Ambience/ambigen15.ogg
+    - /Audio/_Pubg/Ambience/ambigen1.ogg
+    - /Audio/_Pubg/Ambience/ambigen2.ogg
+    - /Audio/_Pubg/Ambience/ambigen3.ogg
+    - /Audio/_Pubg/Ambience/ambigen4.ogg
+    - /Audio/_Pubg/Ambience/ambigen5.ogg
+    - /Audio/_Pubg/Ambience/ambigen6.ogg
+    - /Audio/_Pubg/Ambience/ambigen7.ogg
+    - /Audio/_Pubg/Ambience/ambigen8.ogg
+    - /Audio/_Pubg/Ambience/ambigen9.ogg
+    - /Audio/_Pubg/Ambience/ambigen10.ogg
+    - /Audio/_Pubg/Ambience/ambigen11.ogg
 
 - type: soundCollection
   id: AmbienceHoly
@@ -320,7 +318,7 @@
       components:
         - type: Morgue
       range: 3
-      
+
 - type: rules
   id: NearSpookyFog
   rules:
