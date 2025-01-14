@@ -336,7 +336,7 @@ namespace Content.Shared.Movement.Systems
             entity.Comp.TargetRelativeRotation = Angle.Zero;
         }
 
-        private void HandleRunChange(EntityUid uid, ushort subTick, bool walking)
+        private void HandleRunChange(EntityUid uid, ushort subTick, bool sprinting)
         {
             MoverQuery.TryGetComponent(uid, out var moverComp);
 
@@ -348,7 +348,7 @@ namespace Content.Shared.Movement.Systems
                     SetMoveInput((uid, moverComp), MoveButtons.None);
                 }
 
-                HandleRunChange(relayMover.RelayEntity, subTick, walking);
+                HandleRunChange(relayMover.RelayEntity, subTick, sprinting);
                 return;
             }
 
@@ -359,7 +359,7 @@ namespace Content.Shared.Movement.Systems
                 return;
             }
 
-            SetSprinting((uid, moverComp), subTick, walking);
+            SetSprinting((uid, moverComp), subTick, sprinting);
         }
 
         public (Vector2 Walking, Vector2 Sprinting) GetVelocityInput(InputMoverComponent mover)
@@ -466,11 +466,11 @@ namespace Content.Shared.Movement.Systems
             component.LastInputSubTick = 0;
         }
 
-        public void SetSprinting(Entity<InputMoverComponent> entity, ushort subTick, bool walking)
+        public void SetSprinting(Entity<InputMoverComponent> entity, ushort subTick, bool sprinting)
         {
             // Logger.Info($"[{_gameTiming.CurTick}/{subTick}] Sprint: {enabled}");
 
-            SetMoveInput(entity, subTick, walking, MoveButtons.Walk);
+            SetMoveInput(entity, subTick, sprinting, MoveButtons.Sprint);
         }
 
         /// <summary>
@@ -622,7 +622,7 @@ namespace Content.Shared.Movement.Systems
         Down = 2,
         Left = 4,
         Right = 8,
-        Walk = 16,
+        Sprint = 16,
         AnyDirection = Up | Down | Left | Right,
     }
 
