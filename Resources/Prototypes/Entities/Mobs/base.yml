@@ -38,7 +38,6 @@
   - type: Examiner
   - type: Eye
   - type: ContentEye
-  - type: CameraRecoil
   - type: MindContainer
   - type: MovementSpeedModifier
   - type: TTS # Corvax-TTS

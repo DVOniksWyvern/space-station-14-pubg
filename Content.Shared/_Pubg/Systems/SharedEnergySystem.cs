@@ -65,7 +65,7 @@ public abstract class SharedEnergySystem : EntitySystem
         if (component.CurrentEnergy == 0)
         {
             component.DepletionTime = Timing.CurTime;
-            inputMover.HeldMoveButtons ^= MoveButtons.Walk;
+            inputMover.HeldMoveButtons ^= MoveButtons.Sprint;
         }
 
         SetEnergyAlert(uid, component);

@@ -23,7 +23,7 @@ public sealed class EnergySystem : SharedEnergySystem
 
             energy.NextUpdateTime += energy.UpdateRate;
 
-            if (inputMover.Sprinting)
+            if (inputMover.Sprinting && (inputMover.HeldMoveButtons & MoveButtons.AnyDirection) != MoveButtons.None)
             {
                 ChangeEnergyLevel(uid, energy.CurrentEnergy - energy.EnergyConsumtionRate, energy);
                 continue;
