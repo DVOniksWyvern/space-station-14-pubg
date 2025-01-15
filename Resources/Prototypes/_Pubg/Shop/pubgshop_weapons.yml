@@ -7,7 +7,7 @@
   cost:
     SpaceCash: 100
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
 
 - type: listing
   id: PistolGrach
@@ -17,7 +17,7 @@
   cost:
     SpaceCash: 250
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
 
 - type: listing
   id: ShotgunMP153
@@ -27,7 +27,7 @@
   cost:
     SpaceCash: 650
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
 
 - type: listing
   id: SubRifleMerkel
@@ -37,7 +37,7 @@
   cost:
     SpaceCash: 800
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
 
 - type: listing
   id: WeaponSmgVityaz
@@ -47,7 +47,7 @@
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
 
 # Tier 2
 - type: listing
@@ -58,12 +58,12 @@
   cost:
     SpaceCash: 500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: ShotgunChazer
@@ -73,12 +73,12 @@
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: SubRifleGarand
@@ -88,12 +88,12 @@
   cost:
     SpaceCash: 1200
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: SubRifleSKS
@@ -103,27 +103,27 @@
   cost:
     SpaceCash: 1500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 #- type: listing
-#  id: GoidaGrenadierRig
+#  id: PubgShopGrenadierRig
 #  name: uplink-grenadier-rig-name
 #  description: uplink-grenadier-rig-desc
 #  productEntity: ClothingBeltMilitaryWebbingGrenadeFilled
 #  cost:
 #    SpaceCash: 1200
 #  categories:
-#  - GoidaWeaponry
+#  - PubgShopWeaponry
 #  conditions:
 #  - !type:StoreWhitelistCondition
 #    whitelist:
 #      tags:
-#      - GoidaT2Shop
+#      - PubgShopT2
 #
 
 - type: listing
@@ -134,12 +134,12 @@
   cost:
     SpaceCash: 1500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: PubgRevolverSmith
@@ -149,12 +149,12 @@
   cost:
     SpaceCash: 2000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: WeaponSmgMac10
@@ -164,12 +164,12 @@
   cost:
     SpaceCash: 1200
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: WeaponSmgP90
@@ -179,12 +179,12 @@
   cost:
     SpaceCash: 1500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: WeaponSniperRifleSV98
@@ -194,12 +194,12 @@
   cost:
     SpaceCash: 2000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 # Tier 3
 - type: listing
@@ -210,12 +210,12 @@
   cost:
     SpaceCash: 2000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
   id: WeaponShotgunKS-23
@@ -225,12 +225,12 @@
   cost:
     SpaceCash: 1500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
   id: WeaponRifleBeryl
@@ -240,12 +240,12 @@
   cost:
     SpaceCash: 2000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
   id: WeaponRifleA91
@@ -255,12 +255,12 @@
   cost:
     SpaceCash: 2250
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
   id: WeaponRifleOhioOrdance
@@ -270,12 +270,12 @@
   cost:
     SpaceCash: 2350
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
   id: WeaponRifleFNFAL
@@ -285,12 +285,12 @@
   cost:
     SpaceCash: 2500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
   id: WeaponRifleAR18-V2
@@ -300,12 +300,12 @@
   cost:
     SpaceCash: 3000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
   id: PubgWeaponGL06
@@ -315,12 +315,12 @@
   cost:
     SpaceCash: 2500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
   id: WeaponSniperRifleSVD
@@ -330,12 +330,12 @@
   cost:
     SpaceCash: 3000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 # Tier 4
 - type: listing
@@ -346,12 +346,12 @@
   cost:
     SpaceCash: 2500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4
 
 - type: listing
   id: PubgWeaponRG06
@@ -361,12 +361,12 @@
   cost:
     SpaceCash: 5000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4
 
 - type: listing
   id: WeaponSniperRifleBarrett
@@ -376,12 +376,12 @@
   cost:
     SpaceCash: 4000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4
 
 - type: listing
   id: WeaponRifleAsVal
@@ -391,12 +391,12 @@
   cost:
     SpaceCash: 3500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4
 
 - type: listing
   id: WeaponRifleAsh12
@@ -406,12 +406,12 @@
   cost:
     SpaceCash: 4000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4
 
 - type: listing
   id: WeaponLmgRPD
@@ -421,9 +421,9 @@
   cost:
     SpaceCash: 6000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4

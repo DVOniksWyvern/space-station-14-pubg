@@ -7,7 +7,7 @@
   cost:
     SpaceCash: 250
   categories:
-  - GoidaHelmet
+  - PubgShopHelmet
 
 - type: listing
   id: HelmetZsh1
@@ -17,7 +17,7 @@
   cost:
     SpaceCash: 300
   categories:
-  - GoidaHelmet
+  - PubgShopHelmet
 
 - type: listing
   id: HelmetCappa1
@@ -27,7 +27,7 @@
   cost:
     SpaceCash: 400
   categories:
-  - GoidaHelmet
+  - PubgShopHelmet
 
 # Tier 2
 - type: listing
@@ -38,12 +38,12 @@
   cost:
     SpaceCash: 600
   categories:
-  - GoidaHelmet
+  - PubgShopHelmet
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: HelmetAlpha2
@@ -53,12 +53,12 @@
   cost:
     SpaceCash: 600
   categories:
-  - GoidaHelmet
+  - PubgShopHelmet
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: HelmetHelmetTor2
@@ -68,12 +68,12 @@
   cost:
     SpaceCash: 800
   categories:
-  - GoidaHelmet
+  - PubgShopHelmet
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 # Tier 3
 - type: listing
@@ -84,12 +84,12 @@
   cost:
     SpaceCash: 850
   categories:
-  - GoidaHelmet
+  - PubgShopHelmet
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
   id: HelmetSparta3
@@ -99,12 +99,12 @@
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaHelmet
+  - PubgShopHelmet
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
   id: HelmetSphere3
@@ -114,12 +114,12 @@
   cost:
     SpaceCash: 1200
   categories:
-  - GoidaHelmet
+  - PubgShopHelmet
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 # Tier 4
 - type: listing
@@ -130,9 +130,9 @@
   cost:
     SpaceCash: 2000
   categories:
-  - GoidaHelmet
+  - PubgShopHelmet
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4

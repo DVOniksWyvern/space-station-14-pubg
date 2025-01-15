@@ -6,7 +6,7 @@
   cost:
     SpaceCash: 50
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
   id: AmmoBox12x70
@@ -16,7 +16,7 @@
   cost:
     SpaceCash: 150
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
   id: AmmoBox7-65mm
@@ -26,7 +26,7 @@
   cost:
     SpaceCash: 100
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
   id: AmmoBox23x75
@@ -36,7 +36,7 @@
   cost:
     SpaceCash: 300
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
   id: AmmoBox7-62x39mm
@@ -46,7 +46,7 @@
   cost:
     SpaceCash: 400
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
   id: AmmoBox5-56x45mm
@@ -56,7 +56,7 @@
   cost:
     SpaceCash: 500
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
   id: AmmoBox9x39mm
@@ -66,7 +66,7 @@
   cost:
     SpaceCash: 500
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
   id: AmmoBox5-7x28mm
@@ -76,7 +76,7 @@
   cost:
     SpaceCash: 400
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
   id: AmmoBoxMagnum357
@@ -86,7 +86,7 @@
   cost:
     SpaceCash: 800
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
   id: AmmoBoxMagnum500
@@ -96,7 +96,7 @@
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
   id: AmmoBox7-62x51mm
@@ -106,7 +106,7 @@
   cost:
     SpaceCash: 500
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
   id: AmmoBox7-62x54mm
@@ -116,7 +116,7 @@
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
   id: AmmoBox12-7x99mm
@@ -126,7 +126,7 @@
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 
 

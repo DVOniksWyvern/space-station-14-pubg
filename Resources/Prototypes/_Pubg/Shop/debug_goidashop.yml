@@ -1,59 +1,59 @@
 - type: entity
-  parent: BaseGoidaShop
-  id: GoidaShopT2
-  name: GOIDA SHOPPER T2
-  description: UuuuuEEEEEEEEEEEEEE GOOOOOOOOOOIDAAAAAAAAAAAAA
+  parent: BasePubgShop
+  id: PubgShopT2
+  name: PubgShop SHOPPER T2
+  description: Test
   components:
   - type: Tag
     tags:
-    - GoidaT2Shop
+    - PubgShopT2
 
 - type: entity
-  parent: BaseGoidaShop
-  id: GoidaShopT3
-  name: GOIDA SHOPPER T3
-  description: UuuuuEEEEEEEEEEEEEE GOOOOOOOOOOIDAAAAAAAAAAAAA
+  parent: BasePubgShop
+  id: PubgShopT3
+  name: PubgShop SHOPPER T3
+  description: Test
   components:
   - type: Tag
     tags:
-    - GoidaT2Shop
-    - GoidaT3Shop
+    - PubgShopT2
+    - PubgShopT3
 
 - type: entity
-  parent: BaseGoidaShop
-  id: GoidaShopT4
-  name: GOIDA SHOPPER T4
-  description: UuuuuEEEEEEEEEEEEEE GOOOOOOOOOOIDAAAAAAAAAAAAA
+  parent: BasePubgShop
+  id: PubgShopT4
+  name: PubgShop SHOPPER T4
+  description: Test
   components:
   - type: Tag
     tags:
-    - GoidaT2Shop
-    - GoidaT3Shop
-    - GoidaT4Shop
+    - PubgShopT2
+    - PubgShopT3
+    - PubgShopT4
 
 - type: entity
-  parent: BaseGoidaShop
-  id: BaseGoidaShopDebug
-  name: DEBUG GOIDA SHOP
-  description: UuuuuEEEEEEEEEEEEEE GOOOOOOOOOOIDAAAAAAAAAAAAA
+  parent: BasePubgShop
+  id: BasePubgShopDebug
+  name: DEBUG PubgShop
+  description: Test
   suffix: DEBUG
   components:
   - type: Store
     buySuccessSound: /Audio/_Pubg/Shop/supergoida.ogg
     categories:
-    - GoidaWeaponry
-    - GoidaMedicine
-    - GoidaAmmo
-    - GoidaArmor
-    - GoidaHelmet
-    - GoidaMelee
-    - GoidaMisc
+    - PubgShopWeaponry
+    - PubgShopMedicine
+    - PubgShopAmmo
+    - PubgShopArmor
+    - PubgShopHelmet
+    - PubgShopMelee
+    - PubgShopMisc
     currencyWhitelist:
     - SpaceCash
     balance:
       SpaceCash: 1337228
   - type: Tag
     tags:
-    - GoidaT2Shop
-    - GoidaT3Shop
-    - GoidaT4Shop
+    - PubgShopT2
+    - PubgShopT3
+    - PubgShopT4

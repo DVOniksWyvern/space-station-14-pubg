@@ -7,7 +7,7 @@
   cost:
     SpaceCash: 500
   categories:
-  - GoidaArmor
+  - PubgShopArmor
 
 - type: listing
   id: ArmorFagor1
@@ -17,7 +17,7 @@
   cost:
     SpaceCash: 600
   categories:
-  - GoidaArmor
+  - PubgShopArmor
 
 - type: listing
   id: ClothingOuterArmorTorus
@@ -27,7 +27,7 @@
   cost:
     SpaceCash: 800
   categories:
-  - GoidaArmor
+  - PubgShopArmor
 
 # Tier 2
 - type: listing
@@ -38,12 +38,12 @@
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: ClothingOuterArmorBagarii
@@ -53,12 +53,12 @@
   cost:
     SpaceCash: 1100
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: ClothingOuterArmorKorund
@@ -68,12 +68,12 @@
   cost:
     SpaceCash: 1300
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: ClothingOuterArmorRusarmOlive
@@ -83,12 +83,12 @@
   cost:
     SpaceCash: 1500
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 # Tier 3
 - type: listing
@@ -99,12 +99,12 @@
   cost:
     SpaceCash: 2000
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
   id: ClothingOuterArmorRusarmAssault
@@ -114,12 +114,12 @@
   cost:
     SpaceCash: 2500
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
   id: ClothingOuterArmorSaphire
@@ -129,12 +129,12 @@
   cost:
     SpaceCash: 3000
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 # Tier 4
 - type: listing
@@ -145,9 +145,9 @@
   cost:
     SpaceCash: 4000
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4

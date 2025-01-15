@@ -7,7 +7,7 @@
   cost:
     SpaceCash: 200
   categories:
-  - GoidaMelee
+  - PubgShopMelee
 
 - type: listing
   id: CombatKnife
@@ -17,7 +17,7 @@
   cost:
     SpaceCash: 250
   categories:
-  - GoidaMelee
+  - PubgShopMelee
 
 - type: listing
   id: Pickaxe
@@ -27,7 +27,7 @@
   cost:
     SpaceCash: 300
   categories:
-  - GoidaMelee
+  - PubgShopMelee
 
 - type: listing
   id: BaseBallBat
@@ -37,7 +37,7 @@
   cost:
     SpaceCash: 300
   categories:
-  - GoidaMelee
+  - PubgShopMelee
 
 - type: listing
   id: KukriKnife
@@ -47,7 +47,7 @@
   cost:
     SpaceCash: 350
   categories:
-  - GoidaMelee
+  - PubgShopMelee
 
 - type: listing
   id: Sledgehammer
@@ -57,7 +57,7 @@
   cost:
     SpaceCash: 400
   categories:
-  - GoidaMelee
+  - PubgShopMelee
 
 - type: listing
   id: Machete
@@ -67,7 +67,7 @@
   cost:
     SpaceCash: 500
   categories:
-  - GoidaMelee
+  - PubgShopMelee
 
 # Tier 2
 - type: listing
@@ -78,12 +78,12 @@
   cost:
     SpaceCash: 800
   categories:
-  - GoidaMelee
+  - PubgShopMelee
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: FireAxe
@@ -93,12 +93,12 @@
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaMelee
+  - PubgShopMelee
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 # Tier 3
 - type: listing
@@ -109,9 +109,9 @@
   cost:
     SpaceCash: 1500
   categories:
-  - GoidaMelee
+  - PubgShopMelee
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3

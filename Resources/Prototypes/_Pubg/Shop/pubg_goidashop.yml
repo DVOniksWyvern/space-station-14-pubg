@@ -1,64 +1,64 @@
 - type: entity
   parent: BaseUplinkRadio
-  id: BaseGoidaShop
-  name: GOIDA SHOPPER
-  description: UuuuuEEEEEEEEEEEEEE GOOOOOOOOOOIDAAAAAAAAAAAAA
+  id: BasePubgShop
+  name: Pubg SHOPPER
+  description: Buy what you want!
   components:
   - type: Store
     buySuccessSound: /Audio/_Pubg/Shop/supergoida.ogg
     categories:
-    - GoidaWeaponry
-    - GoidaMedicine
-    - GoidaAmmo
-    - GoidaArmor
-    - GoidaHelmet
-    - GoidaMelee
-    - GoidaMisc
+    - PubgShopWeaponry
+    - PubgShopMedicine
+    - PubgShopAmmo
+    - PubgShopArmor
+    - PubgShopHelmet
+    - PubgShopMelee
+    - PubgShopMisc
     currencyWhitelist:
     - SpaceCash
     balance:
       SpaceCash: 0
 
 - type: Tag
-  id: GoidaT2Shop
+  id: PubgShopT2
 
 - type: Tag
-  id: GoidaT3Shop
+  id: PubgShopT3
 
 - type: Tag
-  id: GoidaT4Shop
+  id: PubgShopT4
 
 - type: storeCategory
-  id: GoidaWeaponry
+  id: PubgShopWeaponry
   name: WEAPONS
   priority: 1
 
 - type: storeCategory
-  id: GoidaMedicine
+  id: PubgShopMedicine
   name: MEDICINE
   priority: 2
 
 - type: storeCategory
-  id: GoidaAmmo
+  id: PubgShopAmmo
   name: AMMO
   priority: 3
 
 - type: storeCategory
-  id: GoidaArmor
+  id: PubgShopArmor
   name: ARMOR
   priority: 4
 
 - type: storeCategory
-  id: GoidaHelmet
+  id: PubgShopHelmet
   name: HELMETS
   priority: 5
 
 - type: storeCategory
-  id: GoidaMelee
+  id: PubgShopMelee
   name: MELEE
   priority: 6
 
 - type: storeCategory
-  id: GoidaMisc
+  id: PubgShopMisc
   name: MISC
   priority: 7

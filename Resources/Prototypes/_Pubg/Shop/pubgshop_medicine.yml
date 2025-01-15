@@ -7,7 +7,7 @@
   cost:
     SpaceCash: 100
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
 
 - type: listing
   id: MedicineStandart
@@ -17,7 +17,7 @@
   cost:
     SpaceCash: 200
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
 
 # Tier 2
 - type: listing
@@ -28,12 +28,12 @@
   cost:
     SpaceCash: 750
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: MedicineSpeedMedipen
@@ -43,12 +43,12 @@
   cost:
     SpaceCash: 900
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: PubgObdalbosMedipen
@@ -58,12 +58,12 @@
   cost:
     SpaceCash: 1228
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
   id: PubgRegeneratorMedipen
@@ -73,12 +73,12 @@
   cost:
     SpaceCash: 1250
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 # Tier 3
 - type: listing
@@ -89,12 +89,12 @@
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
   id: MedicineSuperSpeedMedipen
@@ -104,9 +104,9 @@
   cost:
     SpaceCash: 1500
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
