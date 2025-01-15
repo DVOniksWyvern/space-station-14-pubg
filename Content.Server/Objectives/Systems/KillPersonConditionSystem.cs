@@ -11,6 +11,7 @@ using Content.Shared.Roles.Jobs;
 using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using System.Linq;
 
 namespace Content.Server.Objectives.Systems;
 
@@ -61,8 +62,18 @@ public sealed class KillPersonConditionSystem : EntitySystem
         if (target.Target != null)
             return;
 
+        var allHumans = _mind.GetAliveHumans(args.MindId);
+
+        // Can't have multiple objectives to kill the same person
+        foreach (var objective in args.Mind.Objectives)
+        {
+            if (HasComp<KillPersonConditionComponent>(objective) && TryComp<TargetObjectiveComponent>(objective, out var kill))
+            {
+                allHumans.RemoveWhere(x => x.Owner == kill.Target);
+            }
+        }
+
         // no other humans to kill
-        var allHumans = _mind.GetAliveHumansExcept(args.MindId);
         if (allHumans.Count == 0)
         {
             args.Cancelled = true;
@@ -84,12 +95,12 @@ public sealed class KillPersonConditionSystem : EntitySystem
     }
 
     // start-backmen: centcom
-    private void FilterCentCom(List<EntityUid> minds)
+    private void FilterCentCom(HashSet<Entity<MindComponent>> minds)
     {
         var centcom = _prototype.Index(_ccDep);
         foreach (var mindId in minds.ToArray())
         {
-            if (!_roleSystem.MindHasRole<JobRoleComponent>(mindId, out var job) || job.Value.Comp1.JobPrototype == null)
+            if (!_roleSystem.MindHasRole<JobRoleComponent>(mindId.Owner, out var job) || job.Value.Comp1.JobPrototype == null)
             {
                 continue;
             }
@@ -118,7 +129,7 @@ public sealed class KillPersonConditionSystem : EntitySystem
             return;
 
         // no other humans to kill
-        var allHumans = _mind.GetAliveHumansExcept(args.MindId);
+        var allHumans = _mind.GetAliveHumans(args.MindId);
         if (allHumans.Count == 0)
         {
             args.Cancelled = true;
@@ -135,7 +146,7 @@ public sealed class KillPersonConditionSystem : EntitySystem
         }
         // end-backmen: centcom
 
-        var allHeads = new List<EntityUid>();
+        var allHeads = new HashSet<Entity<MindComponent>>();
         foreach (var person in allHumans)
         {
             if (TryComp<MindComponent>(person, out var mind) && mind.OwnedEntity is { } ent && HasComp<CommandStaffComponent>(ent))

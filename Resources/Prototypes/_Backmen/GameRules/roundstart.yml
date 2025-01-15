@@ -62,9 +62,12 @@
   - type: AntagSelection
     definitions:
     - prefRoles: [ Blob ]
+      min: 1
       max: 2
       playerRatio: 40 #players = 2 blobs
       allowNonHumans: true
+      components:
+      - type: BlobCarrier
       blacklist:
         components:
         - AntagImmune
@@ -74,14 +77,14 @@
         sound: /Audio/Backmen/Ambience/Antag/blob_start.ogg
       mindRoles:
       - MindRoleBlob
- 
+
 - type: entity
   id: BlobSpawn
   parent: BaseGameRule
   categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
-    weight: 15
+    weight: 5
     duration: 1
     earliestStart: 50
     minimumPlayers: 20
@@ -108,6 +111,7 @@
   - type: AntagSelection
     definitions:
     - prefRoles: [ Bloodsucker ]
+      min: 2
       max: 8
       playerRatio: 10
       blacklist:
@@ -128,7 +132,10 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: GameRule
-    minPlayers: 10
+    minPlayers: 1
+    delay:
+      min: 30
+      max: 60
 
 ## Vampire Outbreak
 - type: entity
@@ -137,10 +144,15 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
-    earliestStart: 50
+    earliestStart: 20
     minimumPlayers: 15
     weight: 5
-    duration: 1
+    maxOccurrences: 1 # can only happen once per round
+    startAnnouncement: station-event-communication-interception
+    startAudio:
+      path: /Audio/Announcements/intercept.ogg
+    duration: null # the rule has to last the whole round not 1 second
+    occursDuringRoundEnd: false
 
 # Shipwrecked
 - type: entity
@@ -281,3 +293,34 @@
   components:
   - type: GameRule
   - type: BabelTowerRule
+
+#xeno
+- type: entity
+  id: XenoAgentGameMode
+  parent: BaseGameRule
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: GameRule
+    minPlayers: 15
+    #delay: # 7-10 minutes
+    #  min: 420
+    #  max: 600
+  - type: AntagSelection
+    definitions:
+    - prefRoles: [ XenoAgent ]
+      min: 1
+      max: 2
+      playerRatio: 40 #players = 2 blobs
+      allowNonHumans: true
+      components:
+      - type: XenoAgent
+      - type: NpcFactionMember
+        factions:
+        - Xeno
+        - NanoTrasen
+      - type: XenoAcidSpiller
+      blacklist:
+        components:
+        - AntagImmune
+      mindRoles:
+      - MindRoleXenoAgent

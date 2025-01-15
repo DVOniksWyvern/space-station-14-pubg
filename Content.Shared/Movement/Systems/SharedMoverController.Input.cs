@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Shared.Alert;
 using Content.Shared._Pubg.Components;
 using Content.Shared.CCVar;
 using Content.Shared.Follower.Components;
@@ -9,6 +10,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Input;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Player;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
@@ -21,6 +23,8 @@ namespace Content.Shared.Movement.Systems
     public abstract partial class SharedMoverController
     {
         public bool CameraRotationLocked { get; set; }
+
+        public static ProtoId<AlertPrototype> WalkingAlert = "Walking";
 
         private void InitializeInput()
         {
@@ -53,8 +57,6 @@ namespace Content.Shared.Movement.Systems
             SubscribeLocalEvent<InputMoverComponent, ComponentGetState>(OnMoverGetState);
             SubscribeLocalEvent<InputMoverComponent, ComponentHandleState>(OnMoverHandleState);
             SubscribeLocalEvent<InputMoverComponent, EntParentChangedMessage>(OnInputParentChange);
-
-            SubscribeLocalEvent<AutoOrientComponent, EntParentChangedMessage>(OnAutoParentChange);
 
             SubscribeLocalEvent<FollowedComponent, EntParentChangedMessage>(OnFollowedParentChange);
 
@@ -95,6 +97,9 @@ namespace Content.Shared.Movement.Systems
             entity.Comp.HeldMoveButtons = buttons;
             RaiseLocalEvent(entity, ref moveEvent);
             Dirty(entity, entity.Comp);
+
+            var ev = new SpriteMoveEvent(entity.Comp.HeldMoveButtons != MoveButtons.None);
+            RaiseLocalEvent(entity, ref ev);
         }
 
         private void OnMoverHandleState(Entity<InputMoverComponent> entity, ref ComponentHandleState args)
@@ -118,6 +123,9 @@ namespace Content.Shared.Movement.Systems
                 var moveEvent = new MoveInputEvent(entity, entity.Comp.HeldMoveButtons);
                 entity.Comp.HeldMoveButtons = state.HeldMoveButtons;
                 RaiseLocalEvent(entity.Owner, ref moveEvent);
+
+                var ev = new SpriteMoveEvent(entity.Comp.HeldMoveButtons != MoveButtons.None);
+                RaiseLocalEvent(entity, ref ev);
             }
         }
 
@@ -142,11 +150,6 @@ namespace Content.Shared.Movement.Systems
         public bool DiagonalMovementEnabled { get; private set; }
 
         protected virtual void HandleShuttleInput(EntityUid uid, ShuttleButtons button, ushort subTick, bool state) {}
-
-        private void OnAutoParentChange(Entity<AutoOrientComponent> entity, ref EntParentChangedMessage args)
-        {
-            ResetCamera(entity.Owner);
-        }
 
         public void RotateCamera(EntityUid uid, Angle angle)
         {
@@ -466,7 +469,7 @@ namespace Content.Shared.Movement.Systems
             component.LastInputSubTick = 0;
         }
 
-        public void SetSprinting(Entity<InputMoverComponent> entity, ushort subTick, bool sprinting)
+        public virtual void SetSprinting(Entity<InputMoverComponent> entity, ushort subTick, bool sprinting)
         {
             // Logger.Info($"[{_gameTiming.CurTick}/{subTick}] Sprint: {enabled}");
 

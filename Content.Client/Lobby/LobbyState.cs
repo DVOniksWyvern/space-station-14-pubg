@@ -10,27 +10,29 @@ using Content.Client.Message;
 using Content.Client.Resources;
 using Content.Client.UserInterface.Systems.Chat;
 using Content.Client.Voting;
+using Content.Shared.CCVar;
 using Robust.Client;
 using Robust.Client.Console;
 using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
+using Robust.Shared.Configuration;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-
 
 namespace Content.Client.Lobby
 {
     public sealed class LobbyState : Robust.Client.State.State
     {
         [Dependency] private readonly IBaseClient _baseClient = default!;
+        [Dependency] private readonly IConfigurationManager _cfg = default!;
         [Dependency] private readonly IClientConsoleHost _consoleHost = default!;
         [Dependency] private readonly IEntityManager _entityManager = default!;
         [Dependency] private readonly IResourceCache _resourceCache = default!;
         [Dependency] private readonly IUserInterfaceManager _userInterfaceManager = default!;
         [Dependency] private readonly IGameTiming _gameTiming = default!;
         [Dependency] private readonly IVoteManager _voteManager = default!;
-        [Dependency] private readonly ChangelogManager _changelog = default!; // WD EDIT
+        [Dependency] private readonly ChangelogManager _changelog = default!; // BACKMEN EDIT
         private ClientGameTicker _gameTicker = default!;
         private ContentAudioSystem _contentAudioSystem = default!;
 
@@ -55,10 +57,20 @@ namespace Content.Client.Lobby
 
             _voteManager.SetPopupContainer(Lobby.VoteContainer);
             LayoutContainer.SetAnchorPreset(Lobby, LayoutContainer.LayoutPreset.Wide);
-            Lobby.ServerName.Text = _baseClient.GameInfo?.ServerName; //The eye of refactor gazes upon you...
+
+            var lobbyNameCvar = _cfg.GetCVar(CCVars.ServerLobbyName);
+            var serverName = _baseClient.GameInfo?.ServerName ?? string.Empty;
+
+            Lobby.ServerName.Text = string.IsNullOrEmpty(lobbyNameCvar)
+                ? Loc.GetString("ui-lobby-title", ("serverName", serverName))
+                : lobbyNameCvar;
+
+            var width = _cfg.GetCVar(CCVars.ServerLobbyRightPanelWidth);
+            Lobby.RightSide.SetWidth = width;
+
             UpdateLobbyUi();
 
-            Lobby.CharacterSetupButton.OnPressed += OnSetupPressed; // WD EDIT
+            Lobby.CharacterSetupButton.OnPressed += OnSetupPressed; // BACKMEN EDIT
             Lobby.ReadyButton.OnPressed += OnReadyPressed;
             Lobby.ReadyButton.OnToggled += OnReadyToggled;
 
@@ -122,7 +134,7 @@ namespace Content.Client.Lobby
                 return;
             }
 
-            Lobby!.StationTime.Text =  Loc.GetString("lobby-state-player-status-round-not-started");
+            Lobby!.StationTime.Text = Loc.GetString("lobby-state-player-status-round-not-started");
             string text;
 
             if (_gameTicker.Paused)
@@ -141,6 +153,10 @@ namespace Content.Client.Lobby
                 if (seconds < 0)
                 {
                     text = Loc.GetString(seconds < -5 ? "lobby-state-right-now-question" : "lobby-state-right-now-confirmation");
+                }
+                else if (difference.TotalHours >= 1)
+                {
+                    text = $"{Math.Floor(difference.TotalHours)}:{difference.Minutes:D2}:{difference.Seconds:D2}";
                 }
                 else
                 {
@@ -166,7 +182,7 @@ namespace Content.Client.Lobby
         {
             if (_gameTicker.IsGameStarted)
             {
-                MakeButtonJoinGame(Lobby!.ReadyButton); // WD EDIT
+                MakeButtonJoinGame(Lobby!.ReadyButton); // BACKMEN EDIT
                 Lobby!.ReadyButton.ToggleMode = false;
                 Lobby!.ReadyButton.Pressed = false;
                 Lobby!.ObserveButton.Disabled = false;
@@ -174,12 +190,12 @@ namespace Content.Client.Lobby
             else
             {
                 Lobby!.StartTime.Text = string.Empty;
-                // WD EDIT START
+                // BACKMEN EDIT START
                 if (Lobby!.ReadyButton.Pressed)
                     MakeButtonReady(Lobby!.ReadyButton);
                 else
                     MakeButtonUnReady(Lobby!.ReadyButton);
-                // WD EDIT END
+                // BACKMEN EDIT END
                 Lobby!.ReadyButton.ToggleMode = true;
                 Lobby!.ReadyButton.Disabled = false;
                 Lobby!.ReadyButton.Pressed = _gameTicker.AreWeReady;
@@ -189,8 +205,8 @@ namespace Content.Client.Lobby
             if (_gameTicker.ServerInfoBlob != null)
             {
                 Lobby!.ServerInfo.SetInfoBlob(_gameTicker.ServerInfoBlob);
-                Lobby!.LabelName.SetMarkup("[font=\"Bedstead\" size=20] BackMen And Ataraxia [/font]"); // WD EDIT
-                Lobby!.ChangelogLabel.SetMarkup(Loc.GetString("ui-lobby-changelog")); // WD EDIT
+                Lobby!.LabelName.SetMarkup("[font=\"Bedstead\" size=20] BackMen And Ataraxia [/font]"); // BACKMEN EDIT
+                Lobby!.ChangelogLabel.SetMarkup(Loc.GetString("ui-lobby-changelog")); // BACKMEN EDIT
             }
         }
 
@@ -227,7 +243,7 @@ namespace Content.Client.Lobby
         {
             if (_gameTicker.LobbyBackground != null)
             {
-                Lobby!.Background.SetRSI(_resourceCache.GetResource<RSIResource>(_gameTicker.LobbyBackground).RSI); // WD EDIT
+                Lobby!.Background.SetRSI(_resourceCache.GetResource<RSIResource>(_gameTicker.LobbyBackground).RSI); // BACKMEN EDIT
             }
             else
             {
@@ -246,7 +262,7 @@ namespace Content.Client.Lobby
             _consoleHost.ExecuteCommand($"toggleready {newReady}");
         }
 
-        // WD EDIT START
+        // BACKMEN EDIT START
         private void MakeButtonReady(WhiteLobbyTextButton button)
         {
             button.ButtonText = Loc.GetString("lobby-state-ready-button-ready-up-state");
@@ -347,7 +363,7 @@ namespace Content.Client.Lobby
                 ModulateSelfOverride = Color.FromHex(color)
             };
         }
-        // WD EDIT END
+        // BACKMEN EDIT END
         }
     }
 
