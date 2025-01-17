@@ -10,43 +10,35 @@
 #    event: !type:GoidaScreamActionEvent
 #    checkCanInteract: false
 
-#- type: gamePreset
-#  id: Goida
-#  alias:
-#  - pubg
-#  - goida
-#  name: ГОЙДА
-#  description: ДАЙТЕ ГОЙДУ
-#  maxPlayers: 15
-#  showInVote: true
-#  supportedMaps: GoidaMapPool
-#  rules:
-#  - Goida
-#
-#- type: entity
-#  id: Goida
-#  parent: BaseGameRule
-#  categories: [ HideSpawnMenu ]
-#  components:
-##  - type: GoidaRule
-#  - type: KillCalloutRule
-#  - type: PointManager
-#
-#- type: startingGear
-#  id: GoidaGear
-#  equipment:
-#    jumpsuit: ClothingUniformJumpsuitOperative
-#    shoes: ClothingShoesBootsJack
-#    ears: ClothingHeadsetGrey
-#    gloves: ClothingHandsGlovesFingerless
-#    id: ERTEngineerPDA
-#    pocket1: BaseGoidaShop
-#  innerClothingSkirt: ClothingUniformJumpskirtColorWhite
-#  inhand:
-#  - ToolboxSyndicate
-#
-#- type: gameMapPool
-#  id: GoidaMapPool
-#  maps:
-#  - MeteorArena
-#
+- type: gamePreset
+  id: Pubg
+  alias:
+  - pubg
+  name: Pubg
+  description: oh no
+  maxPlayers: 100
+  showInVote: true
+  supportedMaps: PubgMapPool
+  rules:
+  - PubgRule
+
+- type: entity
+  id: PubgRule
+  parent: BaseGameRule
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: PubgRule
+  - type: PointManager
+
+- type: startingGear
+  id: PubgGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+    shoes: ClothingShoesBootsJack
+    gloves: ClothingHandsGlovesFingerless
+    id: ERTEngineerPDA
+
+- type: gameMapPool
+  id: PubgMapPool
+  maps:
+  - Dev

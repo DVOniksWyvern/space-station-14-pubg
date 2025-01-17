@@ -562,3 +562,8 @@ ent-PubgLabIntercome2 = Интерком
 .desc = *тык* - не работает
 ent-PubgLabLogo = ???
 .desc = Вывеска с неизвестным вам логотипом какой-то компании
+
+
+
+# Shop Messages
+shop-upgrade = Check new item's in!

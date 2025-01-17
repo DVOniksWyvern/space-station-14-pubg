@@ -1,3 +1,5 @@
+using Robust.Shared.Audio;
+
 namespace Content.Server._Pubg.PubgRule;
 
 [RegisterComponent]
@@ -11,4 +13,7 @@ public sealed partial class SlayTargetComponent : Component
 
     [DataField]
     public EntityUid? Shop;
+
+    [DataField]
+    public SoundSpecifier UpgradeSound = new SoundPathSpecifier("/Audio/Effects/Fluids/splat.ogg");
 }

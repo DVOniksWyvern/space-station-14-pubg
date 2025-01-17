@@ -4,6 +4,7 @@
   name: Pubg SHOPPER
   description: Buy what you want!
   components:
+  - type: Tag
   - type: Store
     buySuccessSound: /Audio/_Pubg/Shop/supergoida.ogg
     categories:

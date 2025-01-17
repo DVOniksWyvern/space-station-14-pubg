@@ -7,9 +7,6 @@ public sealed partial class PubgRuleSystem
 {
     public EntityUid? GetShop(EntityUid uid)
     {
-        if (!TryComp<SlayTargetComponent>(uid, out var comp))
-            return null;
-
-        return comp.Shop;
+        return !TryComp<SlayTargetComponent>(uid, out var comp) ? null : comp.Shop;
     }
 }
