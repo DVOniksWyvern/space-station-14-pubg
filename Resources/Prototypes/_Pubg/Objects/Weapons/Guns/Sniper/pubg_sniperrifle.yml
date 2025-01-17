@@ -41,8 +41,7 @@
       magState: mag
       steps: 1
       zeroVisible: true
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -54,13 +53,6 @@
           whitelist:
             tags:
               - MagazineSniperRifleSVD
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeSniper7-62x54mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeSniper7-62x54mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -114,8 +106,7 @@
       magState: mag
       steps: 1
       zeroVisible: true
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -127,13 +118,6 @@
           whitelist:
             tags:
               - MagazineSniperRifleSV-98
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeSniper7-62x54mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeSniper7-62x54mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -187,8 +171,7 @@
       magState: mag
       steps: 1
       zeroVisible: true
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -200,13 +183,6 @@
           whitelist:
             tags:
               - MagazineSniperRifleBarrett
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeSniper12-7x99mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeSniper12-7x99mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot

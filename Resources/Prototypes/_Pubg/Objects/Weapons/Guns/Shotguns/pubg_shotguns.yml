@@ -11,8 +11,6 @@
         - state: icon
           map: [ "enum.GunVisualLayers.Base" ]
     - type: Item
-      # If you update this also update the bulldog's size. SS14
-      # Боже сука, ленивая мразь не смогла пару параметров отредачить
       size: Large
       shape:
         - 0,0,4,0
