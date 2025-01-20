@@ -6,12 +6,13 @@
   description: A large duffel bag for holding various weapons and magazines.
   components:
     - type: Sprite
-      sprite: Clothing/Back/Duffels/syndicate.rsi
+      sprite: _Pubg/Backpacks/large/tactickalbig.rsi
     - type: ExplosionResistance
       damageCoefficient: 0.1
     - type: ClothingSpeedModifier
-      walkModifier: 1
-      sprintModifier: 1
+      walkModifier: 0.5
+      sprintModifier: 0.5
+    - type: HeldSpeedModifier
 
 
 ################################## SUB RIFLE
