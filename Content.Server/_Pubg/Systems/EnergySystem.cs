@@ -21,7 +21,7 @@ public sealed class EnergySystem : SharedEnergySystem
                 continue;
             }
 
-            energy.NextUpdateTime += energy.UpdateRate;
+            energy.NextUpdateTime = currentTime + energy.UpdateRate;
 
             if (inputMover.Sprinting && (inputMover.HeldMoveButtons & MoveButtons.AnyDirection) != MoveButtons.None)
             {
