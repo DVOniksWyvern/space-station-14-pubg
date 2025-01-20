@@ -40,7 +40,7 @@ public sealed partial class CCVars
     ///     Whether monstermos tile equalization is enabled.
     /// </summary>
     public static readonly CVarDef<bool> MonstermosEqualization =
-        CVarDef.Create("atmos.monstermos_equalization", true, CVar.SERVERONLY);
+        CVarDef.Create("atmos.monstermos_equalization", false, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether monstermos explosive depressurization is enabled.
@@ -126,7 +126,7 @@ public sealed partial class CCVars
     ///     Atmos tickrate in TPS. Atmos processing will happen every 1/TPS seconds.
     /// </summary>
     public static readonly CVarDef<float> AtmosTickRate =
-        CVarDef.Create("atmos.tickrate", 15f, CVar.SERVERONLY);
+        CVarDef.Create("atmos.tickrate", 1f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Scale factor for how fast things happen in our atmosphere
