@@ -15,5 +15,5 @@ public sealed partial class SlayTargetComponent : Component
     public EntityUid? Shop;
 
     [DataField]
-    public SoundSpecifier UpgradeSound = new SoundPathSpecifier("/Audio/Effects/Fluids/splat.ogg");
+    public SoundSpecifier UpgradeSound = new SoundPathSpecifier("/Audio/_Pubg/Shop/upgrade.ogg");
 }

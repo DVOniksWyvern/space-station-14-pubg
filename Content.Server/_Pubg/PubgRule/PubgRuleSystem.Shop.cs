@@ -5,7 +5,7 @@ namespace Content.Server._Pubg.PubgRule;
 /// </summary>
 public sealed partial class PubgRuleSystem
 {
-    public EntityUid? GetShop(EntityUid uid)
+    private EntityUid? GetShop(EntityUid uid)
     {
         return !TryComp<SlayTargetComponent>(uid, out var comp) ? null : comp.Shop;
     }

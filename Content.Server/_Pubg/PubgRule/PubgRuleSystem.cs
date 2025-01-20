@@ -20,7 +20,6 @@ using Content.Shared.Tag;
 using Robust.Server.Audio;
 using Robust.Server.Player;
 using Robust.Shared.Audio;
-using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
 
@@ -48,7 +47,6 @@ public sealed partial class PubgRuleSystem : GameRuleSystem<PubgRuleComponent>
 
         SubscribeLocalEvent<PlayerBeforeSpawnEvent>(OnBeforeSpawn);
         SubscribeLocalEvent<KillReportedEvent>(OnKillReported);
-        // SubscribeLocalEvent<RoundEndTextAppendEvent>(OnRoundEndText);
         SubscribeLocalEvent<SlayTargetComponent, MobStateChangedEvent>(OnMobStateChanged);
         //SubscribeLocalEvent<PubgRuleComponent, PlayerPointChangedEvent>(OnPointChanged);
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnSpawnComplete);
@@ -79,10 +77,7 @@ public sealed partial class PubgRuleSystem : GameRuleSystem<PubgRuleComponent>
             {
                 AddComp<SlayTargetComponent>(ev.Player.AttachedEntity.Value);
                 pubg.Survivors.Add(ev.Player.AttachedEntity.Value);
-            }
 
-            if (ev.Player.AttachedEntity != null)
-            {
                 _inventory.SpawnItemOnEntity(ev.Player.AttachedEntity.Value, "BasePubgShop");
                 TryFindShop(ev.Player.AttachedEntity.Value);
             }
@@ -99,7 +94,7 @@ public sealed partial class PubgRuleSystem : GameRuleSystem<PubgRuleComponent>
             return;
         if (!TryComp<SlayTargetComponent>(uid, out var comp))
             return;
-        var shopper = shopUid!.Value;
+        var shopper = shopUid.Value;
         comp.Shop = shopper;
 
     }
@@ -205,10 +200,10 @@ public sealed partial class PubgRuleSystem : GameRuleSystem<PubgRuleComponent>
             uid,
             false,
             actor.PlayerSession.Channel,
-            Color.Red);
+            Color.Gold);
 
         if (TryComp<SlayTargetComponent>(uid, out var comp))
-            _audio.PlayLocal(comp.UpgradeSound, uid, uid, AudioParams.Default.WithVolume(-4f));
+            _audio.PlayEntity(comp.UpgradeSound, uid, uid, AudioParams.Default);
     }
 
     // private void OnPointChanged(EntityUid uid, PubgRuleComponent component, ref PlayerPointChangedEvent args)
@@ -223,21 +218,17 @@ public sealed partial class PubgRuleSystem : GameRuleSystem<PubgRuleComponent>
     //     _roundEnd.EndRound(component.RestartDelay);
     // }
 
-    private void OnRoundEndText(ref RoundEndTextAppendEvent ev)
+    protected override void AppendRoundEndText(EntityUid uid, PubgRuleComponent component, GameRuleComponent gameRule, ref RoundEndTextAppendEvent ev)
     {
-        var query = EntityQueryEnumerator<PubgRuleComponent, PointManagerComponent, GameRuleComponent>();
-        while (query.MoveNext(out var uid, out var dm, out var point, out var rule))
-        {
-            if (!GameTicker.IsGameRuleAdded(uid, rule))
-                continue;
+        if (!TryComp<PointManagerComponent>(uid, out var point))
+            return;
 
-            if (dm.Victor != null && _player.TryGetPlayerData(dm.Victor.Value, out var data))
-            {
-                ev.AddLine(Loc.GetString("point-scoreboard-winner", ("player", data.UserName)));
-                ev.AddLine("");
-            }
-            ev.AddLine(Loc.GetString("point-scoreboard-header"));
-            ev.AddLine(new FormattedMessage(point.Scoreboard).ToMarkup());
+        if (component.Victor != null && _player.TryGetPlayerData(component.Victor.Value, out var data))
+        {
+            ev.AddLine(Loc.GetString("point-scoreboard-winner", ("player", data.UserName)));
+            ev.AddLine("");
         }
+        ev.AddLine(Loc.GetString("point-scoreboard-header"));
+        ev.AddLine(new FormattedMessage(point.Scoreboard).ToMarkup());
     }
 }
