@@ -611,7 +611,7 @@ namespace Content.Client.Lobby.UI
                         selector.Checkbox.Label.FontColorOverride = Color.Red;
                     }
 
-                    TraitsList.AddChild(selector);
+                    // TraitsList.AddChild(selector);
                 }
             }
         }
@@ -728,7 +728,7 @@ namespace Content.Client.Lobby.UI
                     Margin = new Thickness(3f, 0f, 0f, 0f),
                 });
 
-                AntagList.AddChild(antagContainer);
+                // AntagList.AddChild(antagContainer);
             }
         }
 
