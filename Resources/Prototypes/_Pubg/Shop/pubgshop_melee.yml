@@ -1,8 +1,8 @@
 # Tier 1
 - type: listing
-  id: ButchCleaver
-  name: ButchCleaver
-  description: ButchCleaver
+  id: Shop-ButchCleaver
+  name: shop-butchcleaver-name
+  description: shop-butchcleaver-desc
   productEntity: ButchCleaver
   cost:
     SpaceCash: 200
@@ -10,9 +10,9 @@
   - PubgShopMelee
 
 - type: listing
-  id: CombatKnife
-  name: CombatKnife
-  description: CombatKnife
+  id: Shop-CombatKnife
+  name: shop-combatknife-name
+  description: shop-combatknife-desc
   productEntity: CombatKnife
   cost:
     SpaceCash: 250
@@ -20,9 +20,9 @@
   - PubgShopMelee
 
 - type: listing
-  id: Pickaxe
-  name: Pickaxe
-  description: Pickaxe
+  id: Shop-Pickaxe
+  name: shop-pickaxe-name
+  description: shop-pickaxe-desc
   productEntity: Pickaxe
   cost:
     SpaceCash: 300
@@ -30,9 +30,9 @@
   - PubgShopMelee
 
 - type: listing
-  id: BaseBallBat
-  name: BaseBallBat
-  description: BaseBallBat
+  id: Shop-BaseBallBat
+  name: shop-baseballbat-name
+  description: shop-baseballbat-desc
   productEntity: BaseBallBat
   cost:
     SpaceCash: 300
@@ -40,9 +40,9 @@
   - PubgShopMelee
 
 - type: listing
-  id: KukriKnife
-  name: KukriKnife
-  description: KukriKnife
+  id: Shop-KukriKnife
+  name: shop-kukriknife-name
+  description: shop-kukriknife-desc
   productEntity: KukriKnife
   cost:
     SpaceCash: 350
@@ -50,9 +50,9 @@
   - PubgShopMelee
 
 - type: listing
-  id: Sledgehammer
-  name: Sledgehammer
-  description: Sledgehammer
+  id: Shop-Sledgehammer
+  name: shop-sledgehammer-name
+  description: shop-sledgehammer-desc
   productEntity: Sledgehammer
   cost:
     SpaceCash: 400
@@ -60,9 +60,9 @@
   - PubgShopMelee
 
 - type: listing
-  id: Machete
-  name: Machete
-  description: Machete
+  id: Shop-Machete
+  name: shop-machete-name
+  description: shop-machete-desc
   productEntity: Machete
   cost:
     SpaceCash: 500
@@ -71,9 +71,9 @@
 
 # Tier 2
 - type: listing
-  id: Claymore
-  name: Claymore
-  description: Claymore
+  id: Shop-Claymore
+  name: shop-claymore-name
+  description: shop-claymore-desc
   productEntity: Claymore
   cost:
     SpaceCash: 800
@@ -86,9 +86,9 @@
       - PubgShopT2
 
 - type: listing
-  id: FireAxe
-  name: FireAxe
-  description: FireAxe
+  id: Shop-FireAxe
+  name: shop-fireaxe-name
+  description: shop-fireaxe-desc
   productEntity: FireAxe
   cost:
     SpaceCash: 1000
@@ -102,9 +102,9 @@
 
 # Tier 3
 - type: listing
-  id: FireAxeFlaming
-  name: FireAxeFlaming
-  description: FireAxeFlaming
+  id: Shop-FireAxeFlaming
+  name: shop-fireaxeflaming-name
+  description: shop-fireaxeflaming-desc
   productEntity: FireAxeFlaming
   cost:
     SpaceCash: 1500

@@ -19,6 +19,7 @@
     - SpaceCash
     balance:
       SpaceCash: 0
+  - type: Unremoveable
 
 - type: Tag
   id: PubgShopT2
