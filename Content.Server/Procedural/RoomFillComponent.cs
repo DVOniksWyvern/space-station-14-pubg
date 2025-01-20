@@ -15,14 +15,7 @@ public sealed partial class RoomFillComponent : Component
     /// If the room is not a square this will only do 180 degree rotations.
     /// </summary>
     [DataField]
-    public bool Rotation = true;
-
-    /// <summary>
-    /// Should we set Rotation Angle
-    /// Rotation bool will be ignored with this
-    /// </summary>
-    [DataField]
-    public Angle RoomRotation = 0;
+    public bool Rotation = false;
 
     /// <summary>
     /// Size of the room to fill.
