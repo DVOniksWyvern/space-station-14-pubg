@@ -90,12 +90,7 @@
         - FloraTreeStump
       rareChance: 0.01
       prototypes:
-        - FloraTreeSnow01
-        - FloraTreeSnow02
-        - FloraTreeSnow03
-        - FloraTreeSnow04
-        - FloraTreeSnow05
-        - FloraTreeSnow06
+        - FloraTreeSnow
         - PubgSnowBigTree
         - PubgSnowBigTree2
         - PubgSnowBigTree3
@@ -119,9 +114,7 @@
         - FloraTreeStump
       rareChance: 0.01
       prototypes:
-        - FloraTreeConifer03
-        - FloraTreeConifer02
-        - FloraTreeConifer01
+        - FloraTreeConifer
       offset: 0.2
       chance: 0.10
 
@@ -139,6 +132,4 @@
       state: rocksolid01
   - type: RandomSpawner
     prototypes:
-    - FloraRockSolid01
-    - FloraRockSolid02
-    - FloraRockSolid03
+    - FloraRockSolid

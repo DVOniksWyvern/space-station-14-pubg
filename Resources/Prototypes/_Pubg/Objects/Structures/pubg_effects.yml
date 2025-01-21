@@ -2,7 +2,7 @@
   parent: BaseFoam
   id: SmokeStatic
   name: smoke
-  prefix: Static
+  suffix: Static
   components:
   - type: Occluder
   - type: Sprite
