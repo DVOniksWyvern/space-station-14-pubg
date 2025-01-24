@@ -59,7 +59,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.08
+      divisor: 0.09
 
 # Beryl
 - type: entity
@@ -122,7 +122,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.08
+      divisor: 0.09
 
 # FN-FAL
 - type: entity
@@ -185,7 +185,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.08
+      divisor: 0.09
 
 # AS Val
 - type: entity
@@ -248,7 +248,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.08
+      divisor: 0.09
 
 # A91
 - type: entity
@@ -311,7 +311,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.08
+      divisor: 0.09
 
 # Ohio Ordance 1918
 - type: entity
@@ -374,7 +374,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.08
+      divisor: 0.09
 
 # ASH-12
 - type: entity
@@ -439,4 +439,4 @@
   - type: StaticPrice
     price: 500
   - type: Telescope
-    divisor: 0.08
+    divisor: 0.09

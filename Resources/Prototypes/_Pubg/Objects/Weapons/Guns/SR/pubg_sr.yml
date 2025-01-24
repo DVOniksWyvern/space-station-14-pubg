@@ -59,7 +59,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.055
+      divisor: 0.075
 
 # Garand
 - type: entity
@@ -119,7 +119,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.055
+      divisor: 0.075
 
 # Merkel Sr1
 - type: entity
@@ -176,4 +176,4 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.055
+      divisor: 0.075

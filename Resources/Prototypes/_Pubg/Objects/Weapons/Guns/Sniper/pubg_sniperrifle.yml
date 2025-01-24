@@ -61,7 +61,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.04
+      divisor: 0.07
 
 # SV-98
 - type: entity
@@ -126,7 +126,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.04
+      divisor: 0.07
 
 # Barrett
 - type: entity
@@ -191,4 +191,4 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.04
+      divisor: 0.07
