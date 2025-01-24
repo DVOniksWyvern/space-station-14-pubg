@@ -99,6 +99,15 @@
     - type: NightVision
       isToggle: true
       color: "#808080"
+    # start-backmen: surgery
+    - type: Body
+      prototype: Carp
+    - type: SurgeryTarget
+    - type: UserInterface
+      interfaces:
+        enum.SurgeryUIKey.Key:
+          type: SurgeryBui
+    # end-backmen: surgery
 
 - type: entity
   parent: BaseMobCarp
@@ -184,6 +193,8 @@
       name: ghost-role-information-sentient-carp-name
       description: ghost-role-information-sentient-carp-description
       rules: ghost-role-information-space-dragon-summoned-carp-rules
+      mindRoles:
+      - MindRoleGhostRoleTeamAntagonist
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
@@ -262,6 +273,11 @@
         types:
           Slash: 10
           Bloodloss: 5
+    - type: SurgeryTarget
+    - type: UserInterface
+      interfaces:
+        enum.SurgeryUIKey.Key:
+          type: SurgeryBui
 
 - type: entity
   id: MobSharkSalvage

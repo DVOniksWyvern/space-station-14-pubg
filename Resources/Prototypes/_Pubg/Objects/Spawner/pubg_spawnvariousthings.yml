@@ -67,6 +67,8 @@
         - ClothingOuterArmorFagor1
         - ClothingOuterArmorSegment2
         - ClothingOuterArmorTorus
+        - PubgClothingBackpackAssemblyBag
+        - PubgClothingBeltStorageTv101
       rareChance: 0.05
       prototypes:
         #
@@ -111,6 +113,8 @@
         - ClothingOuterArmorKorund
         - ClothingOuterArmorPlitnik
         - ClothingOuterArmorRusarmOlive
+        - PubgClothingBackpackTigerBag
+        - PubgClothingBeltStoragePhoenixMk2
         - SpaceCash10000
       rareChance: 0.10
       prototypes:

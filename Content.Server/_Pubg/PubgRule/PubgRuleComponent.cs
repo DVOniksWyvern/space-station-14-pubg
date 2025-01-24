@@ -15,7 +15,7 @@ public sealed partial class PubgRuleComponent : Component
     /// How long until the round restarts
     /// </summary>
     [DataField("restartDelay"), ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan RestartDelay = TimeSpan.FromMinutes(2);
+    public TimeSpan RestartDelay = TimeSpan.FromSeconds(30);
 
     /// <summary>
     /// The person who won.
@@ -40,8 +40,10 @@ public sealed partial class PubgRuleComponent : Component
     public HashSet<EntityUid> Survivors = new HashSet<EntityUid>();
 
     [DataField]
-    public Dictionary<int, string> ShopUpgrades = new Dictionary<int, string>(){
-        { 10, "GoidaT2Shop" },
-        { 20, "GoidaT3Shop" }
+    public Dictionary<int, string> ShopUpgrades = new Dictionary<int, string>()
+    {
+        { 1, "PubgShopT2" },
+        { 3, "PubgShopT3" },
+        { 5, "PubgShopT4" }
     };
 }

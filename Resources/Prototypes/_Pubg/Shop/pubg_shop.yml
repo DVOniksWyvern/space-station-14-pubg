@@ -1,0 +1,66 @@
+- type: entity
+  parent: BaseUplinkRadio
+  id: BasePubgShop
+  name: Pubg SHOPPER
+  description: Buy what you want!
+  components:
+  - type: Tag
+  - type: Store
+    buySuccessSound: /Audio/_Pubg/Shop/supergoida.ogg
+    categories:
+    - PubgShopWeaponry
+    - PubgShopMedicine
+    - PubgShopAmmo
+    - PubgShopArmor
+    - PubgShopHelmet
+    - PubgShopMelee
+    - PubgShopMisc
+    currencyWhitelist:
+    - SpaceCash
+    balance:
+      SpaceCash: 0
+  - type: Unremoveable
+
+- type: Tag
+  id: PubgShopT2
+
+- type: Tag
+  id: PubgShopT3
+
+- type: Tag
+  id: PubgShopT4
+
+- type: storeCategory
+  id: PubgShopWeaponry
+  name: WEAPONS
+  priority: 1
+
+- type: storeCategory
+  id: PubgShopMedicine
+  name: MEDICINE
+  priority: 2
+
+- type: storeCategory
+  id: PubgShopAmmo
+  name: AMMO
+  priority: 3
+
+- type: storeCategory
+  id: PubgShopArmor
+  name: ARMOR
+  priority: 4
+
+- type: storeCategory
+  id: PubgShopHelmet
+  name: HELMETS
+  priority: 5
+
+- type: storeCategory
+  id: PubgShopMelee
+  name: MELEE
+  priority: 6
+
+- type: storeCategory
+  id: PubgShopMisc
+  name: MISC
+  priority: 7

@@ -257,6 +257,7 @@
     - type: ClothingSpeedModifier
       walkModifier: 0.95
       sprintModifier: 0.95
+    - type: HeldSpeedModifier
     - type: Item
       size: Small
       storedRotation: -90
@@ -283,6 +284,7 @@
     - type: ClothingSpeedModifier
       walkModifier: 0.95
       sprintModifier: 0.95
+    - type: HeldSpeedModifier
     - type: Item
       size: Small
       storedRotation: -90
@@ -309,6 +311,7 @@
     - type: ClothingSpeedModifier
       walkModifier: 0.90
       sprintModifier: 0.90
+    - type: HeldSpeedModifier
     - type: Item
       size: Small
       storedRotation: -90
@@ -337,6 +340,7 @@
     - type: ClothingSpeedModifier
       walkModifier: 0.85
       sprintModifier: 0.85
+    - type: HeldSpeedModifier
     - type: Item
       size: Small
       storedRotation: -90

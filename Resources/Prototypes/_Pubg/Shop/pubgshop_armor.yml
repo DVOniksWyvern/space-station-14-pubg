@@ -1,153 +1,153 @@
 # Tier 1
 - type: listing
-  id: ArmorSegment2
-  name: Armor Segment2
-  description: Armor Segment2
+  id: Shop-ArmorSegment2
+  name: shop-armor-segment2-name
+  description: shop-armor-segment2-desc
   productEntity: ClothingOuterArmorSegment2
   cost:
     SpaceCash: 500
   categories:
-  - GoidaArmor
+  - PubgShopArmor
 
 - type: listing
-  id: ArmorFagor1
-  name: Armor Fagor1
-  description: Armor Fagor1
+  id: Shop-ArmorFagor1
+  name: shop-armor-fagor1-name
+  description: shop-armor-fagor1-desc
   productEntity: ClothingOuterArmorFagor1
   cost:
     SpaceCash: 600
   categories:
-  - GoidaArmor
+  - PubgShopArmor
 
 - type: listing
-  id: ClothingOuterArmorTorus
-  name: Armor Torus
-  description: Armor Torus
+  id: Shop-ClothingOuterArmorTorus
+  name: shop-armor-torus-name
+  description: shop-armor-torus-desc
   productEntity: ClothingOuterArmorTorus
   cost:
     SpaceCash: 800
   categories:
-  - GoidaArmor
+  - PubgShopArmor
 
 # Tier 2
 - type: listing
-  id: ClothingOuterArmorPlitnik
-  name: Armor Plitnik
-  description: Armor Plitnik
+  id: Shop-ClothingOuterArmorPlitnik
+  name: shop-armor-plitnik-name
+  description: shop-armor-plitnik-desc
   productEntity: ClothingOuterArmorPlitnik
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
-  id: ClothingOuterArmorBagarii
-  name: Armor Bagarii
-  description: Armor Bagarii
+  id: Shop-ClothingOuterArmorBagarii
+  name: shop-armor-bagarii-name
+  description: shop-armor-bagarii-desc
   productEntity: ClothingOuterArmorBagarii
   cost:
     SpaceCash: 1100
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
-  id: ClothingOuterArmorKorund
-  name: Armor Korund
-  description: Armor Korund
+  id: Shop-ClothingOuterArmorKorund
+  name: shop-armor-korund-name
+  description: shop-armor-korund-desc
   productEntity: ClothingOuterArmorKorund
   cost:
     SpaceCash: 1300
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
-  id: ClothingOuterArmorRusarmOlive
-  name: Armor Rusarm Olive
-  description: Armor Rusarm Olive
+  id: Shop-ClothingOuterArmorRusarmOlive
+  name: shop-armor-rusarm-olive-name
+  description: shop-armor-rusarm-olive-desc
   productEntity: ClothingOuterArmorRusarmOlive
   cost:
     SpaceCash: 1500
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 # Tier 3
 - type: listing
-  id: ClothingOuterArmorBattleAssault
-  name: Armor Battle Assault
-  description: Armor Battle Assault
+  id: Shop-ClothingOuterArmorBattleAssault
+  name: shop-armor-battle-assault-name
+  description: shop-armor-battle-assault-desc
   productEntity: ClothingOuterArmorBattleAssault
   cost:
     SpaceCash: 2000
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
-  id: ClothingOuterArmorRusarmAssault
-  name: Armor RusArm Assault
-  description: Armor RusArm Assault
+  id: Shop-ClothingOuterArmorRusarmAssault
+  name: shop-armor-rusarm-assault-name
+  description: shop-armor-rusarm-assault-desc
   productEntity: ClothingOuterArmorRusarmAssault
   cost:
     SpaceCash: 2500
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
-  id: ClothingOuterArmorSaphire
-  name: Armor Saphire
-  description: Armor Saphire
+  id: Shop-ClothingOuterArmorSaphire
+  name: shop-armor-saphire-name
+  description: shop-armor-saphire-desc
   productEntity: ClothingOuterArmorSaphire
   cost:
     SpaceCash: 3000
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 # Tier 4
 - type: listing
-  id: ClothingOuterArmorTactick
-  name: Armor Tactick
-  description: Armor Tactick
+  id: Shop-ClothingOuterArmorTactick
+  name: shop-armor-tactick-name
+  description: shop-armor-tactick-desc
   productEntity: ClothingOuterArmorTactick
   cost:
     SpaceCash: 4000
   categories:
-  - GoidaArmor
+  - PubgShopArmor
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4

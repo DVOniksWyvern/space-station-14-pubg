@@ -21,7 +21,8 @@
     - Stun
     - Corporeal
   - type: Damageable
-    damageContainer: Biological
+    damageContainer: ManifestedSpirit
+    damageModifierSet: ManifestedSpirit
   - type: TTS # Corvax-TTS
     voice: Kelthuzad
   - type: NoSlip
@@ -39,6 +40,8 @@
     name: ghost-role-information-revenant-name
     description: ghost-role-information-revenant-description
     rules: ghost-role-information-antagonist-rules
+    mindRoles:
+    - MindRoleGhostRoleSoloAntagonist
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -58,10 +61,13 @@
     color: MediumPurple
     radius: 2
     softness: 1
+  - type: VoiceMask # Backmen
   - type: UserInterface
     interfaces:
       enum.StoreUiKey.Key:
         type: StoreBoundUserInterface
+      enum.VoiceMaskUIKey.Key:
+        type: VoiceMaskBoundUserInterface # Backmen 
   - type: Visibility
     layer: 2 #ghost vis layer
   - type: Store
@@ -85,3 +91,6 @@
     - TauCetiBasic
     understands:
     - TauCetiBasic
+  - type: Reactive
+    groups:
+      Acidic: [Touch]

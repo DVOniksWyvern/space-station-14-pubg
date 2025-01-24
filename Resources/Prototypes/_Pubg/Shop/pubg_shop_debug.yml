@@ -1,0 +1,59 @@
+- type: entity
+  parent: BasePubgShop
+  id: PubgShopT2
+  name: PubgShop SHOPPER T2
+  description: Test
+  components:
+  - type: Tag
+    tags:
+    - PubgShopT2
+
+- type: entity
+  parent: BasePubgShop
+  id: PubgShopT3
+  name: PubgShop SHOPPER T3
+  description: Test
+  components:
+  - type: Tag
+    tags:
+    - PubgShopT2
+    - PubgShopT3
+
+- type: entity
+  parent: BasePubgShop
+  id: PubgShopT4
+  name: PubgShop SHOPPER T4
+  description: Test
+  components:
+  - type: Tag
+    tags:
+    - PubgShopT2
+    - PubgShopT3
+    - PubgShopT4
+
+- type: entity
+  parent: BasePubgShop
+  id: BasePubgShopDebug
+  name: DEBUG PubgShop
+  description: Test
+  suffix: DEBUG
+  components:
+  - type: Store
+    buySuccessSound: /Audio/_Pubg/Shop/supergoida.ogg
+    categories:
+    - PubgShopWeaponry
+    - PubgShopMedicine
+    - PubgShopAmmo
+    - PubgShopArmor
+    - PubgShopHelmet
+    - PubgShopMelee
+    - PubgShopMisc
+    currencyWhitelist:
+    - SpaceCash
+    balance:
+      SpaceCash: 1337228
+  - type: Tag
+    tags:
+    - PubgShopT2
+    - PubgShopT3
+    - PubgShopT4

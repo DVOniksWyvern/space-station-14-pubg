@@ -39,8 +39,7 @@
       magState: mag
       steps: 1
       zeroVisible: true
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -52,13 +51,6 @@
           whitelist:
             tags:
               - MagazineLmgRPD
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeRifle7-62x39mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeRifle7-62x39mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot

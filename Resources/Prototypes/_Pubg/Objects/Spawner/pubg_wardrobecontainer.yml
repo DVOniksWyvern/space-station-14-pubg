@@ -222,6 +222,41 @@
         - id: null
           prob: 0.98
           orGroup: Mask
+        # Backpack
+        - id: PubgClothingBackpackAssault
+          prob: 0.1
+          orGroup: Backpack
+        - id: PubgClothingBackpackRoadBag
+          prob: 0.1
+          orGroup: Backpack
+        - id: PubgClothingBackpackAssemblyBag
+          prob: 0.06
+          orGroup: Backpack
+        - id: PubgClothingBackpackTigerBag
+          prob: 0.04
+          orGroup: Backpack
+        - id: null
+          prob: 0.70
+          orGroup: Backpack
+        # Chestrig
+        - id: PubgClothingBeltStorageArs
+          prob: 0.1
+          orGroup: Chestrig
+        - id: PubgClothingBeltStorageStrixtac
+          prob: 0.1
+          orGroup: Chestrig
+        - id: PubgClothingBeltStorageTv101
+          prob: 0.04
+          orGroup: Chestrig
+        - id: PubgClothingBeltStorageOliva
+          prob: 0.02
+          orGroup: Chestrig
+        - id: PubgClothingBeltStoragePhoenixMk2
+          prob: 0.02
+          orGroup: Chestrig
+        - id: null
+          prob: 0.70
+          orGroup: Chestrig
         # Medicine
         - id: PubgStandartMedicine2
           prob: 0.30
@@ -428,6 +463,41 @@
         - id: null
           prob: 0.98
           orGroup: Mask
+        # Backpack
+        - id: PubgClothingBackpackAssault
+          prob: 0.05
+          orGroup: Backpack
+        - id: PubgClothingBackpackRoadBag
+          prob: 0.05
+          orGroup: Backpack
+        - id: PubgClothingBackpackAssemblyBag
+          prob: 0.15
+          orGroup: Backpack
+        - id: PubgClothingBackpackTigerBag
+          prob: 0.15
+          orGroup: Backpack
+        - id: null
+          prob: 0.70
+          orGroup: Backpack
+          # Chestrig
+        - id: PubgClothingBeltStorageArs
+          prob: 0.05
+          orGroup: Chestrig
+        - id: PubgClothingBeltStorageStrixtac
+          prob: 0.05
+          orGroup: Chestrig
+        - id: PubgClothingBeltStorageTv101
+          prob: 0.05
+          orGroup: Chestrig
+        - id: PubgClothingBeltStorageOliva
+          prob: 0.10
+          orGroup: Chestrig
+        - id: PubgClothingBeltStoragePhoenixMk2
+          prob: 0.10
+          orGroup: Chestrig
+        - id: null
+          prob: 0.65
+          orGroup: Chestrig
         # Medicine
         - id: PubgStandartMedicine2
           prob: 0.10
@@ -644,6 +714,29 @@
         - id: null
           prob: 0.98
           orGroup: Mask
+        # Backpack
+        - id: PubgClothingBackpackAssemblyBag
+          prob: 0.15
+          orGroup: Backpack
+        - id: PubgClothingBackpackTigerBag
+          prob: 0.15
+          orGroup: Backpack
+        - id: PubgClothingBackpackTactickal
+          prob: 0.10
+          orGroup: Backpack
+        - id: null
+          prob: 0.60
+          orGroup: Backpack
+        # Chestrig
+        - id: PubgClothingBeltStorageOliva
+          prob: 0.15
+          orGroup: Chestrig
+        - id: PubgClothingBeltStoragePhoenixMk2
+          prob: 0.15
+          orGroup: Chestrig
+        - id: null
+          prob: 0.70
+          orGroup: Chestrig
         # Medicine
         - id: PubgStandartMedicine
           prob: 0.15

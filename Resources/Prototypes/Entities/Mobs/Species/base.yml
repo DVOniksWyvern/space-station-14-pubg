@@ -3,7 +3,6 @@
   parent:
   - BaseMob
   - MobDamageable
-  - MobPolymorphable
   - MobCombat
   - StripableInventoryBase
   id: BaseMobSpecies
@@ -83,10 +82,11 @@
     horizontalRotation: 90
   - type: HumanoidAppearance
     species: Human
-  - type: SlowOnDamage
+  - type: SlowOnDamage # Pubg redacted
     speedModifierThresholds:
-      60: 0.7
-      80: 0.5
+      50: 0.9
+      75: 0.8
+      90: 0.7
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
@@ -196,6 +196,8 @@
         type: StrippableBoundUserInterface
       enum.StoreUiKey.Key:
         type: StoreBoundUserInterface
+#      enum.SurgeryUIKey.Key: # backmen: surgery
+#        type: SurgeryBui
   - type: Puller
   - type: Speech
     speechSounds: Alto
@@ -214,22 +216,16 @@
   - type: MobPrice
     price: 1500 # Kidnapping a living person and selling them for cred is a good move.
     deathPenalty: 0.01 # However they really ought to be living and intact, otherwise they're worth 100x less.
-  - type: PotentialPsionic
+#  - type: PotentialPsionic
   - type: LayingDown # backmen: LayingDown
   - type: Tag
     tags:
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
-    - AnomalyHost
-  - type: LanguageSpeaker
-    currentLanguage: TauCetiBasic
-  - type: LanguageKnowledge #backmen: languages
-    speaks:
-    - TauCetiBasic
-    understands:
-    - TauCetiBasic
-  - type: Immersive
+  - type: Immersive # backmen: immersive
+#  - type: Targeting # backmen: surgery
+#  - type: SurgeryTarget # backmen: surgery
 
 - type: entity
   save: false
@@ -243,8 +239,8 @@
   abstract: true
   components:
   - type: Absorbable # Changeling
-  - type: DiseaseCarrier # backmen
-  - type: OfferItem # Ataraxia
+#  - type: DiseaseCarrier # backmen
+#  - type: Targeting # backmen: surgery
   - type: Barotrauma
     damage:
       types:
@@ -301,13 +297,6 @@
         Asphyxiation: -1.0
   - type: FireVisuals
     alternateState: Standing
-  - type: LanguageSpeaker
-    currentLanguage: TauCetiBasic
-  - type: LanguageKnowledge #backmen: languages
-    speaks:
-    - TauCetiBasic
-    understands:
-    - TauCetiBasic
   - type: EnergyMover #Pubg
 
 - type: entity

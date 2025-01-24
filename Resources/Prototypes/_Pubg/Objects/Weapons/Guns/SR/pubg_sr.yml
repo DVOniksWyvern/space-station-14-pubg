@@ -51,13 +51,6 @@
           whitelist:
             tags:
               - MagazineRifleSKS
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeRifle7-62x39mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeRifle7-62x39mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -66,7 +59,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.055
+      divisor: 0.075
 
 # Garand
 - type: entity
@@ -118,13 +111,6 @@
           whitelist:
             tags:
               - MagazineRifleGarand
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeRifle7-62x51mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeRifle7-62x51mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -133,7 +119,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.055
+      divisor: 0.075
 
 # Merkel Sr1
 - type: entity
@@ -182,13 +168,6 @@
           whitelist:
             tags:
               - MagazineRifleMerkel
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeRifle30-06spr
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeRifle30-06spr
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -197,4 +176,4 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.055
+      divisor: 0.075

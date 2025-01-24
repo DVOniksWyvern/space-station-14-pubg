@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Server.Administration.Commands;
+using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Rules;
 using Content.Server.GameTicking.Rules.Components;
@@ -9,13 +10,16 @@ using Content.Server.Mind;
 using Content.Server.Points;
 using Content.Server.RoundEnd;
 using Content.Server.Station.Systems;
+using Content.Shared.Chat;
+using Content.Shared.GameTicking;
 using Content.Shared.GameTicking.Components;
 using Content.Shared.Inventory;
 using Content.Shared.Mobs;
 using Content.Shared.Points;
-using Content.Shared.Storage;
 using Content.Shared.Tag;
+using Robust.Server.Audio;
 using Robust.Server.Player;
+using Robust.Shared.Audio;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
 
@@ -26,11 +30,13 @@ namespace Content.Server._Pubg.PubgRule;
 /// </summary>
 public sealed partial class PubgRuleSystem : GameRuleSystem<PubgRuleComponent>
 {
+    [Dependency] private readonly IChatManager _chatManager = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly MindSystem _mind = default!;
     [Dependency] private readonly PointSystem _point = default!;
     [Dependency] private readonly RoundEndSystem _roundEnd = default!;
     [Dependency] private readonly StationSpawningSystem _stationSpawning = default!;
+    [Dependency] private readonly AudioSystem _audio = default!;
     [Dependency] private readonly HandsSystem _hands = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly TagSystem _tag = default!;
@@ -41,10 +47,9 @@ public sealed partial class PubgRuleSystem : GameRuleSystem<PubgRuleComponent>
 
         SubscribeLocalEvent<PlayerBeforeSpawnEvent>(OnBeforeSpawn);
         SubscribeLocalEvent<KillReportedEvent>(OnKillReported);
-        // SubscribeLocalEvent<RoundEndTextAppendEvent>(OnRoundEndText);
         SubscribeLocalEvent<SlayTargetComponent, MobStateChangedEvent>(OnMobStateChanged);
         //SubscribeLocalEvent<PubgRuleComponent, PlayerPointChangedEvent>(OnPointChanged);
-        //SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnSpawnComplete);
+        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnSpawnComplete);
     }
 
     private void OnBeforeSpawn(PlayerBeforeSpawnEvent ev)
@@ -72,18 +77,26 @@ public sealed partial class PubgRuleSystem : GameRuleSystem<PubgRuleComponent>
             {
                 AddComp<SlayTargetComponent>(ev.Player.AttachedEntity.Value);
                 pubg.Survivors.Add(ev.Player.AttachedEntity.Value);
+
+                _inventory.SpawnItemOnEntity(ev.Player.AttachedEntity.Value, "BasePubgShop");
+                TryFindShop(ev.Player.AttachedEntity.Value);
             }
-
-            //var shop = Spawn("GoidaShop");
-
-            //_inventory.TryEquip(ev.Player.AttachedEntity.Value, shop, "pocket1");
-            //_hands.
-            //TODO: spawn shop in pocket here or link with existing shop here
-
 
             ev.Handled = true;
             break;
         }
+    }
+
+    private void TryFindShop(EntityUid uid)
+    {
+        // check inventory slot?
+        if (!_inventory.TryGetSlotEntity(uid, "pocket1", out var shopUid))
+            return;
+        if (!TryComp<SlayTargetComponent>(uid, out var comp))
+            return;
+        var shopper = shopUid.Value;
+        comp.Shop = shopper;
+
     }
 
     private void OnSpawnComplete(PlayerSpawnCompleteEvent ev)
@@ -133,18 +146,15 @@ public sealed partial class PubgRuleSystem : GameRuleSystem<PubgRuleComponent>
                 continue;
 
             if (ev.Primary is not KillPlayerSource player)
-            {
-                _point.AdjustPointValue(ev.Entity, -1, uid, point);
                 continue;
-            }
 
             _point.AdjustPointValue(player.PlayerId, 1, uid, point);
 
             if (ev.Assist is KillPlayerSource assist && pubg.Victor == null)
                 _point.AdjustPointValue(assist.PlayerId, 1, uid, point);
 
-            var spawns = EntitySpawnCollection.GetSpawns(pubg.RewardSpawns).Cast<string?>().ToList();
-            EntityManager.SpawnEntities(Transform(ev.Entity).MapPosition, spawns);
+            // var spawns = EntitySpawnCollection.GetSpawns(pubg.RewardSpawns).Cast<string?>().ToList();
+            // EntityManager.SpawnEntities(Transform(ev.Entity).MapPosition, spawns);
 
             // upgrade pubgShop
 
@@ -154,57 +164,71 @@ public sealed partial class PubgRuleSystem : GameRuleSystem<PubgRuleComponent>
             if (session.AttachedEntity == null)
                 return;
 
-            var Puid = session.AttachedEntity.Value;
-            if (!TryComp<SlayTargetComponent>(uid, out var comp))
+            var puid = session.AttachedEntity.Value;
+            if (!TryComp<SlayTargetComponent>(puid, out var comp))
                 return;
+
+            var shop = GetShop(puid);
 
             if (comp.Shop == null)
                 return;
 
-            var shop = GetShop(Puid);
-
-            if (shop == null)
-                return;
-
-            var kills = _point.GetPointValue(player.PlayerId, Puid);
+            var kills = _point.GetPointValue(player.PlayerId, uid);
 
             foreach (var upgrade in pubg.ShopUpgrades)
             {
                 if (!(upgrade.Key <= kills))
                     continue;
-
-                _tag.AddTag(shop.Value, upgrade.Value);
+                if (shop != null)
+                    _tag.AddTag(shop.Value, upgrade.Value);
+                OnUpgrade(puid);
             }
         }
     }
 
-    private void OnPointChanged(EntityUid uid, PubgRuleComponent component, ref PlayerPointChangedEvent args)
+    private void OnUpgrade(EntityUid uid)
     {
-        //if (component.Victor != null)
-        //    return;
+        if (!TryComp<ActorComponent>(uid, out var actor))
+            return;
 
-        //if (args.Points < component.KillCap)
-        //    return;
+        var message = Loc.GetString("shop-upgrade");
+        var messageWrap = Loc.GetString("chat-manager-server-wrap-message", ("message", message));
 
-        //component.Victor = args.Player;
-        //_roundEnd.EndRound(component.RestartDelay);
+        _chatManager.ChatMessageToOne(ChatChannel.Notifications,
+            message,
+            messageWrap,
+            uid,
+            false,
+            actor.PlayerSession.Channel,
+            Color.Gold);
+
+        if (TryComp<SlayTargetComponent>(uid, out var comp))
+            _audio.PlayEntity(comp.UpgradeSound, uid, uid, AudioParams.Default);
     }
 
-    // private void OnRoundEndText(ref RoundEndTextAppendEvent ev)
+    // private void OnPointChanged(EntityUid uid, PubgRuleComponent component, ref PlayerPointChangedEvent args)
     // {
-    //     var query = EntityQueryEnumerator<PubgRuleComponent, PointManagerComponent, GameRuleComponent>();
-    //     while (query.MoveNext(out var uid, out var dm, out var point, out var rule))
-    //     {
-    //         if (!GameTicker.IsGameRuleAdded(uid, rule))
-    //             continue;
+    //     if (component.Victor != null)
+    //         return;
     //
-    //         if (dm.Victor != null && _player.TryGetPlayerData(dm.Victor.Value, out var data))
-    //         {
-    //             ev.AddLine(Loc.GetString("point-scoreboard-winner", ("player", data.UserName)));
-    //             ev.AddLine("");
-    //         }
-    //         ev.AddLine(Loc.GetString("point-scoreboard-header"));
-    //         ev.AddLine(new FormattedMessage(point.Scoreboard).ToMarkup());
-    //     }
+    //     if (args.Points < component.KillCap)
+    //         return;
+    //
+    //     component.Victor = args.Player;
+    //     _roundEnd.EndRound(component.RestartDelay);
     // }
+
+    protected override void AppendRoundEndText(EntityUid uid, PubgRuleComponent component, GameRuleComponent gameRule, ref RoundEndTextAppendEvent ev)
+    {
+        if (!TryComp<PointManagerComponent>(uid, out var point))
+            return;
+
+        if (component.Victor != null && _player.TryGetPlayerData(component.Victor.Value, out var data))
+        {
+            ev.AddLine(Loc.GetString("point-scoreboard-winner", ("player", data.UserName)));
+            ev.AddLine("");
+        }
+        ev.AddLine(Loc.GetString("point-scoreboard-header"));
+        ev.AddLine(new FormattedMessage(point.Scoreboard).ToMarkup());
+    }
 }

@@ -27,9 +27,9 @@ public sealed class SlayBoundarySystem : EntitySystem
     [Dependency] private readonly SlayRestrictedRangeSystem _SlayRange = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
 
-    public TimeSpan _timeToKill;
+    private TimeSpan _timeToKill;
 
-    public DamageSpecifier _defaultDamage = new ()
+    private DamageSpecifier _defaultDamage = new ()
     {
         DamageDict = new()
         {
@@ -38,7 +38,7 @@ public sealed class SlayBoundarySystem : EntitySystem
     };
 
     // компонент сливается клиенту, поэтому так. мб можно сделать не нетворкающимся полем в компоненте, но я за них не ебу. короче, TODO
-    public Dictionary<SlayBoundaryComponent, HashSet<EntityUid>> _SlayList = new();
+    private Dictionary<SlayBoundaryComponent, HashSet<EntityUid>> _SlayList = new();
 
     public override void Initialize()
     {
@@ -101,7 +101,7 @@ public sealed class SlayBoundarySystem : EntitySystem
         }
     }
 
-    public HashSet<EntityUid> KillListing(EntityUid uid, SlayBoundaryComponent comp)
+    private HashSet<EntityUid> KillListing(EntityUid uid, SlayBoundaryComponent comp)
     {
         var listToSlay = new HashSet<EntityUid>();
         if (!_SlayList.TryGetValue(comp, out var targetList))
@@ -112,7 +112,7 @@ public sealed class SlayBoundarySystem : EntitySystem
             if (_mobState.IsDead(player))
                 continue;
 
-            if (!TryComp<DamageableComponent>(player, out var TargetDamageComp))
+            if (!TryComp<DamageableComponent>(player, out var targetDamageComp))
                 continue;
 
             _damage.TryChangeDamage(player, comp.Damage, true);

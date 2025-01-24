@@ -38,7 +38,7 @@ public sealed class RoomFillSystem : EntitySystem
                     null,
                     clearExisting: component.ClearExisting,
                     rotation: component.Rotation,
-                    roomRot: component.RoomRotation);
+                    roomRot: xform.LocalRotation);
             }
             else
             {

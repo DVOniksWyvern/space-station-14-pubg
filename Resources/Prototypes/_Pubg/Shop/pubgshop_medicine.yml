@@ -1,112 +1,112 @@
 # Tier 1
 - type: listing
-  id: MedicineBandage
-  name: Bandage
-  description: Bandage 5 in pocket
+  id: Shop-MedicineBandage
+  name: shop-bandage-name
+  description: shop-bandage-desc
   productEntity: PubgStandartMedicineBandage
   cost:
     SpaceCash: 100
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
 
 - type: listing
-  id: MedicineStandart
-  name: Standart
-  description: Standart pack 2 in pocket
+  id: Shop-MedicineStandart
+  name: shop-standart-name
+  description: shop-standart-desc
   productEntity: PubgStandartMedicine2
   cost:
     SpaceCash: 200
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
 
 # Tier 2
 - type: listing
-  id: MedicineBruteMedipen
-  name: Brute Medipen
-  description: Brute Medipen
+  id: Shop-MedicineBruteMedipen
+  name: shop-brute-medipen-name
+  description: shop-brute-medipen-desc
   productEntity: PubgBruteMedipen
   cost:
     SpaceCash: 750
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
-  id: MedicineSpeedMedipen
-  name: Speed Medipen
-  description: Speed Medipen
+  id: Shop-MedicineSpeedMedipen
+  name: shop-speed-medipen-name
+  description: shop-speed-medipen-desc
   productEntity: PubgSpeedMedipen
   cost:
     SpaceCash: 900
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
-  id: PubgObdalbosMedipen
-  name: Obdalbos Medipen
-  description: Obdalbos Medipen
+  id: Shop-PubgObdalbosMedipen
+  name: shop-obdalbos-medipen-name
+  description: shop-obdalbos-medipen-desc
   productEntity: PubgObdalbosMedipen
   cost:
     SpaceCash: 1228
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
-  id: PubgRegeneratorMedipen
-  name: Regenerator Medipen
-  description: Regenerator Medipen
+  id: Shop-PubgRegeneratorMedipen
+  name: shop-regenerator-medipen-name
+  description: shop-regenerator-medipen-desc
   productEntity: PubgRegeneratorMedipen
   cost:
     SpaceCash: 1250
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 # Tier 3
 - type: listing
-  id: MedicineSuperBruteMedipen
-  name: Super Brute Medipen
-  description: Super Brute Medipen
+  id: Shop-MedicineSuperBruteMedipen
+  name: shop-super-brute-medipen-name
+  description: shop-super-brute-medipen-desc
   productEntity: PubgSuperBruteMedipen
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
-  id: MedicineSuperSpeedMedipen
-  name: Super Speed Medipen
-  description: Super Speed Medipen
+  id: Shop-MedicineSuperSpeedMedipen
+  name: shop-super-speed-medipen-name
+  description: shop-super-speed-medipen-desc
   productEntity: PubgSuperSpeedMedipen
   cost:
     SpaceCash: 1500
   categories:
-  - GoidaMedicine
+  - PubgShopMedicine
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3

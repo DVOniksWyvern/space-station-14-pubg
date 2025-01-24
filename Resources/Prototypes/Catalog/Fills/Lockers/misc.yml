@@ -30,7 +30,7 @@
     - id: MedkitOxygenFilled
       prob: 0.2
     - id: WeaponFlareGun
-      prob: 0.05
+      prob: 0.1
     - id: BoxMRE
       prob: 0.1
 
@@ -169,6 +169,9 @@
     - !type:NestedSelector
       tableId: BackmenMaintLoot
       prob: 0.2
+    # Recursive
+    - id: ClosetMaintenanceFilledRandom
+      prob: 0.01
 
 - type: entity
   id: ClosetMaintenanceFilledRandom

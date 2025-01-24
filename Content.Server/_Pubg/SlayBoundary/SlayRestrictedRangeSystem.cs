@@ -49,7 +49,7 @@ public sealed class SlayRestrictedRangeSystem : SharedRestrictedRangeSystem
         component.BoundaryEntity = CreateBoundary(new EntityCoordinates(uid, component.Origin), component);
     }
 
-    public EntityUid CreateBoundary(EntityCoordinates coordinates, SlayRestrictedRangeComponent comp)
+    private EntityUid CreateBoundary(EntityCoordinates coordinates, SlayRestrictedRangeComponent comp)
     {
         string? boundaryProtoId = null;
         if (comp.BoundaryProto != null)
@@ -68,7 +68,7 @@ public sealed class SlayRestrictedRangeSystem : SharedRestrictedRangeSystem
         return boundaryUid;
     }
 
-    public void CreateSlayBoundary(EntityUid uid, float range)
+    private void CreateSlayBoundary(EntityUid uid, float range)
     {
         if (!TryComp<PhysicsComponent>(uid, out var boundaryPhysics))
             boundaryPhysics = AddComp<PhysicsComponent>(uid);
@@ -88,7 +88,7 @@ public sealed class SlayRestrictedRangeSystem : SharedRestrictedRangeSystem
     }
 
     //TODO: сделать объявление через AnnouncementSystem, добавить делегат и кастомные функции для этой хуйни
-    public void NarrowBoundary(EntityUid boundaryUid, SlayRestrictedRangeComponent comp, EntityUid uid)
+    private void NarrowBoundary(EntityUid boundaryUid, SlayRestrictedRangeComponent comp, EntityUid uid)
     {
         if (!TryComp<FixturesComponent>(boundaryUid, out var fixturesManager))
             return;

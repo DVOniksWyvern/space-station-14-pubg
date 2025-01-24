@@ -1,17 +1,17 @@
 - type: entity
-  id: PubgTestRoomMarker1
+  id: PubgTestRoomMarkerTEST
   name: Room marker
   parent: MarkerBase
-  suffix: TEST 90 Angle
+  suffix: TEST ROTATION ANGLE
   components:
   - type: RoomFill
     size: 5,5
     rotation: false
-    roomRotation: 90
     roomWhitelist:
       tags:
       - SalvageExperiment
   - type: Sprite
+    granularLayersRendering: true
     layers:
     - state: red
     - sprite: _Pubg/SpawnMarkers/genmarks.rsi
@@ -19,25 +19,4 @@
     - sprite: _Pubg/SpawnMarkers/Marklines/green/mark_line5x5.rsi
       state: 5x5
       offset: 2, 2
-
-- type: entity
-  id: PubgTestRoomMarker2
-  name: Room marker
-  parent: MarkerBase
-  suffix: TEST 180 Angle
-  components:
-  - type: RoomFill
-    size: 5,5
-    rotation: false
-    roomRotation: 180
-    roomWhitelist:
-      tags:
-      - SalvageExperiment
-  - type: Sprite
-    layers:
-    - state: red
-    - sprite: _Pubg/SpawnMarkers/genmarks.rsi
-      state: gen5x5
-    - sprite: _Pubg/SpawnMarkers/Marklines/green/mark_line5x5.rsi
-      state: 5x5
-      offset: 2, 2
+      renderingStrategy: NoRotation

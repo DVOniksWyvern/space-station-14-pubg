@@ -1,429 +1,413 @@
 # Tier 1
 - type: listing
-  id: PistolPM9
-  name: PM9
-  description: PM9
+  id: Shop-PistolPM9
+  name: shop-pm9-name
+  description: shop-pm9-desc
   productEntity: WeaponPistolPM9
   cost:
     SpaceCash: 100
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
 
 - type: listing
-  id: PistolGrach
-  name: Grach
-  description: Grach
+  id: Shop-PistolGrach
+  name: shop-grach-name
+  description: shop-grach-desc
   productEntity: WeaponPistolGrach
   cost:
     SpaceCash: 250
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
 
 - type: listing
-  id: ShotgunMP153
-  name: Shotgun MP153
-  description: Shotgun MP153
+  id: Shop-ShotgunMP153
+  name: shop-shotgun-mp153-name
+  description: shop-shotgun-mp153-desc
   productEntity: WeaponShotgunMP153
   cost:
     SpaceCash: 650
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
 
 - type: listing
-  id: SubRifleMerkel
-  name: Sub Rifle Merkel
-  description: Sub Rifle Merkel
+  id: Shop-SubRifleMerkel
+  name: shop-sub-rifle-merkel-name
+  description: shop-sub-rifle-merkel-desc
   productEntity: WeaponSubRifleMerkel
   cost:
     SpaceCash: 800
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
 
 - type: listing
-  id: WeaponSmgVityaz
-  name: SMG Vityaz
-  description: SMG Vityaz
+  id: Shop-WeaponSmgVityaz
+  name: shop-smg-vityaz-name
+  description: shop-smg-vityaz-desc
   productEntity: WeaponSmgVityaz
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
 
 # Tier 2
 - type: listing
-  id: WeaponPistolLuger
-  name: Pistol Luger
-  description: Pistol Luger
+  id: Shop-WeaponPistolLuger
+  name: shop-pistol-luger-name
+  description: shop-pistol-luger-desc
   productEntity: WeaponPistolLuger
   cost:
     SpaceCash: 500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
-  id: ShotgunChazer
-  name: Shotgun Chazer
-  description: Shotgun Chazer
+  id: Shop-ShotgunChazer
+  name: shop-shotgun-chazer-name
+  description: shop-shotgun-chazer-desc
   productEntity: WeaponShotgunChazer
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
-  id: SubRifleGarand
-  name: Sub Rifle Garand
-  description: Sub Rifle Garand
+  id: Shop-SubRifleGarand
+  name: shop-sub-rifle-garand-name
+  description: shop-sub-rifle-garand-desc
   productEntity: WeaponSubRifleGarand
   cost:
     SpaceCash: 1200
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
-  id: SubRifleSKS
-  name: Sub Rifle SKS
-  description: Sub Rifle SKS
+  id: Shop-SubRifleSKS
+  name: shop-sub-rifle-sks-name
+  description: shop-sub-rifle-sks-desc
   productEntity: WeaponSubRifleSKS
   cost:
     SpaceCash: 1500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
-
-#- type: listing
-#  id: GoidaGrenadierRig
-#  name: uplink-grenadier-rig-name
-#  description: uplink-grenadier-rig-desc
-#  productEntity: ClothingBeltMilitaryWebbingGrenadeFilled
-#  cost:
-#    SpaceCash: 1200
-#  categories:
-#  - GoidaWeaponry
-#  conditions:
-#  - !type:StoreWhitelistCondition
-#    whitelist:
-#      tags:
-#      - GoidaT2Shop
-#
+      - PubgShopT2
 
 - type: listing
-  id: PubgRevolverRex
-  name: Revolver Rex
-  description: Revolver Rex
+  id: Shop-PubgRevolverRex
+  name: shop-revolver-rex-name
+  description: shop-revolver-rex-desc
   productEntity: WeaponPubgRevolverRex
   cost:
     SpaceCash: 1500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
-  id: PubgRevolverSmith
-  name: Revolver Smith
-  description: Revolver Smith
+  id: Shop-PubgRevolverSmith
+  name: shop-revolver-smith-name
+  description: shop-revolver-smith-desc
   productEntity: WeaponPubgRevolverSmith
   cost:
     SpaceCash: 2000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
-  id: WeaponSmgMac10
-  name: SMG Mac10
-  description: SMG Mac10
+  id: Shop-WeaponSmgMac10
+  name: shop-smg-mac10-name
+  description: shop-smg-mac10-desc
   productEntity: WeaponSmgMac10
   cost:
     SpaceCash: 1200
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
-  id: WeaponSmgP90
-  name: SMG P90
-  description: SMG P90
+  id: Shop-WeaponSmgP90
+  name: shop-smg-p90-name
+  description: shop-smg-p90-desc
   productEntity: WeaponSmgP90
   cost:
     SpaceCash: 1500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 - type: listing
-  id: WeaponSniperRifleSV98
-  name: Sniper Rifle SV98
-  description: Sniper Rifle SV98
+  id: Shop-WeaponSniperRifleSV98
+  name: shop-sniper-rifle-sv98-name
+  description: shop-sniper-rifle-sv98-desc
   productEntity: WeaponSniperRifleSV98
   cost:
     SpaceCash: 2000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 # Tier 3
 - type: listing
-  id: WeaponSmgCPW
-  name: SMG CPW
-  description: SMG CPW
+  id: Shop-WeaponSmgCPW
+  name: shop-smg-cpw-name
+  description: shop-smg-cpw-desc
   productEntity: WeaponSmgCPW
   cost:
     SpaceCash: 2000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
-  id: WeaponShotgunKS-23
-  name: Shotgun KS-23
-  description: Shotgun KS-23
+  id: Shop-WeaponShotgunKS-23
+  name: shop-shotgun-ks-23-name
+  description: shop-shotgun-ks-23-desc
   productEntity: WeaponShotgunKS-23
   cost:
     SpaceCash: 1500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
-  id: WeaponRifleBeryl
-  name: Rifle Beryl
-  description: Rifle Beryl
+  id: Shop-WeaponRifleBeryl
+  name: shop-rifle-beryl-name
+  description: shop-rifle-beryl-desc
   productEntity: WeaponRifleBeryl
   cost:
     SpaceCash: 2000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
-  id: WeaponRifleA91
-  name: Rifle A91
-  description: Rifle A91
+  id: Shop-WeaponRifleA91
+  name: shop-rifle-a91-name
+  description: shop-rifle-a91-desc
   productEntity: WeaponRifleA91
   cost:
     SpaceCash: 2250
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
-  id: WeaponRifleOhioOrdance
-  name: Rifle Ohio Ordance
-  description: Ohio Ordance
+  id: Shop-WeaponRifleOhioOrdance
+  name: shop-rifle-ohio-ordance-name
+  description: shop-rifle-ohio-ordance-desc
   productEntity: WeaponRifleOhioOrdance
   cost:
     SpaceCash: 2350
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
-  id: WeaponRifleFNFAL
-  name: Rifle FNFAL
-  description: Rifle FNFAL
+  id: Shop-WeaponRifleFNFAL
+  name: shop-rifle-fnfal-name
+  description: shop-rifle-fnfal-desc
   productEntity: WeaponRifleFNFAL
   cost:
     SpaceCash: 2500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
-  id: WeaponRifleAR18-V2
-  name: Rifle AR18-V2
-  description: Rifle AR18-V2
+  id: Shop-WeaponRifleAR18-V2
+  name: shop-rifle-ar18-v2-name
+  description: shop-rifle-ar18-v2-desc
   productEntity: WeaponRifleAR18-V2
   cost:
     SpaceCash: 3000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
-  id: PubgWeaponGL06
-  name: Grenade Launcher GL06
-  description: Grenade Launcher GL06
+  id: Shop-PubgWeaponGL06
+  name: shop-grenade-launcher-gl06-name
+  description: shop-grenade-launcher-gl06-desc
   productEntity: PubgWeaponGL06
   cost:
     SpaceCash: 2500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT3Shop
+      - PubgShopT3
 
 - type: listing
-  id: WeaponSniperRifleSVD
-  name: Sniper Rifle SVD
-  description: Sniper Rifle SVD
+  id: Shop-WeaponSniperRifleSVD
+  name: shop-sniper-rifle-svd-name
+  description: shop-sniper-rifle-svd-desc
   productEntity: WeaponSniperRifleSVD
   cost:
     SpaceCash: 3000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT2Shop
+      - PubgShopT2
 
 # Tier 4
 - type: listing
-  id: WeaponPistolDesertEagle
-  name: Pistol Desert Eagle
-  description: Pistol Desert Eagle
+  id: Shop-WeaponPistolDesertEagle
+  name: shop-pistol-desert-eagle-name
+  description: shop-pistol-desert-eagle-desc
   productEntity: WeaponPistolDesertEagle
   cost:
     SpaceCash: 2500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4
 
 - type: listing
-  id: PubgWeaponRG06
-  name: Grenade Launcher RG06
-  description: Grenade Launcher RG06
+  id: Shop-PubgWeaponRG06
+  name: shop-grenade-launcher-rg06-name
+  description: shop-grenade-launcher-rg06-desc
   productEntity: PubgWeaponRG06
   cost:
     SpaceCash: 5000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4
 
 - type: listing
-  id: WeaponSniperRifleBarrett
-  name: Sniper Rifle Barrett
-  description: Sniper Rifle Barrett
+  id: Shop-WeaponSniperRifleBarrett
+  name: shop-sniper-rifle-barrett-name
+  description: shop-sniper-rifle-barrett-desc
   productEntity: WeaponSniperRifleBarrett
   cost:
     SpaceCash: 4000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4
 
 - type: listing
-  id: WeaponRifleAsVal
-  name: Rifle AsVal
-  description: Rifle AsVal
+  id: Shop-WeaponRifleAsVal
+  name: shop-rifle-asval-name
+  description: shop-rifle-asval-desc
   productEntity: WeaponRifleAsVal
   cost:
     SpaceCash: 3500
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4
 
 - type: listing
-  id: WeaponRifleAsh12
-  name: Rifle Ash12
-  description: Rifle Ash12
+  id: Shop-WeaponRifleAsh12
+  name: shop-rifle-ash12-name
+  description: shop-rifle-ash12-desc
   productEntity: WeaponRifleAsh12
   cost:
     SpaceCash: 4000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4
 
 - type: listing
-  id: WeaponLmgRPD
-  name: LMG RPD
-  description: LMG RPD
+  id: Shop-WeaponLmgRPD
+  name: shop-lmg-rpd-name
+  description: shop-lmg-rpd-desc
   productEntity: WeaponLmgRPD
   cost:
     SpaceCash: 6000
   categories:
-  - GoidaWeaponry
+  - PubgShopWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - GoidaT4Shop
+      - PubgShopT4

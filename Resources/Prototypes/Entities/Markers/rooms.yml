@@ -6,7 +6,6 @@
   components:
   - type: RoomFill
     size: 5,5
-    roomRotation: 45
   - type: Sprite
     layers:
       - state: red

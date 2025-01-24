@@ -39,7 +39,7 @@ public abstract class SharedEnergySystem : EntitySystem
         SetEnergyAlert(uid);
     }
 
-    protected void SetEnergyAlert(EntityUid uid, EnergyMoverComponent? component = null)
+    private void SetEnergyAlert(EntityUid uid, EnergyMoverComponent? component = null)
     {
         if (!Resolve(uid, ref component, false) || component.Deleted)
         {
@@ -53,7 +53,7 @@ public abstract class SharedEnergySystem : EntitySystem
         _alerts.ShowAlert(uid, component.EnergyAlert, (short) severity);
     }
 
-    public void ChangeEnergyLevel(EntityUid uid, int amount, EnergyMoverComponent? component = null,
+    protected void ChangeEnergyLevel(EntityUid uid, int amount, EnergyMoverComponent? component = null,
         InputMoverComponent? inputMover = null)
     {
         if (!Resolve(uid, ref component, false) || !Resolve(uid, ref inputMover, false) || component.Deleted)

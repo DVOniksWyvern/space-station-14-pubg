@@ -1,132 +1,132 @@
 - type: listing
-  id: AmmoBox9mm
-  name: Box 9mm
-  description: Box 9mm ammo
+  id: Shop-AmmoBox9mm
+  name: shop-box-9mm-name
+  description: shop-box-9mm-desc
   productEntity: BaseMagazineBoxPistols9mm
   cost:
     SpaceCash: 50
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
-  id: AmmoBox12x70
-  name: Box 12x70
-  description: Box 12x70 ammo
+  id: Shop-AmmoBox12x70
+  name: shop-box-12x70-name
+  description: shop-box-12x70-desc
   productEntity: BaseMagazineBoxShotgun12x70
   cost:
     SpaceCash: 150
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
-  id: AmmoBox7-65mm
-  name: Box 7-65mm
-  description: Box 7-65mm ammo
+  id: Shop-AmmoBox7-65mm
+  name: shop-box-7-65mm-name
+  description: shop-box-7-65mm-desc
   productEntity: BaseMagazineBoxPistols7-65mm
   cost:
     SpaceCash: 100
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
-  id: AmmoBox23x75
-  name: Box 23x75
-  description: Box 23x75 ammo
+  id: Shop-AmmoBox23x75
+  name: shop-box-23x75-name
+  description: shop-box-23x75-desc
   productEntity: BaseMagazineBoxShotgun23x75
   cost:
     SpaceCash: 300
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
-  id: AmmoBox7-62x39mm
-  name: Box 7-62x39mm
-  description: Box 7-62x39mm ammo
+  id: Shop-AmmoBox7-62x39mm
+  name: shop-box-7-62x39mm-name
+  description: shop-box-7-62x39mm-desc
   productEntity: BaseMagazineBoxRifle7-62x39mm
   cost:
     SpaceCash: 400
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
-  id: AmmoBox5-56x45mm
-  name: Box 5-56x45mm
-  description: Box 5-56x45mm ammo
+  id: Shop-AmmoBox5-56x45mm
+  name: shop-box-5-56x45mm-name
+  description: shop-box-5-56x45mm-desc
   productEntity: BaseMagazineBoxRifle5-56x45mm
   cost:
     SpaceCash: 500
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
-  id: AmmoBox9x39mm
-  name: Box 9x39mm
-  description: Box 9x39mm ammo
+  id: Shop-AmmoBox9x39mm
+  name: shop-box-9x39mm-name
+  description: shop-box-9x39mm-desc
   productEntity: BaseMagazineBoxRifle9x39mm
   cost:
     SpaceCash: 500
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
-  id: AmmoBox5-7x28mm
-  name: Box 5-7x28mm
-  description: Box 5-7x28mm ammo
+  id: Shop-AmmoBox5-7x28mm
+  name: shop-box-5-7x28mm-name
+  description: shop-box-5-7x28mm-desc
   productEntity: BaseMagazineBoxSMG5-7x28mm
   cost:
     SpaceCash: 400
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
-  id: AmmoBoxMagnum357
-  name: Box Magnum357
-  description: Box Magnum357 ammo
+  id: Shop-AmmoBoxMagnum357
+  name: shop-box-magnum357-name
+  description: shop-box-magnum357-desc
   productEntity: BaseMagazineBoxRevolverMagnum357
   cost:
     SpaceCash: 800
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
-  id: AmmoBoxMagnum500
-  name: Box Magnum500
-  description: Box Magnum500 ammo
+  id: Shop-AmmoBoxMagnum500
+  name: shop-box-magnum500-name
+  description: shop-box-magnum500-desc
   productEntity: BaseMagazineBoxRevolverMagnum500
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
-  id: AmmoBox7-62x51mm
-  name: Box 7-62x51mm
-  description: Box 7-62x51mm ammo
+  id: Shop-AmmoBox7-62x51mm
+  name: shop-box-7-62x51mm-name
+  description: shop-box-7-62x51mm-desc
   productEntity: BaseMagazineBoxRifle7-62x51mm
   cost:
     SpaceCash: 500
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
-  id: AmmoBox7-62x54mm
-  name: Box 7-62x54mm
-  description: Box 7-62x54mm ammo
+  id: Shop-AmmoBox7-62x54mm
+  name: shop-box-7-62x54mm-name
+  description: shop-box-7-62x54mm-desc
   productEntity: BaseMagazineBoxSniperRifle7-62x54mm
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 - type: listing
-  id: AmmoBox12-7x99mm
-  name: Box 12-7x99mm
-  description: Box 12-7x99mm ammo
+  id: Shop-AmmoBox12-7x99mm
+  name: shop-box-12-7x99mm-name
+  description: shop-box-12-7x99mm-desc
   productEntity: BaseMagazineBoxSniperRifle12-7x99mm
   cost:
     SpaceCash: 1000
   categories:
-  - GoidaAmmo
+  - PubgShopAmmo
 
 
 

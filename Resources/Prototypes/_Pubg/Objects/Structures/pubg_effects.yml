@@ -1,0 +1,18 @@
+- type: entity
+  parent: BaseFoam
+  id: SmokeStatic
+  name: smoke
+  suffix: Static
+  components:
+  - type: Occluder
+  - type: Sprite
+    sprite: Effects/chemsmoke.rsi
+    state: chemsmoke
+  - type: AmbientSound
+    enabled: true
+    volume: -5
+    range: 2
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        loop: true

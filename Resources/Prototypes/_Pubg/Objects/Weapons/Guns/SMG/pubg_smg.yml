@@ -35,8 +35,7 @@
       magState: mag
       steps: 1
       zeroVisible: true
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -48,13 +47,6 @@
           whitelist:
             tags:
               - MagazineSmgMac10
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgePistol9mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgePistol9mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -102,8 +94,7 @@
       magState: mag
       steps: 1
       zeroVisible: true
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -115,13 +106,6 @@
           whitelist:
             tags:
               - MagazineSmgP90
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeSmg5-7x28mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeSmg5-7x28mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -169,8 +153,7 @@
       magState: mag
       steps: 1
       zeroVisible: true
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -182,13 +165,6 @@
           whitelist:
             tags:
               - MagazineSmgVityaz
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgePistol9mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgePistol9mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -236,8 +212,7 @@
       magState: mag
       steps: 1
       zeroVisible: true
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -249,13 +224,6 @@
           whitelist:
             tags:
               - MagazineSmgCPW
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeSmg5-7x28mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeSmg5-7x28mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot

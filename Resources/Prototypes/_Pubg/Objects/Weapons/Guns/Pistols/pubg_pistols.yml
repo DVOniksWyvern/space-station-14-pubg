@@ -32,10 +32,7 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/_Pubg/Weapons/Pistols/pm_gunshot.ogg
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -47,13 +44,6 @@
           whitelist:
             tags:
               - MagazinePistol9mm
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgePistol9mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgePistol9mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -102,10 +92,7 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/_Pubg/Weapons/Pistols/grach_gunshot.ogg
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -117,13 +104,6 @@
           whitelist:
             tags:
               - MagazinePistolGrach9mm
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgePistol9mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgePistol9mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -172,10 +152,7 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/_Pubg/Weapons/Pistols/luger_gunshot.ogg
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -187,13 +164,6 @@
           whitelist:
             tags:
               - MagazinePistolLuger7-65mm
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgePistol7-65mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgePistol7-65mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -242,10 +212,7 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/_Pubg/Weapons/Pistols/deserteagle_gunshot.ogg
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -257,13 +224,6 @@
           whitelist:
             tags:
               - MagazinePistolDesertEagle50bmg
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgePistol50bmg
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgePistol50bmg
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot

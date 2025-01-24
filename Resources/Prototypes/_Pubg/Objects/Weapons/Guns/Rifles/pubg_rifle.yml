@@ -39,8 +39,7 @@
       magState: mag
       steps: 1
       zeroVisible: true
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -52,13 +51,6 @@
           whitelist:
             tags:
               - MagazineRifleAR18-V2
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeRifle5-56x45mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeRifle5-56x45mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -67,7 +59,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.08
+      divisor: 0.09
 
 # Beryl
 - type: entity
@@ -110,8 +102,7 @@
       magState: mag
       steps: 1
       zeroVisible: true
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -123,13 +114,6 @@
           whitelist:
             tags:
               - MagazineRifleBeryl
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeRifle5-56x45mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeRifle5-56x45mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -138,7 +122,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.08
+      divisor: 0.09
 
 # FN-FAL
 - type: entity
@@ -181,8 +165,7 @@
       magState: mag
       steps: 1
       zeroVisible: true
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -194,13 +177,6 @@
           whitelist:
             tags:
               - MagazineRifleFNFAL
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeRifle7-62x51mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeRifle7-62x51mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -209,7 +185,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.08
+      divisor: 0.09
 
 # AS Val
 - type: entity
@@ -252,8 +228,7 @@
       magState: mag
       steps: 1
       zeroVisible: true
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -265,13 +240,6 @@
           whitelist:
             tags:
               - MagazineRifleASVAL
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeRifle9x39mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeRifle9x39mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -280,7 +248,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.08
+      divisor: 0.09
 
 # A91
 - type: entity
@@ -323,8 +291,7 @@
       magState: mag
       steps: 1
       zeroVisible: true
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -336,13 +303,6 @@
           whitelist:
             tags:
               - MagazineRifleA91
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeRifle7-62x39mm
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeRifle7-62x39mm
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -351,7 +311,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.08
+      divisor: 0.09
 
 # Ohio Ordance 1918
 - type: entity
@@ -394,8 +354,7 @@
       magState: mag
       steps: 1
       zeroVisible: true
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: null
+    - type: MagazineAmmoProvider
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -407,13 +366,6 @@
           whitelist:
             tags:
               - MagazineRifleOhioOrdance
-        gun_chamber:
-          name: Chamber
-          startingItem: CartridgeRifle30-06spr
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeRifle30-06spr
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
@@ -422,7 +374,7 @@
     - type: StaticPrice
       price: 500
     - type: Telescope
-      divisor: 0.08
+      divisor: 0.09
 
 # ASH-12
 - type: entity
@@ -467,8 +419,7 @@
     magState: mag
     steps: 1
     zeroVisible: true
-  - type: ChamberMagazineAmmoProvider
-    boltClosed: null
+  - type: MagazineAmmoProvider
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -480,13 +431,6 @@
         whitelist:
           tags:
           - MagazineRifleASH12
-      gun_chamber:
-        name: Chamber
-        startingItem: CartridgeRifle12x55mm
-        priority: 1
-        whitelist:
-          tags:
-          - CartridgeRifle12x55mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -495,4 +439,4 @@
   - type: StaticPrice
     price: 500
   - type: Telescope
-    divisor: 0.08
+    divisor: 0.09
