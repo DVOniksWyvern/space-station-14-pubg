@@ -1,64 +1,58 @@
-[<img src="https://imagizer.imageshack.com/img923/7392/pIWR7b.png" alt="ASF" width="989" align="center">](https://github.com/Rxup/space-station-14)
+<div align="center"><img alt="WWDP logo" src="https://raw.githubusercontent.com/WWhiteDreamProject/wwdpublic/master/Resources/Textures/_White/Logo/WWDPDarkSplashIcon.png" width="512px" /></div>
 
 ---
 
-Backmen&Ataraxia - это форк [Space Wizards](https://github.com/space-wizards/space-station-14), ориентирующийся на идеи [СтароTG](https://github.com/tgstation/tgstation) и [Shiptest](https://github.com/shiptest-ss13/Shiptest) из Space Station 13, включая в это свои собственные идеи.
+WWDP - форк Einstein Engines, представляющего из себя хард-форк  [Space Station 14](https://github.com/space-wizards/space-station-14), построенный на идеалах и дизайнерском вдохновении семейства серверов BayStation 12 от Space Station 13 с упором на модульный код, который каждый может использовать для создания RP-сервера своей мечты.
 
-Space Station 14 - это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/Robust-Toolbox), написанном на C#.
+WWDP - один из основных серверов русского коммьюнити, который выступает за идеалы свободы отыгрыша, свободы слова и настоящей классической атмосферы Space Station 13 - хаос, веселье, возможности.
+
+Space Station 14 - это ремейк SS13, который работает на собственном движке  [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), собственном игровом движке, написанном на C#.
+
+Поскольку это хард-форк, любой код, взятый из другого апстрима, не может быть напрямую замержен сюда, а должен быть перенесен.
+Весь код, представленный в этом репозитории, может быть изменен по желанию кодербаса Белой Мечты.
+
+Данный репозиторий является архивом билда PUBG - проекта под началом Warete, который изначально делался под эгидой Белой Мечты, потом Атараксии, потом Бэкмена, потом уже в душе не ебу.
+
+Использовать на свой страх и риск. 
 
 ## Ссылки
 
-[<img src="https://i.imgur.com/XiS9QP5.png" alt="ASF" width="150" align="left">](https://github.com/AtaraxiaSpaceFoundation)
-**Ataraxia Space Foundation**<br>Специализируемся на разработке этого билда.
+[Steam](https://store.steampowered.com/app/2585480/Space_Station_Multiverse/) | [Клиент без Steam](https://spacestationmultiverse.com/downloads/) | [Основной репозиторий](https://github.com/Simple-Station/Einstein-Engines)
 
-[<img src="https://i.imgur.com/xMzKtYK.png" alt="Discord" width="150" align="left">](https://discord.gg/ss-14-backmen-ru-1053200453829132298)
-**Discord Server**<br>В космосе вас никто не услышит.
+## Контрибуция
 
-[<img src="https://imagizer.imageshack.com/img922/4959/8KTh9r.png" alt="Wiki" width="150" align="left">](https://wiki.backmen.ru)
-**Wiki**<br>Что за блобы и с чем их едят?
+В процессе разработки, ожидайте новостей!
 
 ## Сборка
 
-Следуйте гайду от [Space Wizards](https://docs.spacestation14.com/en/general-development/setup/setting-up-a-development-environment.html) по настройке рабочей среды, но учитывайте, что репозитории отличаются друг от друга и некоторые вещи могут отличаться.
-Ниже перечислены скрипты и методы облегчающие работу с билдом.
+Следуйте [гайду от Space Wizards](https://docs.spacestation14.com/en/general-development/setup/setting-up-a-development-environment.html) по настройке рабочей среды, но учитывайте, что наши репозитории отличаются и некоторые вещи могут отличаться.
+Мы предлагаем несколько скриптов, показанных ниже, чтобы облегчить работу.
+
+### Необходимые зависимости
+
+> - Git
+> - .NET SDK 9.0.101
+
 
 ### Windows
 
-> 1. Склонируйте данный репозиторий.
-> 2. Запустите `git submodule update --init --recursive` в командной строке, чтобы скачать движок игры.
-> 3. Запускайте `Scripts/bat/buildAllDebug.bat` после любых изменений в коде проекта.
-> 4. Запустите `Scripts/bat/runQuickAll.bat`, чтобы запустить клиент и сервер.
-> 5. Подключитесь к локальному серверу и играйте.
+> 1. Склонируйте данный репозиторий
+> 2. Запустите `git submodule update --init --recursive` в командной строке, чтобы скачать движок игры
+> 3. Запускайте `Scripts/bat/buildAllDebug.bat` после любых изменений в коде проекта
+> 4. Запустите `Scripts/bat/runQuickAll.bat`, чтобы запустить клиент и сервер
+> 5. Подключитесь к локальному серверу и играйте
 
 ### Linux
 
 > 1. Склонируйте данный репозиторий.
-> 2. Запустите `git submodule update --init --recursive` в командной строке, чтобы скачать движок игры.
-> 3. Запускайте `Scripts/sh/buildAllDebug.sh` после любых изменений в коде проекта.
-> 4. Запустите `Scripts/sh/runQuickAll.sh`, чтобы запустить клиент и сервер.
-> 5. Подключитесь к локальному серверу и играйте.
+> 2. Запустите `git submodule update --init --recursive` в командной строке, чтобы скачать движок игры
+> 3. Запускайте `Scripts/sh/buildAllDebug.sh` после любых изменений в коде проекта
+> 4. Запустите `Scripts/sh/runQuickAll.sh`, чтобы запустить клиент и сервер
+> 5. Подключитесь к локальному серверу и играйте
 
 ### MacOS
 
-> Предположительно, также, как и на Линуксе, сами разберётесь.
-
----
-
-## GptChat
-
-```toml
-[gpt]
-enabled = true
-api = "https://gigachat.devices.sberbank.ru/api/v1/"
-model = "GigaChat"
-token = ""
-giga_token = "ВСТАВИТЬ СЮДА СЕКРЕТНЫЙ КЛЮЧ"
-```
-
-[Токен](https://developers.sber.ru/portal/products/gigachat-api)
- запрашивается автоматически по секретному ключу и автоматически обновляется.
-
----
+> Предположительно, также, как и на Линуксе.
 
 ## Лицензия
 
